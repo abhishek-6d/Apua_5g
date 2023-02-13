@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.sixdee.ussd.dto.TierLanguageMappingDTO" table="TIER_LANGUAGE_MAPPING">
+		<composite-id>
+			<key-property name="langId" type="int" column="LANG_ID"></key-property>
+			<key-property name="tierId" type="int" column="TIER_ID"></key-property>
+		</composite-id>
+		<property name="tierName" type="java.lang.String" column="TIER_NAME"></property>
+	</class>
+</hibernate-mapping>

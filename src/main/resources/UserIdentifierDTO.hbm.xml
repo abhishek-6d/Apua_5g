@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_0"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_0">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />		
+		<property  column="CREATION_DATE" name="createDate"></property>
+		 </class>
+	
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_1"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_1">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_2"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_2">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_3"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_3">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_4"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_4">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_5"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_5">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_6"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_6">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_7"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_7">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_8"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_8">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+
+	<class dynamic-insert="true" entity-name="USER_IDENTIFIER_ENTITY_9"
+		name="com.sixdee.imp.dto.UserIdentifierDTO" table="USER_IDENTIFIER_9">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_identifier_seq</param>
+			</generator>
+		</id>
+
+		<property column="LOYALTY_ID" name="loyaltyID"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />
+		<property  column="CREATION_DATE" name="createDate"></property> </class>
+
+
+
+
+</hibernate-mapping>

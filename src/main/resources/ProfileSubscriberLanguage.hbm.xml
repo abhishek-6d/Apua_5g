@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+        <class name="com.sixdee.imp.dto.ProfileSubscriberLanguageDTO"
+                table="PROFILE_SUBSCRIBER_LANGUAGE" lazy="false">
+                  <id name="id" type="java.lang.Long" column="ID">
+                        <generator class="sequence">
+                <param name="sequence">PROFILE_SUB_LANGUAGE_ID_1SEQ</param>
+            </generator>
+          </id>
+           <property name="msisdn">
+                        <column name="MSISDN" />
+                </property>
+                 <property name="languageId">
+                        <column name="LANGUAGE_ID" />
+                </property>
+                 <property name="msisdnActiveDate">
+                        <column name="MSISDN_ACTIVE_DATE" />
+                </property>
+                 <property name="whiteList">
+                        <column name="WHITE_LIST" />
+                </property>
+                 <property name="ldreg">
+                        <column name="LDREG" />
+                </property>
+                 <property name="userId">
+                        <column name="USER_ID" />
+                </property>
+                 <property name="tempCol">
+                        <column name="TEMP_COL" />
+                </property>
+                 <property name="englishName">
+                        <column name="ENGLISH_NAME" />
+                </property>
+                 <property name="arabicName">
+                        <column name="ARABIC_NAME" />
+                </property>
+                 <property name="category">
+                        <column name="CATEGORY" />
+                </property>
+                <property name="nationality">
+                        <column name="NATIONALITY" />
+                </property>
+                
+                <property name="dob" type="java.util.Date">
+                        <column name="DOB" />
+                </property>
+                  <property name="status">
+                        <column name="STATUS" />
+                </property> 
+                 <property name="portIn">
+                        <column name="PORT_IN" />
+                </property>
+                 <property name="gender">
+                        <column name="GENDER" />
+                </property>
+                
+               
+        </class>
+
+</hibernate-mapping>

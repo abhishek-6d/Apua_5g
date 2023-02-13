@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_0" table="SUBSCRIBER_WISE_PROFILE_0">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE" type="java.util.Date"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_1" table="SUBSCRIBER_WISE_PROFILE_1">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_2" table="SUBSCRIBER_WISE_PROFILE_2">
+	<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_3" table="SUBSCRIBER_WISE_PROFILE_3">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_4" table="SUBSCRIBER_WISE_PROFILE_4">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE" type="java.util.Date"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_5" table="SUBSCRIBER_WISE_PROFILE_5">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_6" table="SUBSCRIBER_WISE_PROFILE_6">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_7" table="SUBSCRIBER_WISE_PROFILE_7">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_8" table="SUBSCRIBER_WISE_PROFILE_8">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberProfileDTO" entity-name="SUBSCRIBER_PROFILE_ENTITY_9" table="SUBSCRIBER_WISE_PROFILE_9">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO" >
+			<generator class="native"/>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceId" column="SERVICE_ID"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="dailyDate" column="DAILY_DATE"></property>
+		<property name="dailyCount" column="DAILY_COUNT"></property>
+		<property name="weeklyDate" column="WEEKLY_DATE"></property>
+		<property name="weeklyCount" column="WEEKLY_COUNT"></property>
+		<property name="monthlyDate" column="MONTHLY_DATE"></property>
+		<property name="monthlyCount" column="MONTHLY_COUNT"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="CustomerProfileTabDTO" table="CUSTOMER_PROFILE">
+		<comment>Customer Profile</comment>
+		<id name="loyaltyId" type="java.lang.Integer" column="LOYALTY_ID" >
+		</id>
+		
+		<property name="accountNo" column="ACCOUNT_NO"/>
+		<property name="msisdn" column="MSISDN"/>
+		<property name="customerRefNumber" column="CUSTOMER_REF_NUMBER"/>
+		<property name="contactNumber" column="CONTACT_NUMBER"/>
+		<property name="accountType" column="ACCOUNT_TYPE"/>
+		<property name="lineType" column="LINE_TYPE"/>
+		<property name="firstName" column="FIRST_NAME"/>
+		<property name="lastName" column="LAST_NAME"/>
+		<property name="defaultLanguage" column="DEFAULT_LANGUAGE"/>
+		<property name="emailId" column="EMAIL_ID"/>
+		<property name="dob" column="DOB"/>
+		<property name="address" column="ADDRESS"/>
+		<property name="occupation" column="OCCUPATION"/>
+		<property name="vipCode" column="VIP_CODE"/>
+		<property name="category" column="CATEGORY"/>
+		<property name="telecoAdmin" column="TELECO_ADMIN"/>
+		<property name="customerSegment" column="CUSTOMER_SEGMENT"/>
+		<property name="asa" column="ASA"/>
+		<property name="billCycle" column="BILL_CYCLE"/>
+		<property name="crn" column="CRN"/>
+		<property name="creditClass" column="CREDIT_CLASS"/>
+		<property name="businessUnit" column="BUSINESS_UNIT"/>
+		<property name="department" column="DEPARTMENT"/>
+		<property name="activationDate" column="ACTIVATION_DATE"/>
+		<property name="nationalId" column="NATIONAL_ID"/>
+		<property name="nationalIdType" column="NATIONAL_ID_TYPE"/>
+		<property name="nationality" column="NATIONALITY"/>
+		<property name="statusId" column="STATUS_ID"/>
+		<property name="gender" column="GENDER"/>
+		<property name="arabicFirstName" column="ARABIC_FIRST_NAME"/>
+		<property name="arabicLastName" column="ARABIC_LAST_NAME"/>
+		<property name="arabicAddress" column="ARABIC_ADDRESS"/>
+		<property name="blacklistStatus" column="BLACKLIST_STATUS"/>
+		<!--<property name="fraudStatus" column="FRAUD_STATUS"/>-->
+		<property name="arpuBand" column="ARPU_BAND"/>
+		<property name="baseRatePlan" column="BASE_RATE_PLAN"/>
+		<property name="creditLimit" column="CREDIT_LIMIT"/>
+		<property name="homeLocation" column="HOME_LOCATION"/>
+		<property name="weekendLocation" column="WEEKEND_LOCATION"/>
+		<property name="frequentlyUsedLocation" column="FREQUENTLY_USED_LOCATION"/>
+		<property name="contract" column="CONTRACT"/>
+		<property name="mobileAppSubscriptionStatus" column="MOBILE_APP_SUBSCRIPTION_STATUS"/>
+		<property name="accountCategoryType" column="ACCOUNT_CATEGORY_TYPE"/>
+		<property name="tierPoints" column="TIER_POINTS"/>
+		<property name="bonusPoints" column="BONUS_POINTS"/>
+		<property name="nojoomClass" column="NOJOOM_CLASS"/>
+		<property name="totalPoints" column="TOTAL_POINTS"/>
+		
+		<property name="softDelete" column="SOFT_DELETE"/>
+		<property name="expiryDate" column="EXPIRY_DATE"/>
+		<!--<property name="totalPoints" column="ARPU_3MONTHS"/>-->
+		<property name="refNumber" column="REF_NUMBER"/>
+		<!--<property name="totalPoints" column="ARPU_3MONTHS"/>-->
+		<property name="isParent" column="IS_PARENT"/>
+		<property name="profileId" column="PROFILE_ID"/>
+	</class>
+	
+</hibernate-mapping>

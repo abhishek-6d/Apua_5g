@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 Jul, 2013 11:13:57 AM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.ussd.dto.ConfigParmeterDTO" table="CONFIG_PARAMETERS">
+        <id name="parameterId" type="int">
+            <column name="PARAMETER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="parameterName" type="java.lang.String">
+            <column name="PARAMETER_NAME" />
+        </property>
+        <property name="parameterValue" type="java.lang.String">
+            <column name="PARAMETER_VALUE" />
+        </property>
+    </class>
+</hibernate-mapping>

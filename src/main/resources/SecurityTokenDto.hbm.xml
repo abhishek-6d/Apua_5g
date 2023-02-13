@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.sixdee.imp.common.dto.SecurityTokenDto" table="LMS_CNFG_SECURITYTOKEN_DETAILS">
+    	<id name="id" type="integer" column="ID">
+    		<generator class="assigned"></generator>
+    	</id>
+    	<property name="ostype" type="string" column="OS_TYPE"></property>
+    	<property name="securityToken" type="string" column="SECURITY_TOKEN"></property>
+    	
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.SMS_NotificationDTO" table="SMS_NOTIFICATION_CONFIGURATION">
+		<id name="feature" type="java.lang.String" column="FEATURE">
+		</id>
+		<property name="response_url" column="RESPONSE_URL"></property>
+		<property name="user_name" column="USER_NAME"></property>
+		<property name="campaign_name" column="CAMPAIGN_NAME"></property>
+		<property name="circle_name" column="CIRCLE_NAME"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="oa" column="OA"></property>		
+		<property name="start_date" column="START_DATE"></property>
+		<property name="end_date" column="END_DATE"></property>
+		<property name="language_id" column="LANGUAGE_ID"></property>
+		</class>
+	
+	
+</hibernate-mapping>	

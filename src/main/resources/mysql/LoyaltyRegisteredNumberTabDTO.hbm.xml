@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_0" table="LOYALTY_REGISTERED_NUMBER_0">
+		
+		<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_1" table="LOYALTY_REGISTERED_NUMBER_1">
+	   <composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_2" table="LOYALTY_REGISTERED_NUMBER_2">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_3" table="LOYALTY_REGISTERED_NUMBER_3">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_4" table="LOYALTY_REGISTERED_NUMBER_4">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_5" table="LOYALTY_REGISTERED_NUMBER_5">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_6" table="LOYALTY_REGISTERED_NUMBER_6">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_7" table="LOYALTY_REGISTERED_NUMBER_7">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_8" table="LOYALTY_REGISTERED_NUMBER_8">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRegisteredNumberTabDTO" entity-name="LOYALTY_REG_NUMBER_ENTITY_9" table="LOYALTY_REGISTERED_NUMBER_9">
+	<composite-id>
+	    <key-property name="loyaltyID"  column="LOYALTY_ID"></key-property>
+	    <key-property name="linkedNumber" column="LINKED_NO"></key-property>
+	   </composite-id>
+	   
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+		
+	</class>
+	
+	
+</hibernate-mapping>	

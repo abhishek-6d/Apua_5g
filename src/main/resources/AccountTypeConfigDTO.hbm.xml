@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 31 Jul, 2018 5:34:01 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.hbmdto.AccountTypeConfigDTO" table="LMS_CNFG_ACCOUNT_TYPE">
+        <id name="accountType" type="java.lang.String">
+            <column name="ACCOUNT_TYPE_NAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountTypeId">
+            <column name="ACCOUNT_TYPE_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

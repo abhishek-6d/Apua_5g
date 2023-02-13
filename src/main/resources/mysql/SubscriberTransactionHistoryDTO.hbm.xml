@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_0" table="SUBS_TRANSACTION_HISTORY_0">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE" type="timestamp"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_1" table="SUBS_TRANSACTION_HISTORY_1">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_2" table="SUBS_TRANSACTION_HISTORY_2">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE" type="timestamp"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_3" table="SUBS_TRANSACTION_HISTORY_3">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_4" table="SUBS_TRANSACTION_HISTORY_4">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_5" table="SUBS_TRANSACTION_HISTORY_5">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_6" table="SUBS_TRANSACTION_HISTORY_6">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_7" table="SUBS_TRANSACTION_HISTORY_7">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_8" table="SUBS_TRANSACTION_HISTORY_8">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.SubscriberTransactionHistroyDTO" entity-name="SUB_TRA_HIS_9" table="SUBS_TRANSACTION_HISTORY_9">
+		<id name="id" type="java.lang.Integer" column="ID">
+		 <generator class="increment"></generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceID" column="SERVICE_ID"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="activationDate" column="ACTIVATION_DATE"></property>
+		<property name="serviceAmt" column="SERVICE_AMT"></property>
+		<property name="transactionType" column="TRANSACTION_TYPE"></property>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"></property>
+		<property name="date" column="CREATE_DATE"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

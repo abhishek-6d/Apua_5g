@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.VoucherOrderDetailsDTO" dynamic-insert="true" entity-name="VOUCHER_ORDER_0" table="VOUCHER_ORDER_0">
+		<id name="sno" type="long" column="SNO">
+			<generator class="sequence">
+                <param name="sequence">VOUCHER_SEQ</param>
+            </generator>
+		</id>
+		<property name="loyalityID" column="LOYALTY_ID"></property>
+		<property name="createDate" column="CREATE_DATE"></property>
+		<property name="orderDate" column="ORDER_DATE"></property>
+		<property name="orderId" column="ORDER_ID"></property>
+		<property name="orderStatus" column="ORDER_STATUS"></property>
+		<property name="quantity" column="QUANTITY"></property>
+		<property name="redeemPoints" column="REDEEM_POINTS"></property>
+		<property name="voucherName" column="VOUCHER_NAME"></property>
+		<property name="voucherNumber" column="VOUCHER_NUMBER"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="area" column="AREA"></property>
+		<property name="location" column="LOCATION"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

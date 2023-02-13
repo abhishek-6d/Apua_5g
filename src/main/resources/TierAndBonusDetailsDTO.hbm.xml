@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.TierAndBonusPointDetailsDTO"  table="DAY_WISE_TIER_AND_BONUS_POINTS">
+		<id name="id" type="java.lang.Integer" column="ID">
+		</id>
+		<property name="expiryDate" type="java.util.Date" column="EXPIRY_DATE"></property>
+		<property name="msisdn" column="MSISDN"></property>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="tierPoints" column="TIER_POINTS"></property>
+		<property name="bonusPoints" column="BONUS_POINTS"></property>
+		<property name="totalPoints" column="TOTAL_POINTS"></property>
+		<property name="tierCreateDate" column="TIER_CREATE_DATE"></property>
+		<property name="bonusCreateDate" column="BONUS_CREATE_DATE"></property>
+		<property name="expiryQuarter" column="EXPIRY_QUARTER"></property>
+				
+	</class>
+	
+	
+</hibernate-mapping>	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class dynamic-insert="false" name="com.sixdee.lms.dto.persistent.ExtNotificationDTO" entity-name="ExtTriggerNotificationDTO" table="LMS_CNFG_EXT_TRIGGER_MASTER">
+		<id name="keyword" type="string" column="KEYWORD"></id>
+		<property name="trigger" type="string" column="TRIGGERID"></property>
+		<property name="isDiscard" column="IS_DISCARD"></property>
+		<property name="isTableInsert" column="IS_TABLE_INSERT" ></property>
+		<property name="isTrigger" column="RE_TRIGGER"></property>
+	</class>
+</hibernate-mapping>

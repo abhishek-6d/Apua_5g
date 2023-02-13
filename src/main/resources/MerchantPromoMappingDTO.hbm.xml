@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class   name="com.sixdee.imp.dto.MerchantPromoMappingDTO"  table="MERCHANT_PROMO_MAPPING">
+	
+  <id column="MERCHANT_ID"  name="merchantId"/>
+   <property column="MERCHANT_NAME" generated="never" lazy="false" name="merchantName"/>
+    <property column="MERCHANT_DESC" generated="never" lazy="false" name="merchantDesc"/>
+	</class>
+	
+</hibernate-mapping>

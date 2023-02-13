@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19 Jun, 2013 8:29:32 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.InstantRewardConfigDTO" table="INSTANT_REWARDS">
+        <id name="id" type="int">
+            <column name="PACKAGE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="packName" type="java.lang.String">
+            <column name="PACKAGE_NAME" />
+        </property>
+        <property name="packCount" type="long">
+            <column name="PACKAGE_COUNT" />
+        </property>
+        <property name="flushReqd" type="int">
+            <column name="SHUFFLE" />
+        </property>
+        <property name="inServiceId" type="int" column="IN_SERVICE_ID" ></property>
+        <property name="validityType" type="int" column="VALIDITY_TYPE" ></property>
+        <property name="validity" type="long" column="VALIDITY" ></property>
+        <property name="carryForward" type="java.lang.String" column="CARRY_FORWARD" ></property>
+        <property name="units" type="long" column="UNITS"></property>
+        <property name="arabicOfferName" type="string" column="ARABIC_OFFER_SYN"></property>
+        
+        
+        </class>
+</hibernate-mapping>

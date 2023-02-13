@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 May, 2013 12:09:13 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.ussd.dto.ServiceRequestDTO" table="SERVICE_MAPPING">
+        <id name="serviceId" type="int">
+            <column name="SERVICE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serviceClass" type="java.lang.String">
+            <column name="SERVICE_CLASS" />
+        </property>
+        <property name="serviceName" type="java.lang.String">
+            <column name="SERVICE_NAME" />
+        </property>
+       <property name="failureMessage" type="java.lang.String" column="FAILURE_RESPONSE"></property>
+       <property name="url" type="java.lang.String" column="URL"></property>
+       <property name="callReqd" type="int" column="CALL_REQD"></property>
+       <property name="authReqd" type="int" column="AUTH_REQD"></property>
+       <property name="timeout" type="long" column="TIME_OUT"></property>
+    </class>
+</hibernate-mapping>

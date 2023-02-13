@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class dynamic-insert="true"
+		name="com.sixdee.imp.dto.LoyaltyTranSummaryMonthlyDTO" table="LOYALTY_TRAN_SUMMARY_MONTHLY">
+		<id column="LOYALTY_ID" name="loyaltyId" type="java.lang.Long" />
+		<property column="REWARD_POINTS" name="rewardPoints" />
+		<property column="STATUS_POINTS" name="statusPoints" />
+		<property column="CREATE_DATE" name="createDate" />
+		<property column="REDEEM_POINTS" name="redeemPoints" />
+		<property column="EXPIR_REWARD_POINTS" name="expiryRewardPoints" />
+		<property column="EXPIRY_STATUS_POINTS" name="expiryStatusPoints" />
+		<property column="EXPIRY_DATE_REWARD" name="expiryDateReward" />
+		<property column="EXPIRY_DATE_STATUS" name="expiryDateStatus" />
+		<property column="PARTITION_INDEX" name="partitionIndex" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.simulator.dto">
+	<class name="NationalIDMergingTabDTO" table="NATIONAL_ID_MERGING">
+		<id name="id"  type="java.lang.Long" column="ID">
+			<generator class="increment"/> 
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"/>
+		<property name="loyaltyId" column="LOYALTY_ID"/>
+		<property name="oldNationalId" column="OLD_NATIONAL_ID"/>
+		<property name="oldNationalIdType" column="OLD_NATIONAL_ID_TYPE"/>	
+		<property name="newNationalId" column="NEW_NATIONAL_ID"/>
+		<property name="newNationalIdType" column="NEW_NATIONAL_ID_TYPE"/>
+		<property name="mismatchFlag" column="MISMATCH_FLAG"/>	
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.TxnChannelStatusMappingDTO"  table="LMS_CNFG_TXN_STATUS_CHANNEL">
+		<id name="id" type="java.lang.Integer" column="ID">
+		</id>
+		<property name="type" column="TYPE"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="statusId" column="STATUS_ID"></property>
+
+	</class>
+	
+	
+</hibernate-mapping>	

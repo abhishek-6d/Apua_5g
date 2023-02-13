@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Jun, 2013 2:49:30 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.InstantPackDTO" table="INSTANT_REWARD_BUCKET">
+        <id name="packId" type="int">
+            <column name="PACKAGE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="packReleaseCount" type="long">
+            <column name="PACKAGE_RELEASE_COUNT" />
+        </property>
+        <property name="packCount" type="long">
+            <column name="PACKAGE_COUNT" />
+        </property>
+        <property name="lock" type="int">
+            <column name="IS_LOCKED" />
+        </property>
+    </class>
+</hibernate-mapping>

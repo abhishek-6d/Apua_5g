@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2016 4:23:03 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.AppMsisdnMappingDTO" table="UPGRADATION_APP_INFO">
+        <id name="appId" type="java.lang.String">
+            <column name="APP_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="msisdn" type="java.lang.String">
+            <column name="MSISDN" />
+        </property>
+        <property name="passCode" type="java.lang.String">
+            <column name="PASSCODE" />
+        </property>
+        <property name="tierId" type="int">
+            <column name="TIER_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

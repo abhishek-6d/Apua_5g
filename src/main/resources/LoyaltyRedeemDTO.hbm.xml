@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyRedeemDTO" table="LOYALTY_REDEEMED">
+  <id column="LOYALTY_ID" name="loyaltyID" type="java.lang.Long"/>
+  <property column="SUBSCRIBER_NUMBER" generated="never" lazy="false" name="subscriberNumber"/>
+  <property column="REDEEM_POINTS" generated="never" lazy="false" name="redeemPoint"/>
+  <property column="CREATE_DATE" generated="never" lazy="false" name="date"/>
+  <property column="PACKAGE_ID" generated="never" lazy="false" name="pakcageID"/>
+  <property column="VOUCHERORDERID" generated="never" lazy="false" name="voucherOrderID"/>
+  <property column="STATUS" generated="never" lazy="false" name="statusID"/>
+  <property column="CHANNEL" generated="never" lazy="false" name="channel"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tier"/>
+  <property column="SUBSCRIBER_TYPE" generated="never" lazy="false" name="subscriberType"/>
+  <property column="IS_SINDABAD" generated="never" lazy="false" name="isSindabad"/>
+ </class>
+ </hibernate-mapping>

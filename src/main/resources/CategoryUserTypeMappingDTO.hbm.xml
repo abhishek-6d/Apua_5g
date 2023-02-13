@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.hbmdto.CategoryUserTypeMappingDTO" table="CATEGORY_USERTYPE_MAPPING">
+		<id name="categoryId" column="CATEGORY_ID">
+			<generator class="foreign">  
+			<param name="property">PackageCategoryDTO</param> 
+          </generator>  
+		</id>
+        <one-to-one name="PackageCategoryDTO" class="com.sixdee.imp.dto.hbmdto.PackageCategoryDTO" cascade="all"></one-to-one>
+         
+		<property name="userType" column="`USERTYPE`" />
+		<property name="active" column="`ACTIVE`" />
+		
+		</class>
+
+</hibernate-mapping>  

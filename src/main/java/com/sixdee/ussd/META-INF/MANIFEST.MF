@@ -1,0 +1,4 @@
+Main-Class: com.sixdee.ussd.ver.Version
+Implementation-Title: UssdAddon
+Implementation-Version: 1.0.5(TAG_DYNUSSD_20150703_Merchant)
+Implementation-Vendor: "SixDEE Telecom Solutions Pvt. Ltd."

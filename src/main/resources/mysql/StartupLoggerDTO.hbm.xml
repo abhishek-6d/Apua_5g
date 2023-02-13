@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Jan, 2014 7:36:45 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.startup.StartupLoggerDTO" table="STARTUP_AUDIT">
+        <id name="appId" type="java.lang.String">
+            <column name="APPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serverId" type="java.lang.String">
+            <column name="SERVERID" />
+        </property>
+        <property name="instanceId" type="java.lang.String">
+            <column name="INSTANCEID" />
+        </property>
+        <property name="startTime" type="java.lang.String">
+            <column name="STARTTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_0" entity-name="PREPAID_PROFILE_0" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_0_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_1" entity-name="PREPAID_PROFILE_1" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_1_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_2" entity-name="PREPAID_PROFILE_2" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_2_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_3" entity-name="PREPAID_PROFILE_3" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_3_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_4" entity-name="PREPAID_PROFILE_4" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_4_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_5" entity-name="PREPAID_PROFILE_5" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_5_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_6" entity-name="PREPAID_PROFILE_6" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_6_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_7" entity-name="PREPAID_PROFILE_7" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_7_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_8" entity-name="PREPAID_PROFILE_8" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_8_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+	<class name="com.sixdee.imp.dto.PrepaidProfileDTO"	table="PREPAID_PROFILE_CDR_9" entity-name="PREPAID_PROFILE_9" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="sequence">
+                <param name="sequence">PREPAID_PROFILE_CDR_9_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="languageId">
+			<column name="FIELD61" />
+		</property>
+		<property name="activationDate">
+			<column name="FIELD36" />
+		</property>
+		<property name="keyword">
+			<column name="FIELD170"></column>
+		</property>
+		<property name="dob">
+			<column name="FIELD214" />
+		</property>
+		<property name="nationality">
+			<column name="FIELD47"></column>
+		</property>
+		<property name="referrer">
+			<column name="FIELD44"></column>
+		</property>
+		<property name="referralDate">
+			<column name="FIELD76"></column>
+		</property>
+		<property name="nationalId">
+			<column name="FIELD49"></column>
+		</property>
+		<property name="status">
+			<column name="FIELD5" />
+		</property>
+		<property name="englishFirstName">
+			<column name="FIELD120" />
+		</property>
+		<property name="arabicFirstName">
+			<column name="FIELD121" />
+		</property>
+		<property name="customerPhoneType">
+			<column name="FIELD122" />
+		</property>
+		<property name="gender">
+			<column name="FIELD48" />
+		</property>
+		<property name="portIn">
+			<column name="FIELD6" />
+		</property>
+	</class>
+	
+</hibernate-mapping>

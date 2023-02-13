@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.simulator.dto.DuplicateNationalIdInfo" table="DUPL_NATIONALID_INFO">
+		<id name="actualNationalId" type="string" column="NATIONAL_ID">
+		<generator class="assigned">
+            </generator>
+		</id>
+		
+		<property name="proposedNationalId" column="PROP_NATIONAL_ID"></property>
+		<property name="actualLoyaltyId" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="actualLines" column="ACTUAL_LINES"></property>
+		<property name="proposedLoyaltyId" column="PROP_LOYALTY_ID"></property>
+				<property name="STATUS" column="status"></property>
+	</class>
+	
+</hibernate-mapping>	

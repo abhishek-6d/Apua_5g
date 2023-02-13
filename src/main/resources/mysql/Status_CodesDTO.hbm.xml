@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.Status_CodesDTO"  table="STATUS_CODES">
+		<id name="status_id" type="java.lang.Integer" column="STATUS_ID">
+		</id>
+		<property name="status_desc" column="STATUS_DESC"></property>
+		
+	</class>
+	
+	
+</hibernate-mapping>	

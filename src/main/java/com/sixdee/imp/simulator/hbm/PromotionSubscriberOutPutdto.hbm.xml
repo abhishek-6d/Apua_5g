@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.simulator.dto">
+	<class name="PromotionSubscriberOutPutdto" table="SUBSCRIBER_PROMOTION_INFO">
+		<id name="id"  type="java.lang.Long" column="ID">
+			<generator class="increment"/> 
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"/>
+		<property name="lineNumber" column="LINE_NUMBER"/>
+		<property name="NationalId" column="NATIONAL_ID"/>
+		<property name="idType" column="NATIONAL_ID_TYPE"/>	
+	</class>
+</hibernate-mapping>

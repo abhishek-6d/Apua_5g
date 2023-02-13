@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="ConfigureParameterDTO" table="CONFIG_PARAMETERS">
+		<comment>CONFIG_PARAMETERS</comment>
+		<id name="parameterID" type="java.lang.Integer" column="PARAMETER_ID">
+		 <generator class="native"></generator>
+		</id>
+		
+		<property name="parameterName" column="PARAMETER_NAME"/>
+		<property name="parameterValue" column="PARAMETER_VALUE"/>
+		<property name="parameterType" column="PARAMETER_TYPE"/>
+		<property name="parameterDesc" column="DESCRIPTION"/>
+		<property name="createDate" column="CREATE_DATE"/>
+		
+	</class>
+	
+</hibernate-mapping>

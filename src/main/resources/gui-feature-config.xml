@@ -1,0 +1,18 @@
+<config>
+<!--  Feature for delete Account -->
+	<feature id="DELETEACCOUNT">
+		<req-assembler>com.sixdee.imp.request.DeleteAccountReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.DeleteAccountRespAssm</resp-assembler>
+		<bo-validator>com.sixdee.imp.validator.bo.DeleteAccountBOVpalidator</bo-validator>
+		<format-validator>com.sixdee.imp.validator.format.DeleteAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.DeleteAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.DeleteAccountRespConv</resp-converter>
+		
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<bo>com.sixdee.imp.bo.DeleteAccountBL</bo>
+		<dto>com.sixdee.imp.dto.DeleteAccountDTO</dto>
+	</feature>
+	
+	
+</config>

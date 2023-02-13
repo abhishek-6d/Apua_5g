@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_1" table="RULE_CDR_01">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+		 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_2" table="RULE_CDR_02">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+	 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_3" table="RULE_CDR_03">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+	 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_4" table="RULE_CDR_04">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+		 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_5" table="RULE_CDR_05">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+	 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_6" table="RULE_CDR_06">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+	 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_7" table="RULE_CDR_07">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+ 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_8" table="RULE_CDR_08">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+ 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_9" table="RULE_CDR_09">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+ 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_10" table="RULE_CDR_10">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+ 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_11" table="RULE_CDR_11">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+	 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.RuleCdrDTO" entity-name="RULE_CDR_12" table="RULE_CDR_12">
+		<id name="id" type="integer" column="ID">
+		</id>
+		<property name="da" column="FIELD2"></property>
+		<property name="marketingPlanId" column="FIELD119"></property>
+		<property name="type" column="FIELD116"></property>
+		<property name="actionkey" column="FIELD104"></property>
+		<property name="scheduleName" column="FIELD109"></property>
+		<property name="promotiondate" column="FIELD1"></property>
+		<property name="messageID" column="FIELD101"></property>
+		<property name="freebiesAmnt" column="FIELD110"></property>
+		<property name="freebieValdity" column="FIELD121"></property>
+		<property name="bonus" column="FIELD122"></property>
+		<property name="chargingIndicator" column="FIELD123"></property>
+ 
+		<property name="microSegment" column="FIELD124"></property>
+		<property name="status" column="FIELD146"></property>
+		<property name="balanceDeduction" column="FIELD254"></property>
+		<property name="cdrStatus" column="FIELD152"></property>
+	</class>
+	
+</hibernate-mapping>	

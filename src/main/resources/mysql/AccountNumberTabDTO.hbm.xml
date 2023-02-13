@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_0" table="ACCOUNT_NUMBER_0">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_1" table="ACCOUNT_NUMBER_1">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_2" table="ACCOUNT_NUMBER_2">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_3" table="ACCOUNT_NUMBER_3">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_4" table="ACCOUNT_NUMBER_4">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_5" table="ACCOUNT_NUMBER_5">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_6" table="ACCOUNT_NUMBER_6">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_7" table="ACCOUNT_NUMBER_7">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_8" table="ACCOUNT_NUMBER_8">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.AccountNumberTabDTO" entity-name="ACCOUNT_NUMBER_ENTITY_9" table="ACCOUNT_NUMBER_9">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+		</id>
+		
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

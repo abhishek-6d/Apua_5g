@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+
+	<class name="com.sixdee.imp.dto.SubscriberFailureDetailsDTO" table="SUBSCRIBER_FAILURE_DETAILS">
+		<id name="id" type="java.lang.Long" column="ID">
+		 <generator class="native">
+
+        </generator>
+		</id>	
+		<property name="transactionID" column="TXN_ID"></property>	
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="ruleName" column="RULE_NAME"></property>
+		<property name="failureDesc" column="FAILURE_DESC"></property>
+		<property name="failureDate" column="FAILURE_DATE"></property>
+	</class>
+	
+</hibernate-mapping>	

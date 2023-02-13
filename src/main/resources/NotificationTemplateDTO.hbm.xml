@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.sixdee.imp.dto.NotificationTemplateDTO" table="NOTIFICATION_TEMPLATE">
+  <id column="CHANNEL_ID" name="channel_id" type="java.lang.String"/>
+  <property column="MESSAGE" generated="never" lazy="false" name="data"/>
+  <property column="SUBJECT" generated="never" lazy="false" name="subject"/>
+  <property column="LANGUAGE_ID" generated="never" lazy="false" name="language_id"/>
+  <property column="SERVICE_ID" generated="never" lazy="false" name="service_id"/>
+   <property column="MSG_ID" generated="never" lazy="false" name="message_id"/>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.hbmdto.TelecomOfferAttributes" table="LMS_CNFG_TELE_OFFER_ATTRIBUTES">
+		<id name="offerId" column="OFFERID">
+			
+		</id>
+		
+
+		<property name="offerCategory" column="OFFERCATEGORY" />
+		<property name="service" column="SERVICE" />
+		<property name="catelogItem" column="CATELOGITEM" />
+		<property name="productId" column="PRODUCTID" />
+		<property name="productLabel" column="PRODUCTLABEL" />
+		<property name="dealerId" column="DEALERID" />
+		<property name="tarrifId" column="TARIFFID" />
+		<property name="operationId" column="OPERATIONID" />
+		<property name="quantityBurn" column="QUANTITY_BURN" />
+		<property name="accountId" column="ACCOUNT_ID" />
+		<property name="dedicatedAccValue" column="DEDICATED_ACCOUNT_VALUE" />
+		<property name="avps" column="AVPS" />
+		<property name="dedicatedAccUnitType" column="DEDICATED_ACCOUNT_UNIT_TYPE" />
+		<property name="points" column="POINTS" />
+		
+			</class>
+
+</hibernate-mapping>  

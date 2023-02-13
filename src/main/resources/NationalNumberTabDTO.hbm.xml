@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_0" table="NATIONAL_NUMBER_0">
+    	<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_1" table="NATIONAL_NUMBER_1">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+		
+	</class>
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_2" table="NATIONAL_NUMBER_2">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_3" table="NATIONAL_NUMBER_3">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_4" table="NATIONAL_NUMBER_4">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_5" table="NATIONAL_NUMBER_5">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_6" table="NATIONAL_NUMBER_6">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_7" table="NATIONAL_NUMBER_7">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_8" table="NATIONAL_NUMBER_8">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+	<class name="com.sixdee.imp.dto.NationalNumberTabDTO" entity-name="NATIONAL_NUMBER_ENTITY_9" table="NATIONAL_NUMBER_9">
+		<composite-id>
+	    <key-property name="nationalNumber"  column="NATIONAL_ID"></key-property>
+	    <key-property name="idType" column="ID_TYPE"></key-property>
+	   </composite-id>
+		 
+	   <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+	</class>
+	
+	
+</hibernate-mapping>	

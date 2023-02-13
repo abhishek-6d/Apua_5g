@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25 Apr, 2013 2:56:42 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.ServiceMappingDTO" table="SERVICES">
+        <id name="serviceId" type="int">
+            <column name="SERVICE_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serviceName" type="java.lang.String">
+            <column name="SERVICE_NAME" />
+        </property>
+        <property name="serviceType" type="java.lang.String">
+            <column name="SERVICE_TYPE" />
+        </property>
+    </class>
+</hibernate-mapping>

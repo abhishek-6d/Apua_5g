@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class	dynamic-insert="true" name="com.sixdee.imp.dto.UserLoginInfoDTO" table="USER_LOGIN_INFO">
+
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+				<param name="sequence">user_logininfo_seq</param>
+			</generator>
+		</id>
+		<property column="IS_USED" name="isUsed"></property>
+		<property column="USER_NAME" generated="never" lazy="false"
+			name="userName" />
+		<property column="PASSWORD" generated="never" lazy="false"
+			name="passWord" />
+		<property column="COUNTER" generated="never" lazy="false"
+			name="counter" />		
+		<property  column="CREATION_DATE" name="createDate"></property>
+	</class>
+	
+</hibernate-mapping>

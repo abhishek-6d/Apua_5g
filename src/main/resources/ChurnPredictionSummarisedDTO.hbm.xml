@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class dynamic-insert="true" name="com.sixdee.imp.dto.ChurnPredictionSummaryHbmDTO" table="CHURN_PREDICTION_SUMMARY">
+  <id column="MSISDN" name="subscriberNo" type="int"/>
+  <property column="RANGE_ID" generated="never" lazy="false" name="rangeID"/>
+  <property column="CHURN_STATUS" generated="never" lazy="false" name="churnStatus"/>
+  <property column="CHURN_CHANCE" generated="never" lazy="false" name="churnChance"/>
+  <property column="ARPU_BAND" generated="never" lazy="false" name="arpuBand"/>
+  <property column="CHURN_CATEGORY" generated="never" lazy="false" name="churnCategory"/>
+ </class>
+ </hibernate-mapping>

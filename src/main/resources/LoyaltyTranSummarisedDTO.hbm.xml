@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.simulator.LoyaltyTranSummarisedDTO" table="LOYALTY_TRAN_SUMMARISED_01">
+		<composite-id>
+			<key-property name="loyaltyId" column="LOYALTY_ID"></key-property>		
+			<key-property name="createDate" column="CREATE_DATE"></key-property>		
+		</composite-id>
+		
+		<property name="rewardPoint" column="REWARD_POINTS"></property>
+		<property name="statusPoint" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINTS"></property>
+	</class>
+	
+</hibernate-mapping>	

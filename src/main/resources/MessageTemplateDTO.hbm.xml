@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 Jun, 2013 10:56:51 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.ussd.dto.MessageTemplateDTO" table="MESSAGE_TEMPLATE">
+        <composite-id>
+        	<key-property name="serviceId" column="SERVICE_ID" type="int"></key-property>
+        	<key-property name="templateId" column="TEMPLATE_ID" type="java.lang.String"></key-property>
+        	<key-property name="langId" column="LANG_ID" type="int"></key-property>
+        	
+        </composite-id>
+        <property name="templateMessage" type="java.lang.String">
+            <column name="MESSAGE_TEMPLATE" />
+        </property>
+      
+    </class>
+</hibernate-mapping>

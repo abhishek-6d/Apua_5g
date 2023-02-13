@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.MerchantTierMappingDTO"  table="MERCHANT_BONUS">
+		<composite-id>
+				<key-property name="merchantId" column="MERCHANT_ID"  />
+				<key-property name="tierId" column="TIER"  />
+			</composite-id>
+		<property name="discount" column="BONUS"></property>
+	</class>
+	
+</hibernate-mapping>

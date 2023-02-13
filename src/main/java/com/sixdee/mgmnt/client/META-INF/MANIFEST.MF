@@ -1,0 +1,4 @@
+Main-Class: com.sixdee.mgmnt.client.ver.Version
+Implementation-Title: ManagementClient
+Implementation-Version: 1.0.0
+Implementation-Vendor: "SixDEE Telecom Solutions Pvt. Ltd."

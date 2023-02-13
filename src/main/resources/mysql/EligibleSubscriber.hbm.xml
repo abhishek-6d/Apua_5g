@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.MarketingPlanDTO" table="MARKETING_PLAN_MASTER">
+		<id name="marketingPlanId" type="integer" column="MARKETING_PLAN_ID">
+		</id>
+		<property name="marketingPlanName" column="MARKETING_PLAN_NAME"></property>
+		<property name="marketingPlanDesc" column="MARKETING_PLAN_DESCRIPTION"></property>
+		<property name="marketingPlanObj" column="MARKETING_PLAN_OBJECTIVES"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

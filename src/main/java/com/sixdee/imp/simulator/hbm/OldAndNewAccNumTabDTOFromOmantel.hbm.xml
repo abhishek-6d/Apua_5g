@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.simulator.dto">
+	<class name="OldAndNewAccNumTabDTOFromOmantel" table="ACTY_DELETE_NATNLID">
+		<id name="id"  type="java.lang.Long" column="ID">
+			<generator class="increment"/> 
+		</id>
+		<property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUM"/>
+		<property name="accountNumber" type="java.lang.Long" column="ACCOUNT_NUMBER"/>
+		<property name="loyaltyID" type="java.lang.Long"  column="LOYALTY_ID"/>
+		<property name="status" type="java.lang.String" column="STATUS"/>
+		<property name="newAccountNumber" type="java.lang.Long" column="NEW_ACCOUNT_NUMBER"/>		
+	</class>
+</hibernate-mapping>

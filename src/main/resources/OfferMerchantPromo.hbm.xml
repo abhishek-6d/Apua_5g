@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OfferMerchantPromoDTO" table="OFFER_MERCHANT_PROMO">
+		<id name="ID" type="integer" column="ID">
+		</id>
+		<property name="merchantID" column="MERCHANT_ID"></property>
+		<property name="promoCode" column="PROMO_CODE"></property>
+		<property name="createDate" column="EXPIRY_DATE"></property>
+		<property name="expiryDate" column="CREATE_DATE"></property>
+		<property name="assigned" column="ASSIGNED"></property>
+	</class>
+	
+		
+	
+</hibernate-mapping>	

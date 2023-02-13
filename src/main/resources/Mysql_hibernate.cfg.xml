@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+    <session-factory>
+
+		<!-- Database connection JNDI
+	  	<property name="connection.datasource">java:MySqlDS1</property>
+  		-->
+  		<property name="connection.datasource">java:jboss/datasources/MySqlDS</property>
+  		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Database connection settings -->
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://10.0.0.39:3306/LMS_DB</property>
+        <property name="connection.username">cmsuser</property>
+        <property name="connection.password">cmsuser</property>-->
+
+        <!-- JDBC connection pool (use the built-in) -->
+       <!-- <property name="connection.pool_size">10</property>-->
+
+        <!-- SQL dialect -->
+      <!--  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+
+        <!-- Enable Hibernate's automatic session context management -->
+       <!-- <property name="current_session_context_class">thread</property>-->
+
+        <!-- second-level cache  -->
+       <!-- <property name="cache.use_second_level_cache">false</property>
+        <property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>-->
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+		<!-- <property name="format_sql">true</property> -->
+		<!-- <property name="use_sql_comments">true</property>-->
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">none</property>
+        <property name="hibernate.connection.zeroDateTimeBehavior">CONVERT_TO_NULL</property>
+        
+        
+
+  <mapping resource="mysql/SubscriberTransactionHistoryDTO.hbm.xml"/>
+  <mapping resource="mysql/ServiceMappingDTO.hbm.xml"/>
+  <mapping resource="mysql/SubscriberNumberTabDTO.hbm.xml"/>
+  <mapping resource="mysql/AccountNumberTabDTO.hbm.xml"/>
+  <mapping resource="mysql/NationalNumberTabDTO.hbm.xml"/>
+  <mapping resource="mysql/LoyaltyProfileTabDTO.hbm.xml"/>
+  <mapping resource="mysql/LoyaltyRegisteredNumberTabDTO.hbm.xml"/>
+  <mapping resource="mysql/ADSLNumberTabDTO.hbm.xml"/>
+  <mapping resource="mysql/TierInfoDTO.hbm.xml"/>
+  <mapping resource="mysql/ConfigureParameterDTO.hbm.xml"/>
+  <mapping resource="mysql/LoyaltyTransactionTabDTO.hbm.xml"/>
+  <mapping resource="mysql/SubscriberProfileDTO.hbm.xml"/>
+  <mapping resource="mysql/ActionServiceDetailsDTO.hbm.xml"/>
+  <mapping resource="mysql/PackageCategory.hbm.xml"/>
+  <mapping resource="mysql/SubscriberFailureDetailsDTO.hbm.xml"/>
+  <mapping resource="mysql/LoyaltyHierarchyDetails.hbm.xml"/>
+  <mapping resource="mysql/Status_CodesDTO.hbm.xml"/>
+  <mapping resource="mysql/SMS_NotificationDTO.hbm.xml"/>
+  <mapping resource="mysql/NotificationTemplateDTO.hbm.xml"/>
+  <mapping resource="mysql/InstantRewardConfig.hbm.xml"/>
+  <mapping resource="mysql/InstantPack.hbm.xml"/>
+  <mapping resource="mysql/KeywordMappingDTO.hbm.xml"/>
+  <mapping resource="mysql/ServiceRequestDTO.hbm.xml"/>
+  <mapping resource="mysql/MessageTemplateDTO.hbm.xml"/>
+  <mapping resource="mysql/ConfigParmeterDTO.hbm.xml"/>
+  <mapping resource="mysql/TransactionHistoryDTO.hbm.xml"/>
+  <mapping resource="mysql/InstantReserve.hbm.xml"/>
+  <mapping resource="mysql/RevertLoyaltyDetails.hbm.xml"/>
+  <mapping resource="mysql/VoucherOrderDetailsDTO.hbm.xml"/>
+  <mapping resource="mysql/TierLanguageMapping.hbm.xml"/>
+  <mapping resource="mysql/EmailInfo.hbm.xml"/>
+  <mapping resource="mysql/LoyaltyRedeemDTO.hbm.xml"/>
+  <mapping resource="mysql/StartupLogger.hbm.xml"/>
+  <mapping resource="mysql/DeleteSummaryInfo.hbm.xml"/>
+  <mapping resource="mysql/TxnStatusChannelMapDTO.hbm.xml"/>
+  <mapping resource="SecurityTokenDto.hbm.xml"/>
+  <mapping resource="CustomerProfile.hbm.xml"/>
+  <mapping resource="BlackListDTO.hbm.xml"/>
+  <mapping resource="ServiceStatusDTO.hbm.xml"/>
+  <mapping resource="CdrGeneralManagement.hbm.xml"/>
+  
+    </session-factory>
+
+</hibernate-configuration>

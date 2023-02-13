@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+	<class name="VoucherLocationTabDTO" table="VOUCHER_LOCATION_DETAILS">
+		<id name="id"  type="java.lang.Integer" column="ID">
+			<generator class="increment"/> 
+		</id>
+		<property name="packId" type="java.lang.Integer" column="PACKAGEID"/>
+		<!-- <property name="locationName" type="java.lang.String" column="LOCATION_NAME"/> -->
+		<property name="areaName" type="java.lang.String" column="AREA_NAME"/>
+		<property name="langId" type="java.lang.Integer" column="LANG_ID"/>
+	</class>
+</hibernate-mapping>

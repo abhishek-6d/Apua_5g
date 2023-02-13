@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class dynamic-insert="true" name="com.sixdee.imp.simulator.dto.LoyaltyTransSummarizedInfo" table="LOYALTY_TRAN_SUMMARISED_01">
+  <id column="LOYALTY_ID" name="loyaltyID" type="java.lang.Long"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="points"/>
+  <property column="REDEEM_POINTS" generated="never" lazy="false" name="redeemPoints"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="createTime"/>
+  <property column="CREATE_DATE" generated="never" lazy="false" name="statusPoints"/>
+   </class>
+ </hibernate-mapping>

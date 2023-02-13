@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.PackageCategory"  table="PACKAGE_CATEGORY">
+	<composite-id>
+<!-- 		<id name="categoryId" type="java.lang.Integer" column="CATEGORY_ID">
+		</id> -->
+		  <key-property name="categoryId"  column="CATEGORY_ID"></key-property>
+	    <key-property name="languageId" column="LANGUAGE_ID"></key-property>
+	    <key-property name="typeId" column="TYPE_ID"></key-property>
+		</composite-id>
+		<!-- <property name="categoryId" column="CATEGORY_ID"></property>  -->
+		<property name="categoryName" column="CATEGORY_NAME"></property>
+		<property name="categoryDesc" column="CATAGORY_DESCRIPTION"></property>
+		<property name="parentId" column="PARENT_ID"></property>
+		<property name="isPackage" column="IS_PACKAGE"></property>
+		<property name="categorySynonm" column="CATEGORY_SYNONM"></property>
+		<!-- <property name="languageId" column="LANGUAGE_ID"></property> -->
+</class>
+	
+
+</hibernate-mapping>	

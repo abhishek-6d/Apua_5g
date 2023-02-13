@@ -1,0 +1,4 @@
+Main-Class: com.sixdee.ussd.ver.Version
+Implementation-Title: USSD MENU BROWSER
+Implementation-Version: 1.0.3(TAG_DYNUSSD_20140821_ResetPin)
+Implementation-Vendor: "SixDEE Telecom Solutions Pvt. Ltd."

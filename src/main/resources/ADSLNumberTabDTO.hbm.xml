@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.ADSLTabDTO" entity-name="ADSL_NUMBER_ENTITY_0" table="ADSL_NUMBER_0">
+		<id name="ADSLNumber" type="java.lang.String" column="ADSL_NO">
+		</id>
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

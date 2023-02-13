@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_0" table="LOYALTY_TRANSACTION_0">
+		<id name="id" type="java.lang.Long" column="ID" >
+		   <generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_1" table="LOYALTY_TRANSACTION_1">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>				
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_2" table="LOYALTY_TRANSACTION_2">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_3" table="LOYALTY_TRANSACTION_3">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_4" table="LOYALTY_TRANSACTION_4">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_5" table="LOYALTY_TRANSACTION_5">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_6" table="LOYALTY_TRANSACTION_6">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_7" table="LOYALTY_TRANSACTION_7">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_8" table="LOYALTY_TRANSACTION_8">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_9" table="LOYALTY_TRANSACTION_9">
+		<id name="id" type="java.lang.Long" column="ID" >
+		<generator class="native"/>
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="accountNumber" column="ACCOUNT_NUMBER"></property>
+		<property name="preRewardPoints" column="PRE_REWARD_POINTS"></property>
+		<property name="curRewardPoints" column="CUR_REWARD_POINTS"></property>
+		<property name="preStatusPoints" column="PRE_STATUS_POINTS"></property>
+		<property name="curStatusPoints" column="CUR_STATUS_POINTS"></property>
+		<property name="createTime" column="CREATE_DATE"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="channel" column="CHANNEL"></property>
+		<property name="destLoyaltyID" column="DEST_LOYALTY_ID"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="rewardPoints" column="REWARD_POINTS"></property>
+		<property name="statusPoints" column="STATUS_POINTS"></property>
+		<property name="redeemPoint" column="REDEEM_POINT"></property>
+		<property name="monthIndex" update="false" column="MONTH_INDEX"></property>
+		<property name="voucherOrderID" column="VOUCHER_ORDER_ID"></property>
+		<property name="oldPoints" column="OLD_POINTS"></property>
+		<property name="preTierId" column="PRE_TIER_ID"></property>
+		<property name="curTierId" column="CUR_TIER_ID"></property>
+		<property name="serverId" column="SERVER_ID"></property>
+		<property name="testNumber" column="TEST_NUMBER"></property>
+		<property name="volume" column="VOLUME"></property>
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+	</class>
+	
+	
+</hibernate-mapping>	

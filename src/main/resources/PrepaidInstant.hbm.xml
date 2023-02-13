@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.PrepaidInstantDTO"
+		table="PREPAID_INSTANT_CDR_0" lazy="false">
+		  <id name="id" type="java.lang.Long" column="ID">
+			<generator class="sequence">
+                <param name="sequence">INSTANT_CDR_0_ID_1SEQ</param>
+            </generator>
+          </id>
+		<property name="date" type="java.util.Date">
+			<column name="FIELD1" />
+		</property>
+		<property name="msisdn">
+			<column name="FIELD2" />
+		</property>
+		<property name="serviceName">
+			<column name="FIELD60" />
+		</property>
+		<property name="createDate">
+			<column name="CREATED_DATE" />
+		</property>
+		<property name="createdBy">
+			<column name="CREATED_BY" />
+		</property>		
+		<property name="languageId">
+			<column name="FIELD14" />
+		</property>
+		<property name="referrer">
+			<column name="FIELD54" />
+		</property>	
+		<property name="referralDate">
+			<column name="FIELD88" />
+		</property>		
+	</class>
+	
+</hibernate-mapping>

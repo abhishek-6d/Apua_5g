@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_0"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_0">
+  
+  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+  
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_1"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_1">
+  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_2"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_2">
+  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="GENDER" name="gender"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_3"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_3">
+ <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+ </class>
+ 
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_4"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_4">
+<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_5"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_5">
+ <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="GENDER" name="gender"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_6"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_6">
+  <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_7"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_7">
+ <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="GENDER" name="gender"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_8"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_8">
+ <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="GENDER" name="gender"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+ </class>
+ <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_9"
+  name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_9">
+ <id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+            </generator>
+   </id>
+		
+  <property name="loyaltyID" column="LOYALTY_ID"></property>
+  <property column="PIN" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" name="contactNumber"/>
+  <property column="FIRSTNAME" name="firstName"/>
+  <property column="GENDER" name="gender"/>
+  <property column="LASTNAME" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" name="defaultLanguage"/>
+  <property column="EMAIL_ID" name="emailID"/>
+  <property column="DOB" name="dateOfBirth"/>
+  <property column="ADDRESS" name="address"/>
+  <property column="OCCUPATION" name="occupation"/>
+  <property column="VIP_CODE" name="vipCode"/>
+  <property column="CATEGORY" name="category"/>
+  <property column="CREATE_TIME" name="createTime"/>
+  <property column="TYPEOFFIRM" name="typeOfForm"/>
+  <property column="ZODIACSIGN" name="zodiacSign"/>
+  <property column="TARROT" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" name="privilegeMember"/>
+  <property column="FAXNUMBER" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" name="custID"/>
+  <property column="TIER_ID" name="tierId"/>
+  <property column="STATUS_ID" name="statusID"/>
+  <property column="STATUS_POINTS" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" name="tierUpdatedDate"/>
+  <property column="COUNTER" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+    <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
+    <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+ </class>
+</hibernate-mapping>
+
+

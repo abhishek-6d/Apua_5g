@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.PackageCategory"  table="PACKAGE_CATEGORY">
+	<composite-id>
+<!-- 		<id name="categoryId" type="java.lang.Integer" column="CATEGORY_ID">
+		</id> -->
+		  <key-property name="categoryId"  column="CATEGORY_ID"></key-property>
+	    <key-property name="languageId" column="LANGUAGE_ID"></key-property>
+		</composite-id>
+		<!-- <property name="categoryId" column="CATEGORY_ID"></property>  -->
+		<property name="categoryName" column="CATEGORY_NAME"></property>
+		<property name="categoryDesc" column="CATAGORY_DESCRIPTION"></property>
+		<property name="parentId" column="PARENT_ID"></property>
+		<property name="isPackage" column="IS_PACKAGE"></property>
+		<property name="categorySynonm" column="CATEGORY_SYNONM"></property>
+		<property name="typeId" column="TYPE_ID"></property>
+		<!-- <property name="languageId" column="LANGUAGE_ID"></property> -->
+		
+		<set name="packages" table="PACKAGE_DETAILS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CATEGORY_ID" not-null="true"/>
+                <column name="LANGUAGE_ID"></column>
+            </key>
+            <one-to-many class="com.sixdee.imp.dto.PackageDetails" />
+        </set>
+		
+	</class>
+	
+	<class dynamic-insert="true" name="com.sixdee.imp.dto.PackageDetails"  table="PACKAGE_DETAILS">
+		<id name="serialNo" type="java.lang.Integer" column="SERIAL_NO">
+		</id>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="packageName" column="PACKAGE_NAME"></property>
+		<property name="packageDesc" column="PACKAGE_DESCRIPTION"></property>
+		<!--  <property name="categoryId" column="CATEGORY_ID" insert="false" update="false"></property>   -->
+		<property name="redeemPoints" column="REDEEM_POINTS"></property>
+		<property name="packageSynonm" column="PACKAGE_SYNONM"></property>
+		<property name="rateCardName" column="RATECARD_NAME"></property>
+		<property name="quantity" column="QUANTITY"></property>
+		<property name="voucherType" column="VOUCHER_TYPE"></property>
+		<property name="expiryDate" column="EXPIRY_DATE"></property>
+		<property name="orderRefNumber" column="ORDER_REF_NUM"></property>
+		<property name="createDate" column="CREATE_DATE"></property>
+		<property name="languageId" column="LANGUAGE_ID" insert="false" update="false"></property>
+		<property name="keyword" column="KEYWORD" type="java.lang.String"></property>
+		<property name="chargingType" column="CHARGING_TYPE" type="java.lang.String"></property>
+		<property name="chargingIndicator" column="CHARGE_INDICATOR" type="java.lang.String"></property>
+		<property name="dedAcntId" column="DED_ACCNT_ID" type="java.lang.String"></property>
+		<property name="dialCode" column="DIAL_CODE" type="java.lang.String"></property>
+		<property name="chargeAmt" column="CHARGE_AMT" type="java.lang.String"></property>
+		<property name="creditAmt" column="CREDIT_AMOUNT" type="java.lang.String"></property>
+		<property name="creditUnits" column="FREE_UNITS" type="java.lang.String"></property> 
+		<many-to-one name="packageCategory" class="com.sixdee.imp.dto.PackageCategory" fetch="select">
+            <column name="CATEGORY_ID" not-null="true" />
+            <column name="LANGUAGE_ID"></column>
+        </many-to-one>
+
+	</class>
+	
+	
+</hibernate-mapping>	

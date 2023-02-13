@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_0" table="LOYALTY_PROFILE_0">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_1" table="LOYALTY_PROFILE_1">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_2" table="LOYALTY_PROFILE_2">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_3" table="LOYALTY_PROFILE_3">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_4" table="LOYALTY_PROFILE_4">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_5" table="LOYALTY_PROFILE_5">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_6" table="LOYALTY_PROFILE_6">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_7" table="LOYALTY_PROFILE_7">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_8" table="LOYALTY_PROFILE_8">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_9" table="LOYALTY_PROFILE_9">
+		 <id name="id" type="java.lang.Long" column="ID">
+		<!-- <generator class="sequence">
+                <param name="sequence">loyalty_profile_seq</param>
+            </generator>-->
+		</id>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		
+  <property column="PIN" generated="never" lazy="false" name="encryptPin"/>
+  <property column="CONTACT_NUMBER" generated="never" lazy="false" name="contactNumber"/>
+  <property column="GENDER" generated="never" lazy="false" name="gender"/>
+  <property column="FIRSTNAME" generated="never" lazy="false" name="firstName"/>
+  <property column="LASTNAME" generated="never" lazy="false" name="lastName"/>
+  <property column="DEFAULTLANGUAGE" generated="never" lazy="false" name="defaultLanguage"/>
+  <property column="EMAIL_ID" generated="never" lazy="false" name="emailID"/>
+  <property column="DOB" generated="never" lazy="false" name="dateOfBirth"/>
+  <property column="ADDRESS" generated="never" lazy="false" name="address"/>
+  <property column="OCCUPATION" generated="never" lazy="false" name="occupation"/>
+  <property column="VIP_CODE" generated="never" lazy="false" name="vipCode"/>
+  <property column="CATEGORY" generated="never" lazy="false" name="category"/>
+  <property column="CREATE_TIME" generated="never" lazy="false" name="createTime"/>
+  <property column="TYPEOFFIRM" generated="never" lazy="false" name="typeOfForm"/>
+  <property column="ZODIACSIGN" generated="never" lazy="false" name="zodiacSign"/>
+  <property column="TARROT" generated="never" lazy="false" name="tarrot"/>
+  <property column="ISDISTRIBUTOR" generated="never" lazy="false" name="distributor"/>
+  <property column="IS_PRIVILEGE_MEMBER" generated="never" lazy="false" name="privilegeMember"/>
+  <property column="FAXNUMBER" generated="never" lazy="false" name="faxNumber"/>
+  <property column="BLOCK_SUBSCRIBER" generated="never" lazy="false" name="blockSubscriber"/>
+  <property column="MYOFFER_DETAILS" generated="never" lazy="false" name="myOfferDetails"/>
+  <property column="NATIONAL_ID" generated="never" lazy="false" name="custID"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tierId"/>
+  <property column="STATUS_ID" generated="never" lazy="false" name="statusID"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="STATUS_UPDATED_DATE" generated="never" lazy="false" name="statusUpdatedDate"/>
+  <property column="REWARD_POINTS" generated="never" lazy="false" name="rewardPoints"/>
+  <property column="TIER_UPDATED_DATE" generated="never" lazy="false" name="tierUpdatedDate"/>
+  <property column="COUNTER" generated="never" lazy="false" name="counter"/>
+  <property column="ARBIC_FIRST_NAME" generated="never" lazy="false" name="arbicFirstName"/>
+  <property column="ARBIC_LAST_NAME" generated="never" lazy="false" name="arbicLastName"/>
+  <property column="ARBIC_ADDRESS" generated="never" lazy="false" name="arbicAddress"/>
+  <property column="POINTS_CREDITED_DATE" generated="never" lazy="false" name="pointsCreditedDate"/>
+  <property column="DAYWISE_REWARD_POINTS" generated="never" lazy="false" name="dayWiseRewardPoints"/>
+  <property column="TIER_POINTS" name="tierPoints"/>
+	<property column="BONUS_POINTS" name="bonusPoints"/>
+	<property column="EXPIRY_DATE" name="expiry_date"/>
+	<property column="RATE_PLAN" name="ratePlan"/>
+	<property column="NATIONALITY_ID" name="nationality_Id"/>
+	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
+
+				
+	</class>
+	
+	
+</hibernate-mapping>	
+

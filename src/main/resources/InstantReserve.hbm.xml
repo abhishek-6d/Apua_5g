@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 Jul, 2013 5:02:06 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_0"  entity-name="INSTANT_REWARD_ENTITY_0" >
+        <id name="id" type="long" column="ID">
+        <generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+        
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+		</property>
+		<property name="packId" type="long" column="PACK_ID"/>
+      
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_1" entity-name="INSTANT_REWARD_ENTITY_1" >
+            <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+     
+   
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+         
+     <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_2" entity-name="INSTANT_REWARD_ENTITY_2" >
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_3" entity-name="INSTANT_REWARD_ENTITY_3" >
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+       
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_4"  entity-name="INSTANT_REWARD_ENTITY_4" >
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+      
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_5" entity-name="INSTANT_REWARD_ENTITY_5" >
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+         <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_6" entity-name="INSTANT_REWARD_ENTITY_6">
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+          <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_7" entity-name="INSTANT_REWARD_ENTITY_7">
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+       
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_8" entity-name="INSTANT_REWARD_ENTITY_8">
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+      
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+        
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+    </class>
+     <class name="com.sixdee.imp.dto.InstantReserveDTO" table="REWARDED_SUSBSCRIBER_9" entity-name="INSTANT_REWARD_ENTITY_9">
+        <id name="id" type="long" column="ID"><generator class="native"></generator></id>
+        <property name="subscriberNumber" type="java.lang.String" column="SUBSCRIBER_NUMBER"></property>
+        <property name="bSubscriberNumber" type="java.lang.String" access="field">
+            <column name="B_SUBSCRIBER_NUMBER" />
+        </property>
+       
+        
+        <property name="offerId" type="java.lang.String">
+            <column name="OFFER_ID" />
+        </property>
+                <property name="offerName" type="java.lang.String">
+            <column name="OFFER_NAME" />
+        </property>
+        <property name="status" type="int">
+            <column name="STATUS" />
+        </property>
+        <property name="packId" type="long" column="PACK_ID"/>
+      
+        <property name="createDate" type="timestamp" column="CREATE_DATE" ></property>
+        <property name="updateDate" type="timestamp" column="UPDATE_DATE" ></property>
+    </class>
+        
+</hibernate-mapping>
+

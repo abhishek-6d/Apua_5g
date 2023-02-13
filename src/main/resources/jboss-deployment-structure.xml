@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+		<exclusions>
+			<module name="org.apache.logging.log4j.api" />
+		</exclusions>
+		-
+		<dependencies>
+			<module name="com.log4j" />
+			<module name="com.property" />
+		</dependencies>
+	</deployment>
+</jboss-deployment-structure>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 April, 2014 6:00:00 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.imp.dto.DeleteSummaryDTO" table="DELETE_SUMMARY_INFO">
+       <id name="id" type="java.lang.Long" column="ID">
+			 <generator class="native"></generator>  
+		</id> 
+        <property name="deleteDate" column="DELETED_DATE"></property>
+        <property name="loyaltyID" column="LOYALTY_ID" ></property>
+        <property name="subscriberNumber" column="SUBSCRIBER_NUMBER" ></property>
+        <property name="statusID" column="STATUS_ID" ></property>
+        <property name="channel" column="CHANNEL" ></property>
+        <property name="remarks" column="REMARKS" ></property>
+        <property name="deleteKey" column="DELETE_KEY" ></property>        
+        <property name="serverID" column="SERVER_ID" ></property>
+        <property name="accountTypeID" column="ACCOUNT_TYPE_ID" ></property>
+        <property name="tierID" column="TIER_ID" ></property>
+        <property name="statusPoints" column="STATUS_POINTS" ></property>        
+        <property name="rewardPoints" column="REWARD_POINTS" ></property>
+        <property name="accountNo" column="ACCOUNT_NO" ></property>
+        <property name="category" column="CATEGORY" ></property>
+    </class>
+</hibernate-mapping>

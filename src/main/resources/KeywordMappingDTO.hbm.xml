@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 May, 2013 12:09:13 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.ussd.dto.KeywordMappingDTO" table="KEYWORD_MAPPING">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="KeyWord" type="java.lang.String">
+            <column name="KEYWORD" />
+        </property>
+        <property name="parentService" type="int">
+            <column name="PARENT_SERVICE_ID" />
+        </property>
+        <property name="desc" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="serviceType" type="java.lang.String">
+            <column name="SERVICE_TYPE" />
+        </property>
+        <property name="respReqd" type="int" column="RESP_REQD"></property>
+        <property name="responseMenu" type="java.lang.String" column="RESPONSE_MENU"></property>
+        <property name="respService" type="java.lang.String" column="RESPONSE_SERVICE_NAME"></property>
+        <property name="respServiceId" type="int" column="RESPONSE_SERVICE_ID"></property>
+        <property name="serviceId" type="int" column="SERVICE_ID"></property>
+        <property name="level" type="int" column="LEVEL_ID"></property>
+        <property name="authReqd" type="int" column="IS_AUTH_REQD"></property>
+        <property name="langId" type="int" column="LANG_ID"></property>
+        <property name="backOptionEnabled" type="int" column="IS_BACK_ENBLD"></property>
+    </class>
+</hibernate-mapping>

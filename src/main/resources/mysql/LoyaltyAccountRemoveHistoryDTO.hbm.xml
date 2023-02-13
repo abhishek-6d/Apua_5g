@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.simulator.LoyaltyAccountRemoveHistoryDTO" table="LOYALTY_REMOVED_HISTORY">
+		<id name="id" type="java.lang.Long" column="ID">
+		<generator class="native">
+
+            </generator>
+		</id>
+		
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="loyaltyRewardPoints" column="LOYALTY_REWARD_POINTS"></property>
+		<property name="loyaltyStatusPoints" column="LOYALTY_STATUS_POINTS"></property>
+		<property name="presentTierID" column="PRESENT_TIER"></property>
+		<property name="refreshRewardPoints" column="REFRESH_REWARD_POINTS"></property>
+		<property name="refreshStatusPoints" column="REFRESH_STATUS_POINTS"></property>
+		<property name="refreshTierID" column="REFRESH_TIER"></property>
+		<property name="loyaltyLinesCount" column="LINES_COUNT"></property>
+		<property name="loyaltyLinesFixedCount" column="LINES_FIXED"></property>
+	</class>
+	
+</hibernate-mapping>	

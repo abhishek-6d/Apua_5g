@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="com.sixdee.imp.dto.InterfaceMasterTabDto" table="LMS_CNFG_INTERFACE_MASTER">
+		<comment>Interface Master</comment>
+		<id name="interfaceId" type="java.lang.Integer" column="INTERFACEID" >
+		</id>
+		
+		<property name="interfaceName" column="INTERFACENAME"/>
+		<property name="providerName" column="PROVIDERNAME"/>
+		<property name="className" column="CLASSNAME"/>
+		<property name="methodName" column="METHODNAME"/>
+		<property name="endDate" column="UPDATEDATE"/>
+		<property name="createDate" column="CREATEDATE"/>
+		
+	</class>
+	
+</hibernate-mapping>

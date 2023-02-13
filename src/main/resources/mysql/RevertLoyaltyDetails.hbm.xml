@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="RevertLoyalty" table="REVERT_LOYALTY">
+		<comment>REVERT_LOYALTY</comment>
+		
+		<id name="sno" type="java.lang.Long" column="SNO">
+			 <generator class="native"></generator>  
+		</id>
+		
+		<property name="transactionID" type="java.lang.String" column="TRANSACTION_ID"/>
+		<property name="channel" type="java.lang.String" column="CHANNEL"/>
+		<property name="date" type="timestamp" column="CREATE_DATE"/>
+		<property name="loyaltyID" type="java.lang.Long" column="LOYALTY_ID"/>
+		<property name="points" type="double" column="POINTS"/>
+		<property name="status" type="java.lang.String" column="STATUS"/>
+		<property name="tableId" column="TABLE_ID"/>
+		<property name="uniqueId" type="java.lang.String" column="UNIQUE_ID"/>
+		
+	</class>
+	
+</hibernate-mapping>

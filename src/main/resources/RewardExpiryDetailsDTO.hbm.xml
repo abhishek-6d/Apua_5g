@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class dynamic-insert="true"
+		name="com.sixdee.imp.dto.RewardExpiryDetailsDTO" table="REWARD_EXPIRY_DETAILS">
+		<id column="LOYALTY_ID" name="loyaltyId" type="java.lang.Long" />
+		<property column="TIMESTAMP" name="time" />
+		<property column="POINTS_BEFORE_EXPIRY" name="pointsBeforeExpiry" />
+		<property column="POINTS_EXPIRING" name="pointsExpiring" />
+		<property column="POINTS_AFTER_EXPIRY" name="pointsAfterExpiry" />
+	</class>
+</hibernate-mapping>

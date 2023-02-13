@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="LoyaltyHierarchyDetailsDTO" table="LOYALTY_HIERARCHY_DETAILS">
+		<comment>LOYALTY_HIERARCHY_DETAILS</comment>
+		
+		<id name="id" type="java.lang.Integer" column="ID">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="parentLoyaltyId" type="java.lang.Long" column="PARENT_LOYALTY_ID"/>
+		<property name="childLoyaltyId" type="java.lang.Long" column="CHILD_LOYALTY_ID"/>
+		<property name="createDate" type="timestamp" column="CREATE_DATE"/>
+		
+	</class>
+	
+</hibernate-mapping>

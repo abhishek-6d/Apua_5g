@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Jul, 2013 5:34:09 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.ussd.dto.TransactionHistoryDTO" table="USSD_TRANSAACTION_HISTORY">
+        <id name="transactionId" type="long">
+            <column name="TRANSACTION_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="sessionId" type="long">
+            <column name="SESSION_ID" />
+        </property>
+        <property name="msisdn" type="long">
+            <column name="MSISDN" />
+        </property>
+        <property name="traversalPath" type="java.lang.String">
+            <column name="TRAVERSAL_PATH" />
+        </property>
+        <property name="messageText" type="java.lang.String">
+            <column name="MESSAGE_TEXT" />
+        </property>
+        <property name="reqXml" type="java.lang.String">
+            <column name="REQ_XML" />
+        </property>
+        <property name="respXml" type="java.lang.String">
+            <column name="RESP_XML" />
+        </property>
+        <property name="successCode" type="java.lang.String">
+            <column name="SUCCESS_CODE" />
+        </property>
+        <property name="successDesc" type="java.lang.String">
+            <column name="SUCCESS_DESC" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.ActionServiceDetailsDTO" table="ACTION_SERVICE_DETAILS">
+		<id name="serviceID" type="java.lang.Integer" column="SERVICE_ID" >
+		</id>
+		<property name="serviceName" column="SERVICE_NAME"></property>
+		<property name="actionName" column="ACTION_NAME"></property>
+		<property name="actionType" column="ACTION_TYPE"></property>
+		<property name="noOfTimes" column="NO_OF_TIMES"></property>
+		<property name="startDate" column="START_DATE"></property>
+		<property name="endDate" column="END_DATE"></property>
+		<property name="repeat" column="ISREPEAT"></property>
+		<property name="parentID" column="PARENT_ID"></property>
+		<property name="validity" column="VALIDITY"></property>
+		<property name="validityType" column="VALIDITY_TYPE"></property>
+		<property name="startTime" column="START_TIME"></property>
+		<property name="endTime" column="END_TIME"></property>
+		<property name="everyDay" column="IS_EVERY_DAY"></property>
+		
+	</class>
+	
+</hibernate-mapping>	

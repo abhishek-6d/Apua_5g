@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.sixdee.imp.dto.GeneralManagementCdrDto" table="LMS_CDR_GENERAL_SERVICES">
+		<comment>CDR GENERAL MANAGEMENT</comment>
+		<id name="msisdn" type="java.lang.String" column="MSISDN" >
+		</id>
+		
+		<property name="service" column="SERVICE"/>
+		<property name="requestDate" column="REQUEST_DATE"/>
+		<property name="dataInfo" column="DATA_INFO"/>
+		<property name="description" column="DESCRIPTION"/>
+		<property name="transactionId" column="TRANSACTION_ID"/>
+		<property name="status" column="STATUS"/>
+
+	</class>
+	
+</hibernate-mapping>

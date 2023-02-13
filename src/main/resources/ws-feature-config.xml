@@ -1,0 +1,833 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<config>
+    <!-- Feature for Create Account -->
+	<feature id="CREATEACCOUNT">
+		<req-assembler>com.sixdee.imp.request.CreateAccountReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.CreateAccountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.CreateAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.CreateAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.CreateAccountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.CreateAccountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>CreateAccountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.CreateAccountBL</bo> 
+		<dto>com.sixdee.imp.dto.CreateAccountDTO</dto>
+	</feature>
+	<!-- Feature for AlufuqSendCodes -->
+	<feature id="AlufuqSendCodes">
+		<req-assembler>com.sixdee.imp.request.AlufuqSendCodesReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.AlufuqSendCodesRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.AlufuqSendCodesFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.AlufuqSendCodesReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.AlufuqSendCodesRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.AlufuqSendCodesBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>AlufuqSendCodesLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.AlufuqSendCodesBL</bo> 
+		<vo>com.sixdee.imp.vo.AlufuqSendCodesVO</vo>
+		<dto>com.sixdee.imp.dto.AlufuqSendCodesDTO</dto>
+	</feature>
+	
+	<!--  Feature for delete Account -->
+	<feature id="DELETEACCOUNT">
+		<req-assembler>com.sixdee.imp.request.DeleteAccountReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.DeleteAccountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.DeleteAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.DeleteAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.DeleteAccountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.DeleteAccountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>DeleteAccountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.DeleteAccountBL</bo>
+		<dto>com.sixdee.imp.dto.DeleteAccountDTO</dto>
+	</feature>
+	
+	<!-- Feature for ViewAccount -->
+	<feature id="VIEWACCOUNT">
+		<req-assembler>com.sixdee.imp.request.ViewAccountReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ViewAccountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ViewAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ViewAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ViewAccountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ViewAccountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ViewAccountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ViewAccountBL</bo> 
+		<vo>com.sixdee.imp.vo.ViewAccountVO</vo>
+		<dto>com.sixdee.imp.dto.ViewAccountDTO</dto>
+	</feature>
+
+<!-- Feature for UserAuthentication -->
+	<feature id="UserAuthentication">
+		<req-assembler>com.sixdee.imp.request.UserAuthenticationReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.UserAuthenticationRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.UserAuthenticationFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.UserAuthenticationReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.UserAuthenticationRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.UserAuthenticationBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>UserAuthenticationLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.UserAuthenticationBL</bo> 
+		<vo>com.sixdee.imp.vo.UserAuthenticationVO</vo>
+		<dto>com.sixdee.imp.dto.UserAuthenticationDTO</dto>
+	</feature>
+
+	
+<!-- Feature for TransferPoints -->
+	<feature id="TransferPoints">
+		<req-assembler>com.sixdee.imp.request.TransferPointsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.TransferPointsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.TransferPointsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.TransferPointsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.TransferPointsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.TransferPointsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>TransferPointsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.TransferPointsBL</bo> 
+		<vo>com.sixdee.imp.vo.TransferPointsVO</vo>
+		<dto>com.sixdee.imp.dto.TransferPointsDTO</dto>
+	</feature>
+	
+	<!-- Feature for SubscriberTransactionHistory -->
+	<feature id="SubscriberTransactionHistory">
+		<req-assembler>com.sixdee.imp.request.SubscriberTransactionHistoryReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.SubscriberTransactionHistoryRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.SubscriberTransactionHistoryFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.SubscriberTransactionHistoryReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.SubscriberTransactionHistoryRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.SubscriberTransactionHistoryBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>SubscriberTransactionHistoryLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.SubscriberTransactionHistoryBL</bo> 
+		<vo>com.sixdee.imp.vo.SubscriberTransactionHistoryVO</vo>
+		<dto>com.sixdee.imp.dto.SubscriberTransactionHistoryDTO</dto>
+	</feature>
+			<feature id="GETTRANSACTIONS">
+		<req-assembler>com.sixdee.imp.request.GetTransHistoryReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetTransHistoryRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetTransHistoryFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetTransHistoryReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetTransHistoryRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetTransHistoryBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetTransHistoryLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetTransHistoryBO</bo> 
+		<vo>com.sixdee.imp.vo.GetTransHistoryVO</vo>
+		<dto>com.sixdee.imp.dto.GetTransHistoryDTO</dto>
+	</feature>
+	
+	<feature id="GETELIGIBLEPROMO">
+		<req-assembler>com.sixdee.imp.request.GetEligiblePromoReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetEligiblePromoRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetEligiblePromoFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetEligiblePromoReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetEligiblePromoRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetEligiblePromoBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetEligiblePromoLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetEligiblePromoBO</bo> 
+		<vo>com.sixdee.imp.vo.GetEligiblePromoVO</vo>
+		<dto>com.sixdee.imp.dto.GetEligiblePromoDTO</dto>
+	</feature>
+
+	<!-- Feature for ActivatePack -->
+	<feature id="ActivatePack">
+		<req-assembler>com.sixdee.imp.request.ActivatePackReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ActivatePackRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ActivatePackFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ActivatePackReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ActivatePackRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ActivatePackBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ActivatePackLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ActivatePackBL</bo> 
+		<vo>com.sixdee.imp.vo.ActivatePackVO</vo>
+		<dto>com.sixdee.imp.dto.ActivatePackDTO</dto>
+	</feature>
+	
+	<!-- Feature for DeActivatePack -->
+	<feature id="DeActivatePack">
+		<req-assembler>com.sixdee.imp.request.DeActivatePackReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.DeActivatePackRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.DeActivatePackFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.DeActivatePackReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.DeActivatePackRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.DeActivatePackBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>DeActivatePackLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.DeActivatePackBL</bo> 
+		<vo>com.sixdee.imp.vo.DeActivatePackVO</vo>
+		<dto>com.sixdee.imp.dto.DeActivatePackDTO</dto>
+	</feature>
+	
+	<!-- Feature for RewardPointsCalculation -->
+	<feature id="RewardPointsCalculation">
+		<req-assembler>com.sixdee.imp.request.RewardPointsCalculationReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.RewardPointsCalculationRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.RewardPointsCalculationFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.RewardPointsCalculationReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.RewardPointsCalculationRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.RewardPointsCalculationBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>RewardPointsCalculationLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.RewardPointsCalculationBL</bo> 
+		<vo>com.sixdee.imp.vo.RewardPointsCalculationVO</vo>
+		<dto>com.sixdee.imp.dto.RewardPointsCalculationDTO</dto>
+	</feature>
+	
+	<!-- Feature for GetTransactionDetails -->
+	<feature id="GetTransactionDetails">
+		<req-assembler>com.sixdee.imp.request.GetTransactionDetailsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetTransactionDetailsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetTransactionDetailsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetTransactionDetailsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetTransactionDetailsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetTransactionDetailsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetTransactionDetailsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetTransactionDetailsBO</bo> 
+		<vo>com.sixdee.imp.vo.GetTransactionDetailsVO</vo>
+		<dto>com.sixdee.imp.dto.GetTransactionDetailsDTO</dto>
+	</feature>
+	
+	
+<!-- Feature for ValidateSubscriber -->
+	<feature id="ValidateSubscriber">
+		<req-assembler>com.sixdee.imp.request.ValidateSubscriberReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ValidateSubscriberRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ValidateSubscriberFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ValidateSubscriberReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ValidateSubscriberRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ValidateSubscriberBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ValidateSubscriberLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ValidateSubscriberBL</bo> 
+		<vo>com.sixdee.imp.vo.ValidateSubscriberVO</vo>
+		<dto>com.sixdee.imp.dto.ValidateSubscriberDTO</dto>
+	</feature>
+	<!-- Feature for Userprofile -->
+	
+	<feature id="Userprofile">
+		<req-assembler>com.sixdee.imp.request.UserprofileReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.UserprofileRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.UserprofileFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.UserprofileReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.UserprofileRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.UserprofileBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>UserprofileLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.UserprofileBL</bo> 
+		<vo>com.sixdee.imp.vo.UserprofileVO</vo>
+		<dto>com.sixdee.imp.dto.UserprofileDTO</dto>
+	</feature>
+	
+	<!-- Feature for GetPackages -->
+	<feature id="GetPackages">
+		<req-assembler>com.sixdee.imp.request.GetPackagesReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetPackagesRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetPackagesFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetPackagesReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetPackagesRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetPackagesBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetPackagesLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetPackagesBL</bo> 
+		<vo>com.sixdee.imp.vo.GetPackagesVO</vo>
+		<dto>com.sixdee.imp.dto.GetPackagesDTO</dto>
+	</feature>
+	
+	<!-- Feature for SubscriberProfile -->
+	<feature id="SubscriberProfile">
+		<req-assembler>com.sixdee.imp.request.SubscriberProfileReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.SubscriberProfileRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.SubscriberProfileFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.SubscriberProfileReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.SubscriberProfileRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.SubscriberProfileBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>SubscriberProfileLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.SubscriberProfileBL</bo> 
+		<vo>com.sixdee.imp.vo.SubscriberProfileVO</vo>
+		<dto>com.sixdee.imp.dto.SubscriberProfileDTO</dto>
+	</feature>
+	
+	<!-- Feature for RedeemPoints -->
+	<feature id="RedeemPoints">
+		<req-assembler>com.sixdee.imp.request.RedeemPointsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.RedeemPointsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.RedeemPointsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.RedeemPointsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.RedeemPointsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.RedeemPointsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>RedeemPointsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.RedeemPointsBL</bo> 
+		<vo>com.sixdee.imp.vo.RedeemPointsVO</vo>
+		<dto>com.sixdee.imp.dto.RedeemPointsDTO</dto>
+	</feature>
+	
+	<!-- Feature for MergeAccount -->
+	<feature id="MergeAccount">
+		<req-assembler>com.sixdee.imp.request.MergeAccountReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.MergeAccountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.MergeAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.MergeAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.MergeAccountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.MergeAccountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>MergeAccountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.MergeAccountBL</bo> 
+		<vo>com.sixdee.imp.vo.MergeAccountVO</vo>
+		<dto>com.sixdee.imp.dto.MergeAccountDTO</dto>
+	</feature>
+	
+<!-- Feature for FailureAction -->
+	<feature id="FailureAction">
+		<req-assembler>com.sixdee.imp.request.FailureActionReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.FailureActionRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.FailureActionFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.FailureActionReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.FailureActionRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.FailureActionBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>FailureActionLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.FailureActionBO</bo> 
+		<vo>com.sixdee.imp.vo.FailureActionVO</vo>
+		<dto>com.sixdee.imp.dto.FailureActionDTO</dto>
+	</feature>
+	
+	<!-- Feature for GetOrderDetails -->
+	<feature id="GetOrderDetails">
+		<req-assembler>com.sixdee.imp.request.GetOrderDetailsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetOrderDetailsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetOrderDetailsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetOrderDetailsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetOrderDetailsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetOrderDetailsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetOrderDetailsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetOrderDetailsBL</bo> 
+		<vo>com.sixdee.imp.vo.GetOrderDetailsVO</vo>
+		<dto>com.sixdee.imp.dto.GetOrderDetailsDTO</dto>
+	</feature>
+	
+	<feature id="UPDATEVOUCHERDETAILS">
+		<req-assembler>com.sixdee.imp.request.UpdateVoucherDetailsReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.UpdateVoucherDetailsRespAssm</resp-assembler>
+		<bo-validator>com.sixdee.imp.validator.bo.UpdateVoucherDetailsBOValidator</bo-validator>
+		<format-validator>com.sixdee.imp.validator.format.UpdateVoucherDetailsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.UpdateVoucherDetailsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.UpdateVoucherDetailsRespConv</resp-converter>
+		
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<bo>com.sixdee.imp.bo.UpdateVoucherDetailsBL</bo>
+		<dto>com.sixdee.imp.dto.UpdateVoucherDetailsDTO</dto>
+	</feature>
+	
+	<feature id="FAQDETAILS">
+		<req-assembler>com.sixdee.imp.request.FAQDetailsReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.FAQDetailsRespAssm</resp-assembler>
+		<bo-validator>com.sixdee.imp.validator.bo.FAQDetailsBOValidator</bo-validator>
+		<format-validator>com.sixdee.imp.validator.format.FAQDetailsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.FAQDetailsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.FAQDetailsRespConv</resp-converter>
+		
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<bo>com.sixdee.imp.bo.FAQDetailsBL</bo>
+		<dto>com.sixdee.imp.dto.FAQDetailsDTO</dto>
+	</feature>
+	<!-- Feature for TransferLine -->
+	<feature id="TransferLine">
+		<req-assembler>com.sixdee.imp.request.TransferLineReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.TransferLineRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.TransferLineFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.TransferLineReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.TransferLineRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.TransferLineBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>TransferLineLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.TransferLineBO</bo> 
+		<vo>com.sixdee.imp.vo.TransferLineVO</vo>
+		<dto>com.sixdee.imp.dto.TransferLineDTO</dto>
+	</feature>
+	<!-- Feature for InstantRewards -->
+	<feature id="InstantRewards">
+		<req-assembler>com.sixdee.imp.request.InstantRewardsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.InstantRewardsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.InstantRewardsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.InstantRewardsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.InstantRewardsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.InstantRewardsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>InstantRewardsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.InstantRewardsBO</bo> 
+		<vo>com.sixdee.imp.vo.InstantRewardsVO</vo>
+		<dto>com.sixdee.imp.dto.InstantRewardsDTO</dto>
+	</feature>
+	<!-- Feature for NEXT_TIER_INFO -->
+		<feature id="NEXTTIERINFO">
+			<req-assembler>com.sixdee.imp.request.NextTierInfoReqAssm </req-assembler>
+			<resp-assembler>com.sixdee.imp.response.NextTierInfoRespAssm</resp-assembler>
+			<format-validator>com.sixdee.imp.validator.format.NextTierInfoFrmtValidator</format-validator>
+			<req-converter>com.sixdee.imp.converter.request.NextTierInfoReqConv</req-converter>
+			<resp-converter>com.sixdee.imp.converter.response.NextTierInfoRespConv</resp-converter>
+			<bo-validator>com.sixdee.imp.validator.bo.NextTierInfoBOValidator</bo-validator>
+			<bo-ejb-enabled>false</bo-ejb-enabled>
+			<is-ejb-local>false</is-ejb-local>
+			<jndi-name>NextTierInfoLocal</jndi-name>
+			<bo>com.sixdee.imp.bo.NextTierInfoBO</bo> 
+			<vo>com.sixdee.imp.vo.NextTierInfoVO</vo>
+			<dto>com.sixdee.imp.dto.NextTierInfoDTO</dto>
+		</feature>
+	
+	<!-- Feature for ForgotPassword -->
+	<feature id="ForgotPassword">
+		<req-assembler>com.sixdee.imp.request.ForgotPasswordReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ForgotPasswordRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ForgotPasswordFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ForgotPasswordReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ForgotPasswordRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ForgotPasswordBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ForgotPasswordLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ForgotPasswordBL</bo> 
+		<vo>com.sixdee.imp.vo.ForgotPasswordVO</vo>
+		<dto>com.sixdee.imp.dto.ForgotPasswordDTO</dto>
+	</feature>
+	
+	<!-- Feature for RedeemIR -->
+	<feature id="RedeemIR">
+		<req-assembler>com.sixdee.imp.request.RedeemIRReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.RedeemIRRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.RedeemIRFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.RedeemIRReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.RedeemIRRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.RedeemIRBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>RedeemIRLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.RedeemIRBO</bo> 
+		<vo>com.sixdee.imp.vo.RedeemIRVO</vo>
+		<dto>com.sixdee.imp.dto.RedeemIRDTO</dto>
+	</feature>
+	
+	
+	<!-- Feature for ChangePassword -->
+	<feature id="ChangePassword">
+		<req-assembler>com.sixdee.imp.request.ChangePasswordReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ChangePasswordRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ChangePasswordFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ChangePasswordReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ChangePasswordRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ChangePasswordBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ChangePasswordLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ChangePasswordBL</bo> 
+		<vo>com.sixdee.imp.vo.ChangePasswordVO</vo>
+		<dto>com.sixdee.imp.dto.ChangePasswordDTO</dto>
+	</feature>
+	
+	
+	<!-- Feature for PointDetails -->
+	<feature id="PointDetails">
+		<req-assembler>com.sixdee.imp.request.PointDetailsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.PointDetailsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.PointDetailsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.PointDetailsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.PointDetailsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.PointDetailsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>PointDetailsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.PointDetailsBL</bo> 
+		<vo>com.sixdee.imp.vo.PointDetailsVO</vo>
+		<dto>com.sixdee.imp.dto.PointDetailsDTO</dto>
+	</feature>
+	
+	<feature id="ChangeLanguage">
+		<req-assembler>com.sixdee.imp.request.ChangeLanguageReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ChangeLanguageRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ChangeLanguageFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ChangeLanguageReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ChangeLanguageRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ChangeLanguageBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ChangeLanguageLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ChangeLanguageBL</bo> 
+		<vo>com.sixdee.imp.vo.ChangeLanguageVO</vo>
+		<dto>com.sixdee.imp.dto.ChangeLanguageDTO</dto>
+	</feature>
+<!-- Feature for UpdateAccount -->
+	<feature id="UpdateAccount">
+		<req-assembler>com.sixdee.imp.request.UpdateAccountReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.UpdateAccountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.UpdateAccountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.UpdateAccountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.UpdateAccountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.UpdateAccountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>UpdateAccountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.UpdateAccountBL</bo> 
+		<vo>com.sixdee.imp.vo.UpdateAccountVO</vo>
+		<dto>com.sixdee.imp.dto.UpdateAccountDTO</dto>
+	</feature>	
+	
+	<!-- Feature for ChangeServiceClass -->
+	<feature id="ChangeServiceClass">
+		<req-assembler>com.sixdee.imp.request.ChangeServiceClassReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ChangeServiceClassRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ChangeServiceClassFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ChangeServiceClassReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ChangeServiceClassRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ChangeServiceClassBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ChangeServiceClassLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ChangeServiceClassBL</bo> 
+		<vo>com.sixdee.imp.vo.ChangeServiceClassVO</vo>
+		<dto>com.sixdee.imp.dto.ChangeServiceClassDTO</dto>
+	</feature>
+	
+	<!-- Feature for AddOffer -->
+	<feature id="AddOffer">
+		<req-assembler>com.sixdee.imp.request.AddOfferReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.AddOfferRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.AddOfferFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.AddOfferReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.AddOfferRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.AddOfferBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>AddOfferLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.AddOfferBL</bo> 
+		<vo>com.sixdee.imp.vo.AddOfferVO</vo>
+		<dto>com.sixdee.imp.dto.AddOfferDTO</dto>
+	</feature>
+	
+	<!-- Feature for UpdatePSO -->
+	<feature id="UpdatePSO">
+		<req-assembler>com.sixdee.imp.request.UpdatePSOReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.UpdatePSORespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.UpdatePSOFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.UpdatePSOReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.UpdatePSORespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.UpdatePSOBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>UpdatePSOLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.UpdatePSOBL</bo> 
+		<vo>com.sixdee.imp.vo.UpdatePSOVO</vo>
+		<dto>com.sixdee.imp.dto.UpdatePSODTO</dto>
+	</feature>
+	
+	<!-- Feature for EligibleSubscriber -->
+	<feature id="EligibleSubscriber">
+		<req-assembler>com.sixdee.imp.request.EligibleSubscriberReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.EligibleSubscriberRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.EligibleSubscriberFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.EligibleSubscriberReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.EligibleSubscriberRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.EligibleSubscriberBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>EligibleSubscriberLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.EligibleSubscriberBL</bo> 
+		<vo>com.sixdee.imp.vo.EligibleSubscriberVO</vo>
+		<dto>com.sixdee.imp.dto.EligibleSubscriberDTO</dto>
+	</feature>
+
+	<!-- Feature for SubsHistory -->
+	<feature id="SubsHistory">
+		<req-assembler>com.sixdee.imp.request.SubsHistoryReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.SubsHistoryRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.SubsHistoryFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.SubsHistoryReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.SubsHistoryRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.SubsHistoryBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>SubsHistoryLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.SubsHistoryBL</bo> 
+		<vo>com.sixdee.imp.vo.SubsHistoryVO</vo>
+		<dto>com.sixdee.imp.dto.SubsHistoryDTO</dto>
+	</feature>		
+	
+	<!-- Feature for AccountConversion -->
+	<feature id="AccountConversion">
+		<req-assembler>com.sixdee.imp.request.AccountConversionReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.AccountConversionRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.AccountConversionFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.AccountConversionReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.AccountConversionRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.AccountConversionBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>AccountConversionLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.AccountConversionBO</bo> 
+		<vo>com.sixdee.imp.vo.AccountConversionVO</vo>
+		<dto>com.sixdee.imp.dto.AccountConversionDTO</dto>
+	</feature>
+	
+	
+<!-- Feature for IRStatusUpdation -->
+	<feature id="IRStatusUpdation">
+		<req-assembler>com.sixdee.imp.request.IRStatusUpdationReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.IRStatusUpdationRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.IRStatusUpdationFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.IRStatusUpdationReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.IRStatusUpdationRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.IRStatusUpdationBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>IRStatusUpdationLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.IRStatusUpdationBO</bo> 
+		<vo>com.sixdee.imp.vo.IRStatusUpdationVO</vo>
+		<dto>com.sixdee.imp.dto.IRStatusUpdationDTO</dto>
+	</feature>
+	
+<!-- Feature for ActDeactOffer -->
+	<feature id="ActDeactOffer">
+		<req-assembler>com.sixdee.imp.request.ActDeactOfferReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ActDeactOfferRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ActDeactOfferFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ActDeactOfferReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ActDeactOfferRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ActDeactOfferBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ActDeactOfferLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ActDeactOfferBL</bo> 
+		<vo>com.sixdee.imp.vo.ActDeactOfferVO</vo>
+		<dto>com.sixdee.imp.dto.ActDeactOfferDTO</dto>
+	</feature>	
+
+<!-- Feature for DeviceMnagement -->
+	<feature id="DeviceMnagement">
+		<req-assembler>com.sixdee.imp.request.DeviceMnagementReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.DeviceMnagementRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.DeviceMnagementFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.DeviceMnagementReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.DeviceMnagementRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.DeviceMnagementBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>DeviceMnagementLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.DeviceMnagementBL</bo> 
+		<vo>com.sixdee.imp.vo.DeviceMnagementVO</vo>
+		<dto>com.sixdee.imp.dto.DeviceMnagementDTO</dto>
+	</feature>	
+	
+	<!-- Feature for StartService -->
+	<feature id="StartService">
+		<req-assembler>com.sixdee.imp.request.StartServiceReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.StartServiceRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.StartServiceFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.StartServiceReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.StartServiceRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.StartServiceBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>StartServiceLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.StartServiceBL</bo> 
+		<vo>com.sixdee.imp.vo.StartServiceVO</vo>
+		<dto>com.sixdee.imp.dto.StartServiceDTO</dto>
+	</feature>
+	
+	<feature id="MerchantDiscount">
+		<req-assembler>com.sixdee.imp.request.MerchantDiscountReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.MerchantDiscountRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.MerchantDiscountFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.MerchantDiscountReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.MerchantDiscountRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.MerchantDiscountBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>MerchantDiscountLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.MerchantDiscountBL</bo> 
+		<vo>com.sixdee.imp.vo.MerchantDiscountVO</vo>
+		<dto>com.sixdee.imp.dto.MerchantDiscountDTO</dto>
+	</feature>
+	
+	<feature id="MerchantRedeem">
+		<req-assembler>com.sixdee.imp.request.MerchantRedeemReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.MerchantRedeemRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.MerchantRedeemFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.MerchantRedeemReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.MerchantRedeemRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.MerchantRedeemBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>MerchantRedeemLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.MerchantRedeemBL</bo> 
+		<vo>com.sixdee.imp.vo.MerchantRedeemVO</vo>
+		<dto>com.sixdee.imp.dto.MerchantRedeemDTO</dto>
+	</feature>
+	
+	
+<!-- Feature for ReferralService -->
+	<feature id="ReferralService">
+		<req-assembler>com.sixdee.imp.request.ReferralServiceReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ReferralServiceRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ReferralServiceFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ReferralServiceReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ReferralServiceRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ReferralServiceBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ReferralServiceLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ReferralServiceBL</bo> 
+		<vo>com.sixdee.imp.vo.ReferralServiceVO</vo>
+		<dto>com.sixdee.imp.dto.ReferralServiceDTO</dto>
+	</feature>
+	
+	<!-- Feature for GetMerchants -->
+	<feature id="GetMerchants">
+		<req-assembler>com.sixdee.imp.request.GetMerchantsReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.GetMerchantsRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.GetMerchantsFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.GetMerchantsReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.GetMerchantsRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.GetMerchantsBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>GetMerchantsLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.GetMerchantsBL</bo> 
+		<vo>com.sixdee.imp.vo.GetMerchantsVO</vo>
+		<dto>com.sixdee.imp.dto.GetMerchantsDTO</dto>
+	</feature>
+	
+	
+		
+<!-- Feature for VoucherPromo -->
+	<feature id="VoucherPromo">
+		<req-assembler>com.sixdee.imp.request.VoucherPromoReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.VoucherPromoRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.VoucherPromoFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.VoucherPromoReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.VoucherPromoRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.VoucherPromoBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>VoucherPromoLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.VoucherPromoBL</bo> 
+		<vo>com.sixdee.imp.vo.VoucherPromoVO</vo>
+		<dto>com.sixdee.imp.dto.VoucherPromoTranverseDTO</dto>
+	</feature>
+	
+	<!-- Feature for TerminationService -->
+	<feature id="TerminationService">
+		<req-assembler>com.sixdee.imp.request.TerminationServiceReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.TerminationServiceRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.TerminationServiceFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.TerminationServiceReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.TerminationServiceRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.TerminationServiceBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>TerminationServiceLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.TerminationServiceBL</bo> 
+		<vo>com.sixdee.imp.vo.TerminationServiceVO</vo>
+		<dto>com.sixdee.imp.dto.TerminationServiceDTO</dto>
+	</feature>
+	
+	<!-- Feature for MonthlyBillService -->
+	<feature id="MonthlyBillService">
+		<req-assembler>com.sixdee.imp.request.MonthlyBillServiceReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.MonthlyBillServiceRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.MonthlyBillServiceFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.MonthlyBillServiceReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.MonthlyBillServiceRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.MonthlyBillServiceBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>MonthlyBillServiceLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.MonthlyBillServiceBL</bo> 
+		<vo>com.sixdee.imp.vo.MonthlyBillServiceVO</vo>
+		<dto>com.sixdee.imp.dto.MonthlyBillServiceDTO</dto>
+	</feature>
+	
+	
+<!-- Feature for ChurnPredictionSummary -->
+	<feature id="ChurnPredictionSummary">
+		<req-assembler>com.sixdee.imp.request.ChurnPredictionSummaryReqAssm </req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ChurnPredictionSummaryRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ChurnPredictionSummaryFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ChurnPredictionSummaryReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ChurnPredictionSummaryRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ChurnPredictionSummaryBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ChurnPredictionSummaryLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ChurnPredictionSummaryBL</bo> 
+		<vo>com.sixdee.imp.vo.ChurnPredictionSummaryVO</vo>
+		<dto>com.sixdee.imp.dto.ChurnPredictionSummaryDTO</dto>
+	</feature>
+	
+	<!-- Feature for CommonServiceManagerment -->
+	<feature id="CommonServiceManagerment">
+		<req-assembler>com.sixdee.imp.request.ServiceManagermentReqAssm</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.ServiceManagermentRespAssm</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.ServiceManagermentFrmtValidator</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.ServiceManagermentReqConv</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.ServiceManagermentRespConv</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.ServiceManagermentBOValidator</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>ChurnPredictionSummaryLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.ServiceManagermentBL</bo> 
+		<vo>com.sixdee.imp.vo.ServiceManagermentVO</vo>
+		<dto>com.sixdee.imp.dto.ServiceManagementDTO</dto>
+	</feature>
+
+	<feature id="VmsLifeCycle">
+		<req-assembler>com.sixdee.imp.request.VoucherManagementReqAssm
+		</req-assembler>
+		<resp-assembler>com.sixdee.imp.response.VoucherManagementRespAssm
+		</resp-assembler>
+		<format-validator>com.sixdee.imp.validator.format.VoucherManagementFrmtValidator
+		</format-validator>
+		<req-converter>com.sixdee.imp.converter.request.VoucherManagementReqConv
+		</req-converter>
+		<resp-converter>com.sixdee.imp.converter.response.VoucherManagementRespConv
+		</resp-converter>
+		<bo-validator>com.sixdee.imp.validator.bo.VoucherManagementBOValidator
+		</bo-validator>
+		<bo-ejb-enabled>false</bo-ejb-enabled>
+		<is-ejb-local>false</is-ejb-local>
+		<jndi-name>VmsLifeCycleLocal</jndi-name>
+		<bo>com.sixdee.imp.bo.VoucherManagementBL</bo>
+		<vo>com.sixdee.imp.vo.VoucherManagementVO</vo>
+		<dto>com.sixdee.imp.dto.VoucherManagementDTO</dto>
+	</feature>
+	
+</config>

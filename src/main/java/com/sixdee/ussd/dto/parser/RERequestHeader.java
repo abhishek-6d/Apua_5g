@@ -1,0 +1,107 @@
+/**
+ * 
+ */
+package com.sixdee.ussd.dto.parser;
+
+
+/**
+ * @author Rahul K K
+ * @version 1.0.0
+ * 
+ * <p>
+ * <b><u>Development History</u></b><br>
+ * <table border="1" width="100%">
+ * <tr>
+ * <td width="15%">Date</td>
+ * <td width="20%">Author</td>
+ * <td>Description</td>
+ * </tr>
+ * <tr>
+ * <td>April 24, 2013</td>
+ * <td>Rahul K K</td>
+ * <td>Created this class</td>
+ * </tr>
+ * </table>
+ * </p>
+ */
+public class RERequestHeader {
+	private String requestId   = null;
+	private String timeStamp   = null;
+	private String msisdn	   = null;
+	private String keyWord	   = null;
+	private String status 	   = null;
+	private String statusDesc  = null;
+	private Object obj = null;
+	
+	
+	
+	private RERequestDataSet dataSet    = null;
+
+	
+	
+	public Object getObj() {
+		return obj;
+	}
+
+	public void setObj(Object obj) {
+		this.obj = obj;
+	}
+
+	public String getRequestId() {
+		return requestId;
+	}
+
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
+	}
+
+	public String getTimeStamp() {
+		return timeStamp;
+	}
+
+	public void setTimeStamp(String timeStamp) {
+		this.timeStamp = timeStamp;
+	}
+
+	public String getMsisdn() {
+		return msisdn;
+	}
+
+	public void setMsisdn(String msisdn) {
+		this.msisdn = msisdn;
+	}
+
+	public String getKeyWord() {
+		return keyWord;
+	}
+
+	public void setKeyWord(String keyWord) {
+		this.keyWord = keyWord;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getStatusDesc() {
+		return statusDesc;
+	}
+
+	public void setStatusDesc(String statusDesc) {
+		this.statusDesc = statusDesc;
+	}
+
+	public RERequestDataSet getDataSet() {
+		return dataSet;
+	}
+
+	public void setDataSet(RERequestDataSet dataSet) {
+		this.dataSet = dataSet;
+	}
+
+	
+}

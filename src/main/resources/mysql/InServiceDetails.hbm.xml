@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.sixdee.imp.common.dto.INServiceDetailsDTO" table="IN_SERVICE_DETAILS">
+    	<id name="serviceId" type="integer" column="SERVICE_ID">
+    		<generator class="assigned"></generator>
+    	</id>
+    	<property name="serviceName" type="string" column="SERVICE_NAME"></property>
+    	<property name="balnceCheckString" type="string" column="USSD_STRING"></property>
+    	<property name="provisioningUrl" type="string" column="PROVISION_URL"></property>
+    	<property name="requestorName" type="string" column="REQUESTOR_NAME"></property>
+    	
+
+    	
+    </class>
+</hibernate-mapping>

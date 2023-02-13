@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://service.imp.sixdee.com" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ax25="http://resp.serviceDTO.service.imp.sixdee.com/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ax21="http://req.serviceDTO.service.imp.sixdee.com/xsd" xmlns:ax22="http://common.serviceDTO.service.imp.sixdee.com/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://service.imp.sixdee.com">
+    <wsdl:types>
+        <xs:schema xmlns:ax26="http://common.serviceDTO.service.imp.sixdee.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://resp.serviceDTO.service.imp.sixdee.com/xsd">
+            <xs:import namespace="http://common.serviceDTO.service.imp.sixdee.com/xsd"/>
+            <xs:complexType name="ResponseDTO">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="data" nillable="true" type="ax26:Data"/>
+                    <xs:element minOccurs="0" name="statusCode" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="statusDescription" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="timestamp" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="transcationId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="TransactionInfoDTO">
+                <xs:complexContent>
+                    <xs:extension base="ax25:ResponseDTO">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="limit" type="xs:int"/>
+                            <xs:element minOccurs="0" name="offSet" type="xs:int"/>
+                            <xs:element minOccurs="0" name="totalCount" type="xs:int"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" name="transactionDetails" nillable="true" type="ax25:TransactionDetailsDTO"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="TransactionDetailsDTO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="accountLineNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="activity" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="date" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="loyaltyPoints" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="OrderTrackingInfoDTO">
+                <xs:complexContent>
+                    <xs:extension base="ax25:ResponseDTO">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="limit" type="xs:int"/>
+                            <xs:element minOccurs="0" name="offSet" type="xs:int"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" name="orderDetails" nillable="true" type="ax25:OrderTrackingDetailsDTO"/>
+                            <xs:element minOccurs="0" name="totalCount" type="xs:int"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="OrderTrackingDetailsDTO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="itemName" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="itemNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="orderId" type="xs:long"/>
+                    <xs:element minOccurs="0" name="orderStatus" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="quantity" type="xs:int"/>
+                    <xs:element minOccurs="0" name="redeemPoints" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax23="http://common.serviceDTO.service.imp.sixdee.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://req.serviceDTO.service.imp.sixdee.com/xsd">
+            <xs:import namespace="http://common.serviceDTO.service.imp.sixdee.com/xsd"/>
+            <xs:complexType name="TransactionDTO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="channel" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="data" nillable="true" type="ax23:Data"/>
+                    <xs:element minOccurs="0" name="fromDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="limit" type="xs:int"/>
+                    <xs:element minOccurs="0" name="loyaltyID" type="xs:long"/>
+                    <xs:element minOccurs="0" name="moNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="noOfLastTransaction" type="xs:int"/>
+                    <xs:element minOccurs="0" name="noOfMonths" type="xs:int"/>
+                    <xs:element minOccurs="0" name="offSet" type="xs:int"/>
+                    <xs:element minOccurs="0" name="subscriberNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="timestamp" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="toDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="transactionId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="OrderTrackingDTO">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="channel" nillable="true" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="data" nillable="true" type="ax23:Data"/>
+                    <xs:element minOccurs="0" name="fromDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="limit" type="xs:int"/>
+                    <xs:element minOccurs="0" name="loyaltyID" type="xs:long"/>
+                    <xs:element minOccurs="0" name="moNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="noOfLastTransaction" type="xs:int"/>
+                    <xs:element minOccurs="0" name="noOfMonths" type="xs:int"/>
+                    <xs:element minOccurs="0" name="offSet" type="xs:int"/>
+                    <xs:element minOccurs="0" name="subscriberNumber" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="timestamp" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="toDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="transcationId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax27="http://resp.serviceDTO.service.imp.sixdee.com/xsd" xmlns:ax24="http://req.serviceDTO.service.imp.sixdee.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://service.imp.sixdee.com">
+            <xs:import namespace="http://req.serviceDTO.service.imp.sixdee.com/xsd"/>
+            <xs:import namespace="http://resp.serviceDTO.service.imp.sixdee.com/xsd"/>
+            <xs:element name="getTransactionDetails">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="transactionDTO" nillable="true" type="ax24:TransactionDTO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getTransactionDetailsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax27:TransactionInfoDTO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getOrderDetails">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="orderTrackingDTO" nillable="true" type="ax24:OrderTrackingDTO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getOrderDetailsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax27:OrderTrackingInfoDTO"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://common.serviceDTO.service.imp.sixdee.com/xsd">
+            <xs:complexType name="Data">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="value" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getTransactionDetailsRequest">
+        <wsdl:part name="parameters" element="ns:getTransactionDetails"/>
+    </wsdl:message>
+    <wsdl:message name="getTransactionDetailsResponse">
+        <wsdl:part name="parameters" element="ns:getTransactionDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getOrderDetailsRequest">
+        <wsdl:part name="parameters" element="ns:getOrderDetails"/>
+    </wsdl:message>
+    <wsdl:message name="getOrderDetailsResponse">
+        <wsdl:part name="parameters" element="ns:getOrderDetailsResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="TransactionManagementPortType">
+        <wsdl:operation name="getTransactionDetails">
+            <wsdl:input message="ns:getTransactionDetailsRequest" wsaw:Action="urn:getTransactionDetails"/>
+            <wsdl:output message="ns:getTransactionDetailsResponse" wsaw:Action="urn:getTransactionDetailsResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderDetails">
+            <wsdl:input message="ns:getOrderDetailsRequest" wsaw:Action="urn:getOrderDetails"/>
+            <wsdl:output message="ns:getOrderDetailsResponse" wsaw:Action="urn:getOrderDetailsResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="TransactionManagementSoap11Binding" type="ns:TransactionManagementPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="getTransactionDetails">
+            <soap:operation soapAction="urn:getTransactionDetails" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderDetails">
+            <soap:operation soapAction="urn:getOrderDetails" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="TransactionManagementSoap12Binding" type="ns:TransactionManagementPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="getTransactionDetails">
+            <soap12:operation soapAction="urn:getTransactionDetails" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderDetails">
+            <soap12:operation soapAction="urn:getOrderDetails" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="TransactionManagementHttpBinding" type="ns:TransactionManagementPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="getTransactionDetails">
+            <http:operation location="getTransactionDetails"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getOrderDetails">
+            <http:operation location="getOrderDetails"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="TransactionManagement">
+        <wsdl:port name="TransactionManagementHttpSoap11Endpoint" binding="ns:TransactionManagementSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/TransactionManagement"/>
+        </wsdl:port>
+        <wsdl:port name="TransactionManagementHttpSoap12Endpoint" binding="ns:TransactionManagementSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/TransactionManagement"/>
+        </wsdl:port>
+        <wsdl:port name="TransactionManagementHttpEndpoint" binding="ns:TransactionManagementHttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/TransactionManagement"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

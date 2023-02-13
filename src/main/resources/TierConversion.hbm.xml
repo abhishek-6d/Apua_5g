@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class dynamic-insert="true" name="com.sixdee.imp.simulator.dto.TierConversionInfo" table="TIER_COINVERSION">
+  <id column="LOYALTY_ID" name="loyaltyId" type="java.lang.Long"/>
+  <property column="TIER_ID" generated="never" lazy="false" name="tier"/>
+  <property column="NEW_STATUS_POINTS" generated="never" lazy="false" name="newStatusPoints"/>
+  <property column="STATUS_POINTS" generated="never" lazy="false" name="statusPoints"/>
+  <property column="NEW_TIER" generated="never" lazy="false" name="newTier"/>
+ </class>
+ </hibernate-mapping>

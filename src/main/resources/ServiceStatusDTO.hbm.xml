@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.ServiceStatusDTO"  table="MODULE_SERVICE_REPLY_MESSAGE">
+		<id name="serviceId" type="java.lang.Integer" column="SERVICE_ID">
+		</id>
+		<property name="id" column="ID"></property>
+		<property name="statusCode" column="STATUS_CODE"></property>
+		<property name="statusDesc" column="STATUS_DESC"></property>
+		
+	</class>
+	
+	
+</hibernate-mapping>	

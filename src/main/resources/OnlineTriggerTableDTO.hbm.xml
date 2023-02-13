@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 May, 2013 12:09:13 PM by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.sixdee.lms.dto.OnlineTriggerTableDTO" table="RE_ONLINE_RULES_TRIGGER">
+    <comment>ONLINE TRIGGER TABLE DETAILS</comment>
+		<id name="Id" type="java.lang.Long" column="ID">
+		 <generator class="native"></generator>
+		</id>
+		<property name="triggerId" column="TRIGGER_ID"/>
+		<property name="planId" column="PLAN_ID"/>
+		<property name="ruleId" column="RULE_ID"/>
+		<property name="ruleURL" column="RULE_URL" />
+		<property name="triggerName" column="TRIGGER_NAME" />
+
+    </class>
+</hibernate-mapping>

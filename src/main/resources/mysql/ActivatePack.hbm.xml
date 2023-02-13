@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sixdee.imp.dto">
+
+	<class name="ActivatePackLMSDTO" table="SUBS_TRANSACTION_HISTORY_0">
+		<comment>SUBS_TRANSACTION_HISTORY_0</comment>
+		
+		<id name="subscriberNumber"  column="SUBSCRIBER_NUMBER">
+			
+		</id>
+		
+		<property name="startDate" column="START_DATE"/>
+		<property name="endDate" column="END_DATE"/>
+		<property name="activationDate" column="ACIVATION_DATE"/>
+		<property name="transactionType" column="TRANSACTION_TYPE"/>
+		<property name="serviceResponse" column="SERVICE_RESPONSE"/>
+		
+	</class>
+	
+</hibernate-mapping>

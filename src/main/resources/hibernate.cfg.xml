@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<!-- Database connection JNDI <property name="connection.datasource">java:oracleDS1</property> -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@10.0.0.85:1521:LMS</property>
+		<property name="connection.username">lmsuser</property>
+		<property name="connection.password">lmsuser</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">10</property>
+		<property name="hibernate.jdbc.batch_size">20</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+		<!-- second-level cache -->
+		<property name="cache.use_second_level_cache">false</property>
+		<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<!-- <property name="format_sql">true</property> <property name="use_sql_comments">true</property> -->
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">none</property>
+		<property name="hibernate.connection.zeroDateTimeBehavior">convertToNull</property>
+		<mapping resource="SubscriberTransactionHistoryDTO.hbm.xml" />
+		<mapping resource="ServiceMappingDTO.hbm.xml" />
+		<mapping resource="SubscriberNumberTabDTO.hbm.xml" />
+		<mapping resource="AccountNumberTabDTO.hbm.xml" />
+		<mapping resource="NationalNumberTabDTO.hbm.xml" />
+		<mapping resource="LoyaltyProfileTabDTO.hbm.xml" />
+		<mapping resource="LoyaltyRegisteredNumberTabDTO.hbm.xml" />
+		<mapping resource="ADSLNumberTabDTO.hbm.xml" />
+		<mapping resource="TierInfoDTO.hbm.xml" />
+		<mapping resource="ConfigureParameterDTO.hbm.xml" />
+		<mapping resource="LoyaltyTransactionTabDTO.hbm.xml" />
+		<mapping resource="SubscriberProfileDTO.hbm.xml" />
+		<mapping resource="ActionServiceDetailsDTO.hbm.xml" />
+		<mapping resource="PackageCategory.hbm.xml" />
+		<mapping resource="SubscriberFailureDetailsDTO.hbm.xml" />
+		<mapping resource="LoyaltyHierarchyDetails.hbm.xml" />
+		<mapping resource="Status_CodesDTO.hbm.xml" />
+		<mapping resource="SMS_NotificationDTO.hbm.xml" />
+		<mapping resource="NotificationTemplateDTO.hbm.xml" />
+		<mapping resource="InstantRewardConfig.hbm.xml" />
+		<mapping resource="InstantPack.hbm.xml" />
+		<mapping resource="KeywordMappingDTO.hbm.xml" />
+		<mapping resource="ServiceRequestDTO.hbm.xml" />
+		<mapping resource="MessageTemplateDTO.hbm.xml" />
+		<mapping resource="ConfigParmeterDTO.hbm.xml" />
+		<mapping resource="TransactionHistoryDTO.hbm.xml" />
+		<mapping resource="InstantReserve.hbm.xml" />
+		<mapping resource="RevertLoyaltyDetails.hbm.xml" />
+		<mapping resource="VoucherOrderDetailsDTO.hbm.xml" />
+		<mapping resource="TierLanguageMapping.hbm.xml" />
+		<mapping resource="EmailInfo.hbm.xml" />
+		<mapping resource="LoyaltyRedeemDTO.hbm.xml" />
+		<mapping resource="LoyaltyLineRemoveHistoryDTO.hbm.xml" />
+		<mapping resource="LoyaltyAccountRemoveHistoryDTO.hbm.xml" />
+		<mapping resource="LoyaltyTranSummarisedDTO.hbm.xml" />
+		<mapping resource="DeleteSummaryInfo.hbm.xml" />
+		<mapping resource="StartupLogger.hbm.xml" />
+		<mapping resource="MerchantTierMappingDTO.hbm.xml" />
+		<mapping resource="PackageDetails.hbm.xml"/> 
+     	<mapping resource="MerchantNotificationTemplateDTO.hbm.xml" />	
+	    <mapping resource="MerchantPromoMappingDTO.hbm.xml" />
+	    <mapping resource="UserIdentifierDTO.hbm.xml"/>
+		<mapping resource="UserLoginInfoDTO.hbm.xml"/>
+		<mapping resource="LoyaltyTranSummaryMonthlyDTO.hbm.xml"/>
+		<mapping resource="ProfileSubscriberLanguage.hbm.xml"/>
+		<mapping resource="ExtTriggerMaster.hbm.xml"/>
+		<mapping resource="AccountTypeConfigDTO.hbm.xml"/>
+		<mapping resource="TeleOfferAttributesDTO.hbm.xml"/>
+		
+	</session-factory>
+</hibernate-configuration>

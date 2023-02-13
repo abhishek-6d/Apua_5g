@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.sixdee.imp.dto.hbmdto.PackageCategoryDTO" table="PACKAGE_CATEGORY">
+		<id name="categoryId" column="CATEGORY_ID">
+			<!-- <generator class="cachingUsingHibernate.CustomIdGenerator"/> -->
+			<!-- <generator class="increment"></generator> -->
+		</id>
+
+		<property name="offerType" column="`OFFER_TYPE`" />
+		<property name="parentId" column="`PARENT_ID`" />
+		<property name="active" column="`ACTIVE`" />
+		<property name="isPackage" column="`IS_PACKAGE`" />
+		
+		<one-to-one name="CategoryChannelMappingDTO" class="com.sixdee.imp.dto.hbmdto.CategoryChannelMappingDTO" cascade="all"></one-to-one>
+           <one-to-one name="CategoryProductMappingDTO" class="com.sixdee.imp.dto.hbmdto.CategoryProductMappingDTO" cascade="all"></one-to-one>
+           <one-to-one name="CategoryTierMappingDTO" class="com.sixdee.imp.dto.hbmdto.CategoryTierMappingDTO" cascade="all"></one-to-one>
+           <one-to-one name="CategorySubTypeMappingDTO" class="com.sixdee.imp.dto.hbmdto.CategorySubTypeMappingDTO" cascade="all"></one-to-one>
+		 <one-to-one name="CategoryUserTypeMappingDTO" class="com.sixdee.imp.dto.hbmdto.CategoryUserTypeMappingDTO" cascade="all"></one-to-one>
+		  <one-to-one name="CategoryVerbiageDTO" class="com.sixdee.imp.dto.hbmdto.CategoryVerbiageDTO" cascade="all"></one-to-one>
+	</class>
+
+</hibernate-mapping>  

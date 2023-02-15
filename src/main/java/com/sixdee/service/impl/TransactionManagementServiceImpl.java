@@ -73,8 +73,14 @@ public class TransactionManagementServiceImpl implements TransactionManagementSe
 			transactionDTO.setMsisdn(phoneNumber);
 			transactionDTO.setLangId(language);
 			transactionDTO.setChannel(channel);
-			transactionDTO.setStatusId(transactionType);
-			transactionDTO.setLoyaltyId(loyaltyId);		
+			if(transactionType!=null) {
+				transactionDTO.setStatusId(transactionType);
+			}else {
+				transactionDTO.setStatusId(Cache.cacheMap.get("TRANSACTION_TYPE"));
+			}
+			transactionDTO.setLoyaltyId(loyaltyId);	
+			if(loyaltyId!=null)
+				
 			transactionDTO.setSubscriberNumber(phoneNumber);
 			transactionDTO.setTransactionId(requestId);
 			if(startDate !=null && !startDate.equalsIgnoreCase("")) {
@@ -150,6 +156,9 @@ public class TransactionManagementServiceImpl implements TransactionManagementSe
 				transactionDetailsDTO2.setExpiryDate(String.valueOf(historyDTO.getExpiryDate()));
 				if(historyDTO.getExpiryPoints()!=null)
 				transactionDetailsDTO2.setExpiryPoints(historyDTO.getExpiryPoints());
+				if(historyDTO.getExpiryDate()!=null)
+				transactionDetailsDTO2.setExpiryDate(historyDTO.getExpiryDate());
+				if(historyDTO.getActivity()!=null)
 			    transactionDetailsDTO2.setActivity(historyDTO.getActivity());
 				detailsDTO[i]=transactionDetailsDTO2;
 				transactionDetailsDTO2=null;

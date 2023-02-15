@@ -82,7 +82,7 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 
 				managementResponseDTO.setRequestId(txnId);
 
-				logger.info("Status code " + genericDTO.getStatusCode());
+				logger.info("Status code " + managementRequestDTO.getStatusCode());
 				if (managementRequestDTO.getStatusCode().equalsIgnoreCase("SC0000")) {
 					logger.info("Status code " + genericDTO.getStatusCode());
 					// managementRequestDTO = (ServiceManagementRequestDTO) genericDTO.getObj();
@@ -92,8 +92,7 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 					managementResponseDTO=new LoyaltyResponseDTO();
 					managementResponseDTO.setRespCode("SC001");
 					managementResponseDTO.setRespDesc("FAILURE");
-					logger.info(
-							"Transaction id {} Description{} " + txnId + managementResponseDTO.getRespDesc());
+					
 				}
 				managementResponseDTO.setTimestamp(t3);
 			} else {
@@ -103,7 +102,7 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 				managementResponseDTO.setRespCode("400");
 				managementResponseDTO.setRespDesc("Missing Mandatory Parameters");
 			}
-
+			logger.info("Status code " + managementResponseDTO.getRespCode()+"responseDesc:"+managementResponseDTO.getRespDesc());
 		}
 
 		catch (Exception e) {

@@ -40,7 +40,7 @@ import com.sixdee.service.impl.PointEarnServiceImpl;
 import com.sixdee.service.impl.TransactionManagementServiceImpl;
 
 @RestController
-@RequestMapping("/loyaltyMangamement")
+@RequestMapping("/loyaltyManagement")
 @CrossOrigin(origins = "*")
 public class ManagementController {
 
@@ -297,7 +297,7 @@ public class ManagementController {
 	public LoyaltyResponseDTO PointaddService(@RequestHeader("Authorization") String bearerToken,
 			@PathVariable("phoneNumber") String phoneNumber, @RequestHeader Map<String, String> headers,
 			@RequestBody(required = false) @Valid RequestPoint requestPoint) {
-		logger.info("**inside Add/Sub Point***");
+		logger.info("**inside Add/Sub Point***");	logger.info("**inside Add/Sub Point***");
 		LoyaltyResponseDTO response = null;
 		long t1 = System.currentTimeMillis();
 		Map<String, String> lowerCaseMap = null;
@@ -347,9 +347,9 @@ public class ManagementController {
 			}
 
 		} catch (Exception ex) {
-
+			logger.info("**Exception***"+ex);
 		}
-
+		logger.info("**response***"+response);
 		return response;
 	}
 

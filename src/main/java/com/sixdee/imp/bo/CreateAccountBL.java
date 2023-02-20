@@ -106,7 +106,7 @@ public class CreateAccountBL extends BOCommon {
 			    	 }
 				 genericDTO.setObj(createAccountDTO);
 				 
-				 logger.info("TransactionId"+createAccountDTO.getTransactionId()+" status code "+genericDTO.getStatusCode());
+				 logger.info("TransactionId"+createAccountDTO.getTransactionId()+" status code "+createAccountDTO.getStatusCode());
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

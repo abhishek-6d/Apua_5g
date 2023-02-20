@@ -20,6 +20,8 @@ import com.sixdee.imp.dto.ServiceMappingDTO;
 import com.sixdee.imp.dto.ServiceStatusDTO;
 import com.sixdee.imp.dto.TierInfoDTO;
 import com.sixdee.lms.dto.OnlineTriggerTableDTO;
+import com.sixdee.lms.dto.persistent.ExtNotificationDTO;
+import com.sixdee.lms.dto.persistent.TriggerDetailsDTO;
 import com.thoughtworks.xstream.XStream;
 
 public class Cache 
@@ -83,7 +85,8 @@ public class Cache
 	public static Map<Integer, ArrayList<OnlineTriggerTableDTO>> triggerTableMap = null; 
 	public static Map<String,String> accountCategoryType;
 	public static Map<String, SecurityTokenDto> securityTokenDetailsMap = null;
-	
+	public static Map<String, ExtNotificationDTO> extTriggerMasterMap = null; 
+	public static Map<String, TriggerDetailsDTO> reTriggersMap = null;
 	
 	
 	
@@ -297,5 +300,19 @@ public class Cache
 	public static void setSecurityTokenDetailsMap(Map<String, SecurityTokenDto> securityTokenDetailsMap) {
 		Cache.securityTokenDetailsMap = securityTokenDetailsMap;
 	}
-	
+	public static Map<String, TriggerDetailsDTO> getReTriggersMap() {
+		return reTriggersMap;
+	}
+
+	public static void setReTriggersMap(Map<String, TriggerDetailsDTO> reTriggersMap) {
+		Cache.reTriggersMap = reTriggersMap;
+	}
+	public static Map<String, ExtNotificationDTO> getExtTriggerMasterMap() {
+		return extTriggerMasterMap;
+	}
+
+	public static void setExtTriggerMasterMap(
+			Map<String, ExtNotificationDTO> extTriggerMasterMap) {
+		Cache.extTriggerMasterMap = extTriggerMasterMap;
+	}
 }

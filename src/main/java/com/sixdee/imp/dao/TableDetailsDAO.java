@@ -57,6 +57,7 @@ public class TableDetailsDAO {
 			query.setString("msisdnData", msisdnData);
 			query.setInteger("status", status);
 			List<BlackListDTO> blackListDTOs = query.list();
+			logger.info(" blackListDTOs Size "+blackListDTOs.size());
 			if (blackListDTOs != null && blackListDTOs.size() > 0) {
 				isBlacklisted=true;
 			}
@@ -145,7 +146,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			String sql = " FROM " + tableName + " WHERE (subscriberNumber=? OR loyaltyID=?)";
 			logger.info("query "+ sql);
 			if (loyaltyID != null && loyaltyID > 0)
-				sql += " AND loyaltyID=?2 ";
+				sql += " AND loyaltyID=? ";
 
 			Query query = session.createQuery(sql);
 			query.setParameter(0, subscriberNumber);
@@ -412,7 +413,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			// trx = session.beginTransaction();
 			String tableName = infoDAO.getNationalNumberDBTable(nationalNumber + "");
 
-			String sql = " SELECT NATIONAL_ID,LOYALTY_ID " + " FROM " + tableName + " WHERE NATIONAL_ID=?0 ";
+			String sql = " SELECT NATIONAL_ID,LOYALTY_ID " + " FROM " + tableName + " WHERE NATIONAL_ID=? ";
 
 			if (loyaltyID != null && loyaltyID > 0)
 				sql += " AND LOYALTY_ID=?1 ";
@@ -463,7 +464,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			// trx = session.beginTransaction();
 			String tableName ="NATIONAL_NUMBER_ENTITY_0";
 
-			String sql = " FROM " + tableName + " WHERE LOYALTY_ID=?0 ";
+			String sql = " FROM " + tableName + " WHERE LOYALTY_ID=? ";
 
 			Query query = session.createQuery(sql);
 
@@ -614,7 +615,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			//trx = session.beginTransaction();
 			String tableName = infoDAO.getLoyaltyRegisteredNumberDBTable(loyaltyID + "");
 
-			String sql = " SELECT LOYALTY_ID,ACCOUNT_NO,LINKED_NO,STATUS_ID,STATUS_UPDATED_DATE,ACCOUNT_TYPE " + " FROM " + tableName + " WHERE LOYALTY_ID=?0 AND ACCOUNT_NO=?1";
+			String sql = " SELECT LOYALTY_ID,ACCOUNT_NO,LINKED_NO,STATUS_ID,STATUS_UPDATED_DATE,ACCOUNT_TYPE " + " FROM " + tableName + " WHERE LOYALTY_ID=? AND ACCOUNT_NO=?";
 
 			Query query = session.createSQLQuery(sql);
 			query.setParameter(0, loyaltyID);
@@ -681,7 +682,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			//trx = session.beginTransaction();
 			String tableName = infoDAO.getLoyaltyRegisteredNumberDBTable(loyaltyID + "");
 
-			String sql = " SELECT LOYALTY_ID,ACCOUNT_NO,LINKED_NO,STATUS_ID,STATUS_UPDATED_DATE,ACCOUNT_TYPE " + " FROM " + tableName + " WHERE LOYALTY_ID=?0 AND LINKED_NO=?1";
+			String sql = " SELECT LOYALTY_ID,ACCOUNT_NO,LINKED_NO,STATUS_ID,STATUS_UPDATED_DATE,ACCOUNT_TYPE " + " FROM " + tableName + " WHERE LOYALTY_ID=? AND LINKED_NO=?";
 
 			logger.info("Query for " + loyaltyID + " " + subsNumber);
 			Query query = session.createSQLQuery(sql);
@@ -1335,7 +1336,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			session = HiberanteUtil.getSessionFactory().openSession();
 			//trx = session.beginTransaction();
 
-			String sql = "SELECT SERVICE_ID,SERVICE_NAME,ACTION_NAME,ACTION_TYPE,NO_OF_TIMES,VALIDITY,VALIDITY_TYPE,START_TIME,END_TIME," + "IS_EVERY_DAY,ISREPEAT,PARENT_ID,START_DATE,END_DATE FROM ACTION_SERVICE_DETAILS WHERE  SERVICE_ID=?0 ";
+			String sql = "SELECT SERVICE_ID,SERVICE_NAME,ACTION_NAME,ACTION_TYPE,NO_OF_TIMES,VALIDITY,VALIDITY_TYPE,START_TIME,END_TIME," + "IS_EVERY_DAY,ISREPEAT,PARENT_ID,START_DATE,END_DATE FROM ACTION_SERVICE_DETAILS WHERE  SERVICE_ID=? ";
 
 			Query query = session.createSQLQuery(sql).setParameter(0, serviceId);
 
@@ -1427,7 +1428,7 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			session = HiberanteUtil.getSessionFactory().openSession();
 			
 
-			String sql = "SELECT LOYALTY_ID " + " FROM " + infoDAO.getLoyaltyProfileDBTable(loyaltyID + "") + " WHERE LOYALTY_ID = ?0";
+			String sql = "SELECT LOYALTY_ID " + " FROM " + infoDAO.getLoyaltyProfileDBTable(loyaltyID + "") + " WHERE LOYALTY_ID = ?";
 
 			Query query = session.createSQLQuery(sql);
 			query.setParameter(0, loyaltyID);

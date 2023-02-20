@@ -46,7 +46,7 @@ public class LoyaltyAccountCreationUtil {
 			transaction = session.beginTransaction();
 			infoDAO = new TableInfoDAO();
 			tableName=infoDAO.getLoyaltyProfileTable(loyaltyProfileTabDTO.getLoyaltyID()+"");
-			
+			logger.info("tableName:"+tableName);
 			//loyaltyProfileManagerDAO.persistLoyaltyAccount(session, transaction, loyaltyProfileTabDTO);
 			loyaltyProfileManagerDAO.persistLoyaltyAccount(session,transaction,tableName,loyaltyProfileTabDTO);
 		

@@ -6,7 +6,7 @@
 
 	<class name="CustomerProfileTabDTO" table="CUSTOMER_PROFILE">
 		<comment>Customer Profile</comment>
-		<id name="loyaltyId" type="java.lang.Integer" column="LOYALTY_ID" >
+		<id name="loyaltyId" type="java.lang.Long" column="LOYALTY_ID" >
 		</id>
 		
 		<property name="accountNo" column="ACCOUNT_NO"/>

@@ -56,6 +56,8 @@ import com.sixdee.imp.service.httpcall.dto.SubscriberDataSet;
 import com.sixdee.imp.service.httpcall.dto.SubscriberRequest;
 import com.sixdee.imp.service.httpcall.dto.SubscriberRequestParam;
 import com.sixdee.lms.dto.OnlineTriggerTableDTO;
+import com.sixdee.lms.dto.persistent.ExtNotificationDTO;
+import com.sixdee.lms.dto.persistent.TriggerDetailsDTO;
 import com.sixdee.ussd.dto.TierLanguageMappingDTO;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.core.util.QuickWriter;
@@ -121,9 +123,79 @@ public class Globals
 		loadOnlineTriggers();
 		loadInterfaceDetails();
 		loadSecurityTokenDetails();
+		loadReTriggers();
+		loadExtTriggerMaster();
 	}
 	
 	
+	private static void loadExtTriggerMaster() {
+		log.info("*****loadExtTriggerMaster****");
+		Session session = null;
+		Transaction transaction = null;
+		Criteria criteria = null;
+		HashMap<String, ExtNotificationDTO> map = null;
+		try {
+			map = new HashMap<String, ExtNotificationDTO>();
+			session = HiberanteUtil.getSessionFactory().openSession();
+			transaction = session.beginTransaction();
+			criteria = session.createCriteria(ExtNotificationDTO.class);
+			List<ExtNotificationDTO> list = criteria.list();
+			for (ExtNotificationDTO extNotificationDTO : list) {
+				
+				map.put(extNotificationDTO.getKeyword(), extNotificationDTO);
+			}
+			transaction.commit();
+			Cache.setExtTriggerMasterMap(map);
+			log.info("loadExtTriggerMaster :"+map);
+		} catch (HibernateException h) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+
+		} catch (Exception e) {
+			log.error("Exception in loadExtTriggerMaster " + e);
+			e.printStackTrace();
+		} finally {
+			if (session != null && session.isOpen()) {
+				session.close();
+				session = null;
+			}
+		}
+	}
+	private static void loadReTriggers() {
+		log.info("*****loadReTriggers****");
+		Session session = null;
+		Transaction transaction = null;
+		Criteria criteria = null;
+		HashMap<String, TriggerDetailsDTO> map = null;
+		try {
+			map = new HashMap<String, TriggerDetailsDTO>();
+			session = HiberanteUtilRule.getSessionFactory().openSession();
+			transaction = session.beginTransaction();
+			criteria = session.createCriteria(TriggerDetailsDTO.class);
+			List<TriggerDetailsDTO> list = criteria.list();
+			for (TriggerDetailsDTO triggerDetailsDTO : list) {
+				
+				map.put(triggerDetailsDTO.getTriggerName(), triggerDetailsDTO);
+			}
+			transaction.commit();
+			Cache.setReTriggersMap(map);
+			log.info("loadReTriggers ::"+map);
+		} catch (HibernateException h) {
+			if (transaction != null) {
+				transaction.rollback();
+			}
+
+		} catch (Exception e) {
+			log.error("Exception in loadReTriggers " + e);
+			e.printStackTrace();
+		} finally {
+			if (session != null && session.isOpen()) {
+				session.close();
+				session = null;
+			}
+		}
+	}
 	
 	private static void loadAccountCategories() {
 		HashMap<String,String> accountCategories = new HashMap<String, String>();

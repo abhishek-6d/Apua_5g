@@ -5,6 +5,7 @@ package com.sixdee.lms.util;
 
 import org.apache.log4j.Logger;
 
+import com.sixdee.imp.common.config.Cache;
 import com.sixdee.lms.dao.RealTimeTriggerDAO;
 import com.sixdee.lms.dto.persistent.ExtNotificationDTO;
 import com.sixdee.lms.dto.persistent.TriggerDetailsDTO;
@@ -24,12 +25,12 @@ public class RealTimeTriggerUtil {
 		try {
 			realTimeTriggerDAO = new RealTimeTriggerDAO();
 			// extNotificationDTO = realTimeTriggerDAO.getNotificationProperties(keyword);
-			extNotificationDTO = (ExtNotificationDTO) realTimeTriggerDAO
-					.getNotificationProperties(ExtNotificationDTO.class, keyword);
+			//extNotificationDTO = (ExtNotificationDTO) realTimeTriggerDAO.getNotificationProperties(ExtNotificationDTO.class, keyword);
+			extNotificationDTO = Cache.getExtTriggerMasterMap().get(keyword);
 			if (extNotificationDTO != null) {
 				logger.info("extNotificationDTO dto " + extNotificationDTO.toString());
-				triggerDetailsDTO = (TriggerDetailsDTO) realTimeTriggerDAO
-						.getNotificationPropertiesRule(TriggerDetailsDTO.class, extNotificationDTO.getTrigger());
+				//triggerDetailsDTO = (TriggerDetailsDTO) realTimeTriggerDAO.getNotificationPropertiesRule(TriggerDetailsDTO.class, extNotificationDTO.getTrigger());
+				 triggerDetailsDTO = Cache.getReTriggersMap().get(extNotificationDTO.getTrigger());
 				logger.info("Triggers dto " + triggerDetailsDTO.toString());
 				logger.info("Trigger Id " + triggerDetailsDTO.getTriggerId());
 				if (triggerDetailsDTO != null)

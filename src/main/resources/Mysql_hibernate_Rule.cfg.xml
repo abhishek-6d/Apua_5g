@@ -41,9 +41,9 @@
         <property name="hibernate.connection.zeroDateTimeBehavior">CONVERT_TO_NULL</property>
       
 	    <mapping resource="RuleCdrDTO.hbm.xml"/>  
-   <mapping resource="OnlineTriggerTableDTO.hbm.xml"/>
+        <mapping resource="OnlineTriggerTableDTO.hbm.xml"/>
         <mapping resource="Trigger.hbm.xml"/>
-
+        <mapping resource="ExtTriggerMaster.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

@@ -25,7 +25,7 @@
 	</class>
 	
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_1" table="SUBSCRIBER_NUMBER_1">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_1" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -44,7 +44,7 @@
 		<property name="pointsUpdatedDate" column="POINTS_UPDATED_DATE"></property>
 	</class>
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_2" table="SUBSCRIBER_NUMBER_2">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_2" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -64,7 +64,7 @@
 	</class>
 	
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_3" table="SUBSCRIBER_NUMBER_3">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_3" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -84,7 +84,7 @@
 		<property name="pointsUpdatedDate" column="POINTS_UPDATED_DATE"></property>
 	</class>
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_4" table="SUBSCRIBER_NUMBER_4">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_4" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -103,27 +103,7 @@
 		<property name="pointsUpdatedDate" column="POINTS_UPDATED_DATE"></property>
 	</class>
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_5" table="SUBSCRIBER_NUMBER_5">
-		<id name="id" type="java.lang.Long" column="ID">
-		 <generator class="sequence">
-                <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
-            </generator>
-		</id>
-		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
-		<property name="loyaltyID" column="LOYALTY_ID"></property>
-		<property name="accountNumber" column="ACCOUNT_NO"></property>
-		<property name="points" column="POINTS"></property>
-		<property name="statusID" column="STATUS_ID"></property>
-		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
-		<property name="counter" column="COUNTER"></property>
-		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
-				<property name="createDate" column="CREATE_TIME"></property>
-		<property name="accountCategory" column="ACCOUNT_CATEGORY"></property>
-		<property name="pointsUpdatedDate" column="POINTS_UPDATED_DATE"></property>
-	</class>
-	
-	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_6" table="SUBSCRIBER_NUMBER_6">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_5" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -143,7 +123,7 @@
 	</class>
 	
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_7" table="SUBSCRIBER_NUMBER_7">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_6" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -163,7 +143,7 @@
 	</class>
 	
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_8" table="SUBSCRIBER_NUMBER_8">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_7" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
@@ -183,7 +163,27 @@
 	</class>
 	
 	
-	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_9" table="SUBSCRIBER_NUMBER_9">
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_8" table="SUBSCRIBER_NUMBER_0">
+		<id name="id" type="java.lang.Long" column="ID">
+		 <generator class="sequence">
+                <param name="sequence">SUBSCRIBER_NUMBER_seq</param>
+            </generator>
+		</id>
+		<property name="subscriberNumber" column="SUBSCRIBER_NUMBER"></property>
+		<property name="loyaltyID" column="LOYALTY_ID"></property>
+		<property name="accountNumber" column="ACCOUNT_NO"></property>
+		<property name="points" column="POINTS"></property>
+		<property name="statusID" column="STATUS_ID"></property>
+		<property name="statusUpdatedDate" column="STATUS_UPDATED_DATE"></property>
+		<property name="counter" column="COUNTER"></property>
+		<property name="accountTypeId" column="ACCOUNT_TYPE"></property>
+				<property name="createDate" column="CREATE_TIME"></property>
+		<property name="accountCategory" column="ACCOUNT_CATEGORY"></property>
+		<property name="pointsUpdatedDate" column="POINTS_UPDATED_DATE"></property>
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.SubscriberNumberTabDTO" entity-name="SUBSCRIBER_NUMNER_ENTITY_9" table="SUBSCRIBER_NUMBER_0">
 		<id name="id" type="java.lang.Long" column="ID">
 		 <generator class="sequence">
                 <param name="sequence">SUBSCRIBER_NUMBER_seq</param>

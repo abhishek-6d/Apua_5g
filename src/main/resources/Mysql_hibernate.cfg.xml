@@ -82,6 +82,13 @@
   <mapping resource="BlackListDTO.hbm.xml"/>
   <mapping resource="ServiceStatusDTO.hbm.xml"/>
   <mapping resource="CdrGeneralManagement.hbm.xml"/>
+   <mapping resource="TierAndBonusDetailsDTO.hbm.xml"/>
+    <mapping resource="ExtTriggerMaster.hbm.xml"/>
+    <mapping resource="RuleCdrDTO.hbm.xml"/>  
+        <mapping resource="OnlineTriggerTableDTO.hbm.xml"/>
+        <mapping resource="Trigger.hbm.xml"/>
+      
+   
   
     </session-factory>
 

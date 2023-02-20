@@ -49,6 +49,7 @@ public class OnlineRuleInitiatorBO implements BusinessLogics{
 			if(extNotificationDTO!=null && extNotificationDTO.getIsTrigger()==1){
 			if(Cache.triggerTableMap!=null){
 				onlineTableDTOList=Cache.getTriggerTableMap().get(extNotificationDTO.getTriggerId());
+				
 				if(onlineTableDTOList!=null){
 					for(OnlineTriggerTableDTO onlineTriggerTableDTO : onlineTableDTOList){
 						response = generateRECall(requestId,extNotificationDTO.getTrigger(),onlineTriggerTableDTO,request);

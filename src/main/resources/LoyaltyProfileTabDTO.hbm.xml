@@ -6,8 +6,7 @@
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_0">
   
   <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -51,8 +50,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_1"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_1">
   <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -94,8 +92,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_2"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_2">
   <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -138,8 +135,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_3"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_3">
  <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -182,8 +178,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_4"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_4">
 <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -226,8 +221,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_5"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_5">
  <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -270,8 +264,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_6"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_6">
   <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -314,8 +307,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_7"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_7">
  <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -358,8 +350,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_8"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_8">
  <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+	
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>
@@ -401,8 +392,7 @@
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_9"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_9">
  <id name="id" type="java.lang.Long" column="ID">
-		<generator class="native">
-            </generator>
+		
    </id>
 		
   <property name="loyaltyID" column="LOYALTY_ID"></property>

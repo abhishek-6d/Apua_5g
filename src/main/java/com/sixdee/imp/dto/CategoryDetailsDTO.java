@@ -84,12 +84,14 @@ public class CategoryDetailsDTO {
 	public void setTierID(int tierID) {
 		this.tierID = tierID;
 	}
-	
-	
 	@Override
 	public String toString() {
-		return "[ MIN Value : "+minValue+", MAX Value : "+maxValue+",Reward Points : "+rewardPoints+",Status Points : "+statusPoints+"]";
+		return "CategoryDetailsDTO [tierID=" + tierID + ", categoryID=" + categoryID + ", minValue=" + minValue
+				+ ", maxValue=" + maxValue + ", rewardPoints=" + rewardPoints + ", statusPoints=" + statusPoints + "]";
 	}
+	
+	
+
 	
 	
 }

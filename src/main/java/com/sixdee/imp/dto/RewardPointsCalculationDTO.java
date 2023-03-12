@@ -303,6 +303,13 @@ public class RewardPointsCalculationDTO extends CommonVO implements Serializable
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	@Override
+	public String toString() {
+		return "RewardPointsCalculationDTO [loyaltyID=" + loyaltyID + ", requestRewardPoints=" + requestRewardPoints
+				+ ", requestStatusPoints=" + requestStatusPoints + ", isSubscriber=" + isSubscriber
+				+ ", isStatusPoints=" + isStatusPoints + ", profileRewardPoints=" + profileRewardPoints
+				+ ", profileStatusoints=" + profileStatusoints + "]";
+	}
 	
 	
 	

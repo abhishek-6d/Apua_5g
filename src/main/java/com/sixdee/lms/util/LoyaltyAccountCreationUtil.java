@@ -46,7 +46,7 @@ public class LoyaltyAccountCreationUtil {
 			transaction = session.beginTransaction();
 			infoDAO = new TableInfoDAO();
 			tableName=infoDAO.getLoyaltyProfileTable(loyaltyProfileTabDTO.getLoyaltyID()+"");
-			logger.info("tableName:"+tableName);
+			
 			//loyaltyProfileManagerDAO.persistLoyaltyAccount(session, transaction, loyaltyProfileTabDTO);
 			loyaltyProfileManagerDAO.persistLoyaltyAccount(session,transaction,tableName,loyaltyProfileTabDTO);
 		
@@ -101,6 +101,7 @@ public class LoyaltyAccountCreationUtil {
 			loyaltyTransactionMap.put(LoyalityTransactionConstants.subscriberNumber,loyaltyProfileTabDTO.getContactNumber());//added S
 			loyaltyTransactionMap.put(LoyalityTransactionConstants.accountNumber,loyaltyProfileTabDTO.getAccountNumber());//added S
 			loyaltyTransactionMap.put(LoyalityTransactionConstants.statusDescription,Cache.getConfigParameterMap().get("ACCOUNT_CREATION_TXN_DESC").getParameterValue());
+			logger.info("Description:"+Cache.getConfigParameterMap().get("ACCOUNT_CREATION_TXN_DESC").getParameterValue()+"description after setting:"+Cache.getConfigParameterMap().get("ACCOUNT_CREATION_TXN_DESC").getParameterValue());
 			loyaltyCommonTransaction = new LoyalityCommonTransaction();
 			
 			loyalityTransaction = loyaltyCommonTransaction.loyaltyTransactionSetter(loyalityTransaction, loyaltyTransactionMap);

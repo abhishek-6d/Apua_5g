@@ -74,6 +74,7 @@ public class LoyaltyProfileTabDTO {
 	private String codesent;
 	
 	
+	
 	public String getNationality_Id() {
 		return nationality_Id;
 	}

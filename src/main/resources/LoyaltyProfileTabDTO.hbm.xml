@@ -23,6 +23,7 @@
   <property column="OCCUPATION" name="occupation"/>
   <property column="VIP_CODE" name="vipCode"/>
   <property column="CATEGORY" name="category"/>
+  <property column="ACCOUNT_TYPE" name="accountType"/>
   <property column="CREATE_TIME" name="createTime"/>
   <property column="TYPEOFFIRM" name="typeOfForm"/>
   <property column="ZODIACSIGN" name="zodiacSign"/>
@@ -45,6 +46,7 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
   <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
   <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+  <property column="RESERVE_POINT" name="reservePoints"/>
   
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_1"
@@ -86,8 +88,10 @@
   <property column="ARBIC_FIRST_NAME" name="arbicFirstName"/>
   <property column="ARBIC_LAST_NAME" name="arbicLastName"/>
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
+  <property column="ACCOUNT_TYPE" name="accountType"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+    <property column="RESERVE_POINT" name="reservePoints"/>
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_2"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_2">
@@ -130,6 +134,7 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+    <property column="RESERVE_POINT" name="reservePoints"/>
 
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_3"
@@ -173,6 +178,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
  </class>
  
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_4"
@@ -216,6 +223,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
       
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_5"
@@ -259,6 +268,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
       
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_6"
@@ -302,6 +313,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
 
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_7"
@@ -345,6 +358,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
 
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_8"
@@ -388,6 +403,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
  </class>
  <class dynamic-insert="true" entity-name="LOYALTY_PROFILE_ENTITY_9"
   name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" table="LOYALTY_PROFILE_9">
@@ -430,6 +447,8 @@
   <property column="ARBIC_ADDRESS" name="arbicAddress"/>
     <property column="POINTS_CREDITED_DATE" name="pointsCreditedDate"/>
     <property column="DAYWISE_REWARD_POINTS" name="dayWiseRewardPoints"/>
+      <property column="ACCOUNT_TYPE" name="accountType"/>
+      <property column="RESERVE_POINT" name="reservePoints"/>
  </class>
 </hibernate-mapping>
 

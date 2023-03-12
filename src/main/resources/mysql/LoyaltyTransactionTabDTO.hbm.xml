@@ -32,6 +32,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 		
 	</class>
 	
@@ -63,7 +64,8 @@
 		<property name="serverId" column="SERVER_ID"></property>
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
-		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>				
+		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>				
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_2" table="LOYALTY_TRANSACTION_2">
@@ -94,6 +96,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -125,6 +128,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_4" table="LOYALTY_TRANSACTION_4">
@@ -155,6 +159,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_5" table="LOYALTY_TRANSACTION_5">
@@ -185,6 +190,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -216,6 +222,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -247,6 +254,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -278,6 +286,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -309,6 +318,7 @@
 		<property name="testNumber" column="TEST_NUMBER"></property>
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	

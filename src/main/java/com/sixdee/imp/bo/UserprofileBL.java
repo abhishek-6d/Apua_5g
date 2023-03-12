@@ -77,9 +77,7 @@ public class UserprofileBL extends BOCommon {
 			userprofileDTO = (UserprofileDTO) genericDTO.getObj();
 		if (userprofileDTO.getSubscriberNumber() != null) {
 
-			logger.info("SUBSCRIBER NUMBER:" + userprofileDTO.getSubscriberNumber());
-			logger.info("PIN:" + userprofileDTO.getPin());
-			logger.info("IS_DOD VALUE:" + userprofileDTO.isDealOfDay());
+			
 			if(userprofileDTO.getSubscriberNumber()!=null &&userprofileDTO.isDealOfDay() ){
 				userprofileDTO.setActive(userprofileDAO.getSubscriberNumberDetails(userprofileDTO.getSubscriberNumber()));
 			}else
@@ -143,7 +141,7 @@ public class UserprofileBL extends BOCommon {
 				logger.info("loyaltyProfileDTO value before proccesing in else blk" + loyaltyProfileDTO);
 				// Long
 				// subscriberNum=Long.parseLong(userprofileDTO.getSubscriberNumber());
-				logger.info("SUB>>>>>>" + userprofileDTO.getSubscriberNumber());
+			
 				if (userprofileDTO.isNationalID()) {
 					String nationalId = userprofileDTO.getSubscriberNumber().replaceFirst("^0+(?!$)", "");
 					logger.info("NATIONAL ID FINAL NUMBER::" + nationalId);
@@ -163,7 +161,7 @@ public class UserprofileBL extends BOCommon {
 						subscriberNumDTO = tabDAO.getSubscriberNumberDetails(Long.parseLong(userprofileDTO.getSubscriberNumber()));
 
 						if (subscriberNumDTO != null) {
-							logger.info(">>>status map >>"+Cache.statusMap);
+							
 							if (subscriberNumDTO.getStatusID() != 1) {
 								logger.info("Subscriber Number is not Active Mode : " + userprofileDTO.getSubscriberNumber() + "  Mode : " + Cache.statusMap.get(subscriberNumDTO.getStatusID()));
 								genericDTO = commonUtil.getStatusCodeDescription(genericDTO, "SUBS_NOT_ACT_" + userprofileDTO.getLanguageId(), userprofileDTO.getTransactionId());
@@ -376,7 +374,7 @@ public class UserprofileBL extends BOCommon {
 						userprofileDTO.setAddress(loyaltyProfileDTO.getArbicAddress());
 
 					}
-
+					
 					logger.info("LoyalityId>>" + loyaltyProfileDTO.getLoyaltyID());
 					userprofileDTO.setLoyaltyID(loyaltyProfileDTO.getLoyaltyID());
 
@@ -459,6 +457,8 @@ public class UserprofileBL extends BOCommon {
 
 					logger.info("BonusPoint" + bonusPoint);
 					userprofileDTO.setBonuspoints(bonusPoint);
+					
+					//userprofileDTO.setAccountType(loyaltyProfileDTO.getAccountType());
 					
 					//getting next tier
 					/*NextTierInfoDTO nextTierInfoDTO = new NextTierInfoDTO();

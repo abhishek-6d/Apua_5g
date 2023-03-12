@@ -51,7 +51,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+	<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_1" table="LOYALTY_PROFILE_1">
@@ -101,7 +102,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_2" table="LOYALTY_PROFILE_2">
@@ -151,7 +153,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_3" table="LOYALTY_PROFILE_3">
@@ -201,7 +204,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_4" table="LOYALTY_PROFILE_4">
@@ -251,7 +255,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_5" table="LOYALTY_PROFILE_5">
@@ -301,7 +306,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_6" table="LOYALTY_PROFILE_6">
@@ -351,7 +357,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_7" table="LOYALTY_PROFILE_7">
@@ -401,7 +408,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_8" table="LOYALTY_PROFILE_8">
@@ -451,7 +459,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	<class name="com.sixdee.imp.dto.LoyaltyProfileTabDTO" entity-name="LOYALTY_PROFILE_ENTITY_9" table="LOYALTY_PROFILE_9">
@@ -501,7 +510,8 @@
 	<property column="RATE_PLAN" name="ratePlan"/>
 	<property column="NATIONALITY_ID" name="nationality_Id"/>
 	<property column="NATIONALITY_ID_TYPE" name="nationality_Id_Type"/>
-
+<property column="ACCOUNT_TYPE" name="accountType"/>
+<property column="RESERVE_POINT" name="reservePoints"/>
 				
 	</class>
 	

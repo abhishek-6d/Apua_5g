@@ -18,6 +18,9 @@ public class SystemConstants {
 	public static final String BASE_RATE_PLAN = "BASE_RATE_PLAN";
 	public static final String MOBILE_APP_SUBSCRIPTION_STATUS = "MOBILE_APP_SUBSCRIPTION_STSTUS";
 	public static final String BILL_CYCLE_TYPE = "BILL_CYCLE_TYPE";
+	public static final String FIRSTNAME = "first_name";
+	public static final String LASTNAME = "last_name";
+	public static final String ADDRESSES = "addresses";
 	public static final String FNAME = "FIRST_NAME";
 	public static final String LNAME = "LAST_NAME" ;
 	public static final String SUBSCRIPTION_ID = "SUBSCRIPTION_ID";

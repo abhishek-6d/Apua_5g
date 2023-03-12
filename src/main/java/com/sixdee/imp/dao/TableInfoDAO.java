@@ -187,7 +187,17 @@ public class TableInfoDAO {
 		return tablePrefix+tableName;
 		
 	}//getSubscriberNumberTable
-	
+	public String getAccountNumberTable(String accountNumber)
+	{
+		String tablePrefix="ACCOUNT_NUMBER_ENTITY";
+		int index=Integer.parseInt(Cache.getConfigParameterMap().get("ACCOUNT_NO_SUFFIX_LENGTH").getParameterValue());
+		String tableName="_0";
+		if(index>0)
+		 tableName="_"+accountNumber.substring(accountNumber.length()-index);
+		
+		return tablePrefix+tableName;
+		
+	}//getAccountNumberTable
 	
 	   public String getUserIdentifierTable(String loyaltyID)
 	    {
@@ -201,17 +211,7 @@ public class TableInfoDAO {
 	    }
 	   
 	   
-	public String getAccountNumberTable(String accountNumber)
-	{
-		String tablePrefix="ACCOUNT_NUMBER_ENTITY";
-		int index=Integer.parseInt(Cache.getConfigParameterMap().get("ACCOUNT_NO_SUFFIX_LENGTH").getParameterValue());
-		String tableName="_0";
-		if(index>0)
-		 tableName="_"+accountNumber.substring(accountNumber.length()-index);
-		
-		return tablePrefix+tableName;
-		
-	}//getAccountNumberTable
+	
 	
 	public String getNationalNumberTable(String nationnalNumber)
 	{

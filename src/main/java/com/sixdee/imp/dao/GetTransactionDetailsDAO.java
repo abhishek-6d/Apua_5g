@@ -212,8 +212,7 @@ public class GetTransactionDetailsDAO {
 
 			// criteria.setMaxResults(limit);
 			// query.list();
-			transactionList = (ArrayList<LoyaltyTransactionTabDTO>) criteria
-					.list();
+			transactionList = (ArrayList<LoyaltyTransactionTabDTO>) criteria.list();
 
 			// System.out.println(transactionList.get(0).getCreateTime());
 			//transaction.commit();

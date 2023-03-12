@@ -1645,7 +1645,8 @@ logger.info("inside getSubscriberNumberDetails"+" subscriber nuber "+subscriberN
 			logger.info("Exception in commiting the data-->"+e);
 		}
 		finally{
-			session.close();
+			if(session != null)
+				session.close();
 		}
 
 	}//updating the promodetails ***end sajith k s

@@ -34,6 +34,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 		<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 		
 	</class>
 	
@@ -67,7 +68,8 @@
 		<property name="volume" column="VOLUME"></property>
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>	
 				<property name="area" column="AREA"></property>
-		<property name="location" column="LOCATION"></property>		
+		<property name="location" column="LOCATION"></property>	
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>	
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_2" table="LOYALTY_TRANSACTION_2">
@@ -100,6 +102,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -133,6 +136,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_4" table="LOYALTY_TRANSACTION_4">
@@ -165,6 +169,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	<class  dynamic-insert="true" name="com.sixdee.imp.dto.LoyaltyTransactionTabDTO" entity-name="LOYALTY_TRANSACTION_ENTITY_5" table="LOYALTY_TRANSACTION_5">
@@ -197,6 +202,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -230,6 +236,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -263,6 +270,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -296,6 +304,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	
@@ -329,6 +338,7 @@
 		<property name="reqTransactionID" column="REQ_TRAN_ID"></property>
 				<property name="area" column="AREA"></property>
 		<property name="location" column="LOCATION"></property>
+		<property name="statusDesc" column="STATUS_DESCRIPTION"></property>
 	</class>
 	
 	

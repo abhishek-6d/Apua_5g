@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import com.sixdee.fw.dto.GenericDTO;
 import com.sixdee.imp.common.config.Cache;
 import com.sixdee.imp.dto.Json.RequestRealTimeTrigger;
+import com.sixdee.imp.response.ResponseDTO;
 import com.sixdee.imp.utill.Request;
 import com.sixdee.imp.utill.Response;
 import com.sixdee.lms.dto.OnlineTriggerTableDTO;
@@ -37,7 +38,7 @@ public class NotificationRequestProcessBO implements BusinessLogics{
 		InitiateRECallBO initiateRECallBO = null;
 		OnlineRuleInitiatorBO onlineRuleInitiatorBO = new OnlineRuleInitiatorBO();
 		List<OnlineTriggerTableDTO> onlineTableDTOList = null;
-		Response response = null;
+		ResponseDTO response = null;
 		try{
 			requestId = genericDTO.getRequestId();
 			realTimeTrigger = (RequestRealTimeTrigger) genericDTO.getObj();

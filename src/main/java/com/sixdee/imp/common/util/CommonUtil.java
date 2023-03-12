@@ -2,6 +2,7 @@ package com.sixdee.imp.common.util;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -23,8 +24,9 @@ import com.sixdee.imp.service.serviceDTO.common.Data;
 import com.sixdee.imp.utill.DataSet;
 import com.sixdee.imp.utill.Param;
 import com.sixdee.imp.utill.Request;
+import com.sixdee.imp.utill.RuleEngine.Parameters;
 import com.sixdee.lms.bo.OnlineRuleInitiatorBO;
-
+import org.hibernate.internal.SessionImpl;
 
 public class CommonUtil {
 	
@@ -86,7 +88,7 @@ public class CommonUtil {
 		
 	}//getStatusDescription
 	
-	@SuppressWarnings("unchecked")
+
 	public ArrayList<String> callProcedure(String callMethod, String loyaltyId, String points, int type){
 		logger.info("**************  callProcedure  *******************  " + callMethod);
 
@@ -99,9 +101,10 @@ public class CommonUtil {
 		Transaction txn = null;
 		long startTime=System.currentTimeMillis();
 		try {
-	
+			
 			session = HiberanteUtil.getSessionFactory().openSession();
-			//conn = session.connection();
+
+			conn = ((SessionImpl) session).connection();
 			txn = session.beginTransaction();
 			cstmt = conn.prepareCall(callMethod);
 
@@ -180,27 +183,29 @@ public class CommonUtil {
 	
 	public void generateNotifyRequest(String transactionId, String Keyword,String msisdn,
 			HashMap<String, String> map) {
+		
 		GenericDTO genericDTO2 = new GenericDTO();
 		Request request = new Request();
 		request.setRequestId(transactionId);
 		request.setMsisdn(msisdn);
 		request.setKeyWord(Keyword);
 		DataSet dataSet = new DataSet();
-		ArrayList<Param> paramList = new ArrayList<Param>();
+		ArrayList<Parameters> paramList = new ArrayList<Parameters>();
+		
 		
 		if(map!=null){
 			Set<String> s = map.keySet();
 			for(String key:s){
-				logger.info(">>key >>"+key);
-				Param p = new Param();
-				p.setId(key);
+				
+				Parameters p = new Parameters();
+				p.setName(key);
 				p.setValue(map.get(key));
 				paramList.add(p);
 			  	
 			}
 		}
 		
-		dataSet.setParameter1(paramList);
+		dataSet.setParameters(paramList);
 		request.setDataSet(dataSet);
 		
 		genericDTO2.setObj(request);

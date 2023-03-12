@@ -36,6 +36,24 @@ public class ServiceInfo{
     public List<ProfileInfo> profile_info;
     public String profile_first_name;
     public String profile_last_name;
+    public String first_name;
+    public String last_name;
+    
+    
+    
+    
+	public String getFirst_name() {
+		return first_name;
+	}
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
+	}
+	public String getLast_name() {
+		return last_name;
+	}
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
+	}
 	public String getService_type_id() {
 		return service_type_id;
 	}

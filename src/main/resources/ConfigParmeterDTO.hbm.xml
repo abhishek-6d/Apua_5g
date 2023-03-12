@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 5 Jul, 2013 11:13:57 AM by Hibernate Tools 3.3.0.GA -->
 <hibernate-mapping>
-    <class name="com.sixdee.ussd.dto.ConfigParmeterDTO" table="CONFIG_PARAMETERS">
+    <class name="com.sixdee.ussd.dto.ConfigParmeterDTO" table="LMS_CNFG_CONFIG_PARAMETERS">
         <id name="parameterId" type="int">
             <column name="PARAMETER_ID" />
             <generator class="assigned" />

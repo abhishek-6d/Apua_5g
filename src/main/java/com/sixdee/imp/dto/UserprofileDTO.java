@@ -74,10 +74,21 @@ public class UserprofileDTO extends CommonVO implements Serializable {
 
 	private String nextTierName;
 	private String pointsToNextTier;
+	private String accountType;
 	
 	
 	
 	
+	public String getAccountType() {
+		return accountType;
+	}
+
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+
 	public String getNextTierName() {
 		return nextTierName;
 	}

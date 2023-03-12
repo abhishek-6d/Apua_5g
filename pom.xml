@@ -222,6 +222,8 @@
     <artifactId>commons-httpclient</artifactId>
     <version>3.1</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/jakarta.resource/jakarta.resource-api -->
+
 
 		
 	</dependencies>
@@ -241,7 +243,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<!--<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>-->
+					<configuration>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

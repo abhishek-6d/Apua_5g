@@ -85,9 +85,10 @@
    <mapping resource="TierAndBonusDetailsDTO.hbm.xml"/>
     <mapping resource="ExtTriggerMaster.hbm.xml"/>
     <mapping resource="RuleCdrDTO.hbm.xml"/>  
-        <mapping resource="OnlineTriggerTableDTO.hbm.xml"/>
-        <mapping resource="Trigger.hbm.xml"/>
-      
+       <!--  <mapping resource="OnlineTriggerTableDTO.hbm.xml"/>
+        <mapping resource="Trigger.hbm.xml"/>-->
+      <mapping resource="LmsOnmPointSnapshot.hbm.xml"/>
+     <mapping resource="OnmRedemptionTransactionDTO.hbm.xml"/>
    
   
     </session-factory>

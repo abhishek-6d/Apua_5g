@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_1" table="LMS_ONM_REDEEM_TXN_1">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>-->
+		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+		
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_2" table="LMS_ONM_REDEEM_TXN_2">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+		
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_3" table="LMS_ONM_REDEEM_TXN_3">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+				
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_4" table="LMS_ONM_REDEEM_TXN_4">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+			
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_5" table="LMS_ONM_REDEEM_TXN_5">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+			
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_6" table="LMS_ONM_REDEEM_TXN_6">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+			
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_7" table="LMS_ONM_REDEEM_TXN_7">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+				
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_8" table="LMS_ONM_REDEEM_TXN_8">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+				
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_9" table="LMS_ONM_REDEEM_TXN_9">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+				
+	</class>
+	
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_10" table="LMS_ONM_REDEEM_TXN_10">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+				
+	</class>
+	
+	<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_0" table="LMS_ONM_REDEEM_TXN_0">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+		
+	</class>
+	
+		<class  dynamic-insert="true" name="com.sixdee.imp.dto.OnmRedemptionTransactionDTO" entity-name="LMS_ONM_REDEEM_TXN_12" table="LMS_ONM_REDEEM_TXN_12">
+		<id name="transactionId" column="TRANSACTION_ID">
+<!--			<generator class="native"></generator>
+-->		</id>
+		<property name="loyaltyId" column="LOYALTY_ID"></property>
+		<property name="redeemPoints" column="POINTS"></property>
+		<property name="moNumber" column="MO_NUMBER"></property>
+		<property name="packageId" column="PACKAGE_ID"></property>
+		<property name="processStartTime" column="PROCESSSTARTTIME"></property>
+		<property name="processEndTime" column="PROCESSENDTIME"></property>
+		<property name="status" column="STATUS"></property>
+		<property name="createTime" column="CREATE_TIME"></property>
+		<property name="updateTime" column="UPDATE_TIME"></property>
+			
+	</class>	
+	
+	
+	
+</hibernate-mapping>	

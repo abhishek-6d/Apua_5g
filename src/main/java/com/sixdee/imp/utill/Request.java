@@ -10,6 +10,7 @@ public class Request
 	private String msisdn;
 	private String timeStamp;
 	private String keyWord;
+	private String scheduleId;
 	private DataSet dataSet;
 	
 	public String getMsisdn() {
@@ -42,6 +43,13 @@ public class Request
 	public void setKeyWord(String keyWord) {
 		this.keyWord = keyWord;
 	}
+	public String getScheduleId() {
+		return scheduleId;
+	}
+	public void setScheduleId(String scheduleId) {
+		this.scheduleId = scheduleId;
+	}
+	
 	
 	
 }

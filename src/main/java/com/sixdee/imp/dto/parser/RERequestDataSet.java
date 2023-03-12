@@ -5,6 +5,8 @@ package com.sixdee.imp.dto.parser;
 
 import java.util.ArrayList;
 
+import com.sixdee.imp.utill.RuleEngine.Parameters;
+
 /**
  * @author Rahul K K
  * @version 1.0.0
@@ -28,6 +30,18 @@ import java.util.ArrayList;
 public class RERequestDataSet {
 	
 	private ArrayList<ReResponseParameter> responseParam = null;
+	
+	public ArrayList<Parameters> parameters=null;
+	
+	
+	
+	public ArrayList<Parameters> getParameters() {
+		return parameters;
+	}
+
+	public void setParameters(ArrayList<Parameters> parameters) {
+		this.parameters = parameters;
+	}
 
 	public ArrayList<ReResponseParameter> getResponseParam() {
 		return responseParam;

@@ -4,7 +4,7 @@
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.sixdee.imp.dto">
 
-	<class name="ConfigureParameterDTO" table="CONFIG_PARAMETERS">
+	<class name="ConfigureParameterDTO" table="LMS_CNFG_CONFIG_PARAMETERS">
 		<comment>CONFIG_PARAMETERS</comment>
 		<id name="parameterID" type="java.lang.Integer" column="PARAMETER_ID">
 		 <generator class="native"></generator>

@@ -54,6 +54,7 @@ public class CreateAccountBL extends BOCommon {
 		CreateLoyaltyAccountBO createLoyaltyAccountBO;
 		TableDetailsDAO tableDetailsDAO;
 		boolean isBlacklisted=false;
+		Long t1=System.currentTimeMillis();
 		try {
 			tableDetailsDAO=new TableDetailsDAO();
 			createLoyaltyAccountBO=new CreateLoyaltyAccountBO();
@@ -106,7 +107,7 @@ public class CreateAccountBL extends BOCommon {
 			    	 }
 				 genericDTO.setObj(createAccountDTO);
 				 
-				 logger.info("TransactionId"+createAccountDTO.getTransactionId()+" status code "+createAccountDTO.getStatusCode());
+				 logger.info("TransactionId"+createAccountDTO.getTransactionId()+" status code "+createAccountDTO.getStatusCode()+"TotalTime:"+(t1-System.currentTimeMillis()));
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -155,13 +156,17 @@ public class CreateAccountBL extends BOCommon {
 	
 	public void accountNotification(CreateAccountDTO createAccountDTO)
 	{
+		
+		String keyWord=null;
 		CommonUtil commonUtil = null;
 		try {
 			commonUtil = new CommonUtil();
 			HashMap<String, String> map = new HashMap<>();
 			map.put(SystemConstants.MSISDN, createAccountDTO.getMoNumber() + "");
 			map.put(SystemConstants.MSG_CAUSE, "CREATE_ACCOUNT_SUCCESS");
-			commonUtil.generateNotifyRequest(createAccountDTO.getTransactionId(), "NotifyCustomer",createAccountDTO.getMoNumber() + "", map);
+			keyWord=(Cache.getConfigParameterMap().get("KEY_WORD")).getParameterValue();
+			logger.info("keyWord:"+keyWord);
+			commonUtil.generateNotifyRequest(createAccountDTO.getTransactionId(),keyWord ,createAccountDTO.getMoNumber() + "", map);
 		} catch (Exception e) {
 			logger.info("Exception " + e.getMessage());
 		}finally

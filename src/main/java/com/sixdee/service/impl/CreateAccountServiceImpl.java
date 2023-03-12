@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.httpclient.HttpStatus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -38,7 +41,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 	boolean check = false;
 	private Logger logger = LogManager.getLogger(CreateAccountServiceImpl.class);
 
-	public ResponsesDTO createAccount(String phoneNumber, Map<String, String> headers) {
+	public ResponsesDTO createAccount(String phoneNumber, Map<String, String> headers,HttpServletResponse servletResponse) {
 		ResponsesDTO responseDTO = new ResponsesDTO();
 		CommonUtil commonUtil = null;
 		LanguageDAO languageDAO = null;
@@ -71,10 +74,21 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 						request.setLanguageID(headers.get(key));
 				}
 				request.setTransactionId(txnId);
-				request.setMoNumber(Long.valueOf(phoneNumber));
-				logger.info("requestId:{} channel:{} MobNumber:{} defaultlanguage:{}" , request.getTransactionId(), request.getChannel(),
-						request.getMoNumber(),Cache.cacheMap.get("DEFAULT_LANGUAGE_ID"));
+				
+				logger.info("requestId:{} channel:{} MobNumber:{} defaultlanguage:{}" , request.getTransactionId(), request.getChannel(),request.getMoNumber(),Cache.cacheMap.get("DEFAULT_LANGUAGE_ID"));
 
+				String subscriberCountryCode=Cache.getConfigParameterMap().get("SUBSCRIBER_COUNTRY_CODE").getParameterValue();
+				Integer subscriberSize=Integer.parseInt(Cache.getConfigParameterMap().get("SUBSCRIBER_NUMBER_LENGTH").getParameterValue());
+				if(phoneNumber!=null&&(phoneNumber.length()==subscriberSize)) {
+					request.setMoNumber(Long.valueOf(subscriberCountryCode+phoneNumber));
+				}else {
+					request.setMoNumber(Long.valueOf(phoneNumber));
+				}
+					
+				
+					
+				
+				
 				responseDTO.setTranscationId(request.getTransactionId());
 
 				if (request.getMoNumber() != null && !request.getMoNumber().equals("")) {
@@ -95,6 +109,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 							.getStatusCode());
 					responseDTO.setReason(Cache.getServiceStatusMap().get("LOYALTY_SUCCESS_" + request.getLanguageID())
 							.getStatusDesc());
+					servletResponse.setStatus(HttpStatus.SC_OK);
 					
 				}else {
 					responseDTO.setCode(
@@ -103,13 +118,14 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 							Cache.getServiceStatusMap().get("LOYALTY_FAIL_" + request.getLanguageID()).getStatusDesc());
 					logger.info(request.getTransactionId() + ": "
 							+ Cache.getServiceStatusMap().get("LOYALTY_FAIL_" + request.getLanguageID()).getStatusDesc());
-					
+					servletResponse.setStatus(HttpStatus.SC_INTERNAL_SERVER_ERROR);
 				}
 
 			} else {
 				responseDTO = new ResponsesDTO();
 				responseDTO.setCode("500");
 				responseDTO.setReason("Missing Mandatory Parameters");
+				servletResponse.setStatus(HttpStatus.SC_BAD_REQUEST);
 			}
 			responseDTO.setTranscationId(txnId);
 			//responseDTO.setTimestamp(System.currentTimeMillis());
@@ -135,7 +151,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 		return responseDTO;
 	}
 
-	public ResponsesDTO deleteLoyaltyAccount(String phoneNumber, Map<String, String> headers) {
+	public ResponsesDTO deleteLoyaltyAccount(String phoneNumber, Map<String, String> headers,HttpServletResponse servletResponse) {
 		CommonUtil commonUtil = null;
 		String lanId = Cache.defaultLanguageID;
 		ResponsesDTO responseDTO = null;
@@ -163,7 +179,10 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 				accountDTO.setTransactionId(txnId);
 				status=Cache.cacheMap.get("DELETE_ACCOUNT_STATUS");
 				accountDTO.setStatus(status);
-				accountDTO.setMoNumber(Long.valueOf(phoneNumber));
+				if(phoneNumber!=null){
+					accountDTO.setMoNumber(Long.valueOf(commonUtil.discardCountryCodeIfExists(phoneNumber)));
+				}
+				
 				accountDTO.setDelete(true);
 				if (accountDTO != null && accountDTO.getLangId() == null
 						&& accountDTO.getLangId().equalsIgnoreCase("")) {
@@ -175,8 +194,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 						&& !accountDTO.getTransactionId().equalsIgnoreCase("")) {
 					if (accountDTO.getChannel() != null && !accountDTO.getChannel().equalsIgnoreCase("")) {
 						if (accountDTO.getMoNumber() != null) {
-							logger.info("TransactionId " + txnId + " MO Number " + accountDTO.getMoNumber()
-									+ " Channel : " + accountDTO.getChannel() + " Request Recieved in System ");
+							logger.info("TransactionId " + txnId + " MO Number " + accountDTO.getMoNumber()+ " Channel : " + accountDTO.getChannel() + " Request Recieved in System ");
 
 							deleteAccountBL = new DeleteAccountBL();
 							genericDTO.setObj(accountDTO);
@@ -198,22 +216,23 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 										Cache.getServiceStatusMap().get("DELETE_SUCCESS_" + lanID).getStatusDesc());
 								responseDTO.setStatus("Registered subscriber status-"+status);
 								responseDTO.setMessage("Loyalty account deleted succesfully");
+								servletResponse.setStatus(HttpStatus.SC_OK);
 							}else {
 								responseDTO.setCode(genericDTO.getStatusCode());
 								responseDTO.setReason(genericDTO.getStatus());
 								responseDTO.setReason("Subscriber Not Registered");
 								responseDTO.setMessage("Please Pass Valid Subscriber");
+								servletResponse.setStatus(HttpStatus.SC_BAD_REQUEST);
 							}
-							logger.info(
-									"TransactionId " + txnId + " Delete Account Status Code" + responseDTO.getReason());
-							logger.info("TransactionId " + txnId + " Delete Account Status Description"
-									+ responseDTO.getReason());
+						
+							
 						} else {
 							responseDTO = new ResponsesDTO();
 							responseDTO.setReason("Authenticated value not passing");
 							responseDTO.setMessage("Please pass uthenticated value");
 							responseDTO.setCode("500");
 							responseDTO.setReason("Missing Mandatory Parameters");
+							servletResponse.setStatus(HttpStatus.SC_BAD_REQUEST);
 						}
 
 					} else {
@@ -237,7 +256,10 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 				responseDTO.setMessage("Please pass uthenticated value");
 				responseDTO.setCode("500");
 				responseDTO.setReason("Missing Mandatory Parameters");
+				servletResponse.setStatus(HttpStatus.SC_BAD_REQUEST);
 			}
+			logger.info("TransactionId " + txnId + " Delete Account Status Description"
+					+ responseDTO.getReason());
 		} catch (Exception e) {
 			logger.error("TransactionId" + txnId + " Exception e" + e.getMessage());
 			e.printStackTrace();
@@ -259,7 +281,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 	
 
 	@Override
-	public UserResponseDTO getUserProfile(String subscriberNumber, Map<String, String> headers) {
+	public UserResponseDTO getUserProfile(String subscriberNumber, Map<String, String> headers,HttpServletResponse servletResponse) {
 		CommonUtil commonUtil = new CommonUtil();
 		LanguageDAO languageDAO = new LanguageDAO();
 		SubscriberListCheckDAO subslistDAO = null;
@@ -295,15 +317,12 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 					if (key.equalsIgnoreCase("CHANNEL"))
 						channel = (headers.get(key));
 				}
-
-				userProfileDTO.setSubscriberNumber(subscriberNumber);
-
-				logger.info("Service : GetUserProfile  -- TRANSACTION ID : " + txnId + " SUBSCRIBER NUMBER: "
-						+ subscriberNumber + " Request Recieved in System");
-				logger.debug("PIN::" + userProfileDTO.getPin());
-				logger.debug("CHANNEL::" + userProfileDTO.getChannel());
-				logger.debug("Language ID ::" + userProfileDTO.getLanguageId());
-
+				if(subscriberNumber!=null){
+					userProfileDTO.setSubscriberNumber(commonUtil.discardCountryCodeIfExists(subscriberNumber));
+				}
+			
+				logger.info("Service : GetUserProfile  -- TRANSACTION ID : " + txnId + " SUBSCRIBER NUMBER: "+ subscriberNumber + " Request Recieved in System");
+				
 				
 				boolean valid = false;
 
@@ -322,7 +341,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 
 				if (userProfileDTO.getData() != null && userProfileDTO.getData().length > 0) {
 					List<Data> list = new ArrayList<Data>(Arrays.asList(userProfileDTO.getData()));
-					logger.info("the size of the list---->" + list.size());
+					
 					for (int i = 0; i < list.size(); i++) {
 						if (list.get(i) != null && list.get(i).getName() != null
 								&& !list.get(i).getName().trim().equals("")
@@ -332,7 +351,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 
 				}
 
-				logger.info("The value of valid---->" + valid);
+				
 
 				if (!valid && commonUtil.isItChar(subscriberNumber)) {
 					logger.info("ADSL Checking");
@@ -366,7 +385,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 				genericDTO = userprofileBL.buildProcess(genericDTO);
 
 				// UserDTO profileDTO=new UserDTO();
-				
+
 				profileDTO.setId(txnId);
 
 				if (genericDTO == null) {
@@ -391,19 +410,24 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 					 * profileDTO.setStatusDescription(Cache.getServiceStatusMap().get(
 					 * "GET_USER_PROFILE_SUCCESS_" + langId).getStatusDesc());
 					 */
-					profileDTO.setId(txnId);
+					logger.info("Category"+dto.getCategory());
+					profileDTO.setId(String.valueOf(dto.getLoyaltyID()));
 					profileDTO.setLoyaltyTier(String.valueOf(dto.getTierpoints()));
 
 					LoyaltyBalance loyaltyBalance = new LoyaltyBalance();
-					loyaltyBalance.setId(txnId);
+					loyaltyBalance.setId(String.valueOf(dto.getLoyaltyID()));
 					loyaltyBalance.setBalance(String.valueOf(dto.getRewardPoints()));
 					loyaltyBalance.setBonusPoints(String.valueOf(dto.getBonuspoints()));
 					loyaltyBalance.setStatusPoints(String.valueOf(dto.getStatusPoints()));
+					loyaltyBalance.setCategory(dto.getCategory());
 					loyaltyBalance.setStatusUpdateDate(
 							dto.getStatusUpdatedDate() != null ? dto.getStatusUpdatedDate() + "" : "");
-					loyaltyBalance.setCategory(dto.getTierName());
+					loyaltyBalance.setTierUpdateDate(
+							dto.getTierUpdatedDate() != null ? dto.getTierUpdatedDate() + "" : "");
+					
+					
 					ExpiringPoints expiringPoints = new ExpiringPoints();
-					expiringPoints.setDate("2018-09-30");
+					expiringPoints.setDate("2030-09-30");
 					expiringPoints.setPoints("0");
 					loyaltyBalance.setExpiringPoints(expiringPoints);
 					loyaltyBalanceList = new ArrayList<LoyaltyBalance>();
@@ -421,8 +445,9 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 
 					profileDTO.setCode("SC0000");
 					profileDTO.setReason("SUCCESS");
+					servletResponse.setStatus(HttpStatus.SC_OK);
 					logger.info("dto.isDealOfDay()>>>>>>>>" + dto.isDealOfDay());
-					logger.info("isActive()>>>>>>>>" + dto.isActive());
+					logger.info("isActive()>>>>>>>>" + dto.toString());
 					if (dto.isDealOfDay()) {
 						/*
 						 * datas = new Data[2]; data = new Data(); data.setName("IS_DOD_ELIGIBLE");
@@ -512,6 +537,7 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 				else if (genericDTO.getStatusCode().equalsIgnoreCase("SC1000") && genericDTO.getStatus() != null) {
 
 					// profileDTO.setStatusCode("SC1000");
+					servletResponse.setStatus(HttpStatus.SC_INTERNAL_SERVER_ERROR);
 					profileDTO.setCode(
 							Cache.getServiceStatusMap().get("GET_USER_PROFILE_FAIL_" + langId).getStatusCode());
 					profileDTO.setReason(genericDTO.getStatus());
@@ -522,11 +548,13 @@ public class CreateAccountServiceImpl implements CreateAccountService {
 					// profileDTO.setStatusCode("SC1000");
 					// profileDTO.setStatusCode(Cache.getServiceStatusMap().get("SUBS_NOT_ACT_" +
 					// langId).getStatusCode());
+					servletResponse.setStatus(HttpStatus.SC_INTERNAL_SERVER_ERROR);
 					profileDTO.setCode(genericDTO.getStatusCode());
 					profileDTO.setReason(genericDTO.getStatus());
 					logger.info("DESCRIPTION>>>>>>>>" + profileDTO.getReason());
 				} else {
 					logger.info("Failure");
+					servletResponse.setStatus(HttpStatus.SC_INTERNAL_SERVER_ERROR);
 					if (genericDTO.getStatus() == null && genericDTO.getStatusCode() == null) {
 						profileDTO.setCode(
 								Cache.getServiceStatusMap().get("GET_USER_PROFILE_INVALID_" + langId).getStatusCode());

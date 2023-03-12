@@ -2,12 +2,16 @@ package com.sixdee.service.impl;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.httpclient.HttpStatus;
 import org.apache.log4j.Logger;
 
 import com.sixdee.fw.dto.GenericDTO;
 import com.sixdee.imp.bo.ServiceManagermentBL;
 import com.sixdee.imp.common.config.Cache;
 import com.sixdee.imp.common.dao.LanguageDAO;
+import com.sixdee.imp.common.util.CommonUtil;
 import com.sixdee.imp.dto.LoyaltyResponseDTO;
 import com.sixdee.imp.dto.ServiceManagementDTO;
 import com.sixdee.imp.service.GeneralManagement;
@@ -24,11 +28,11 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 	// SubscriberListCheckDAO subslistDAO=new SubscriberListCheckDAO();
 	// boolean check=false;
 
-	public LoyaltyResponseDTO serviceManagement(String subscriberNumber, Map<String, String> headers) {
+	public LoyaltyResponseDTO serviceManagement(String subscriberNumber, Map<String, String> headers,HttpServletResponse servletResponse) {
 		LanguageDAO languageDAO = new LanguageDAO();
 		LoyaltyResponseDTO managementResponseDTO = null;
 		String langId = null;
-
+		CommonUtil commonUtil = null;
 		String txnId = null;
 		GenericDTO genericDTO = new GenericDTO();
 
@@ -37,7 +41,7 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 
 		ServiceManagermentBL serviceManagermentBL = null;
 		try {
-
+			commonUtil = new CommonUtil();
 			managementRequestDTO = new ServiceManagementDTO();
 			managementResponseDTO = new LoyaltyResponseDTO();
 			if (subscriberNumber != null && headers != null) {
@@ -49,11 +53,13 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 					if (key.equalsIgnoreCase("X_LANGUAGE"))
 						managementRequestDTO.setLanguageId(headers.get(key));
 				}
-				managementRequestDTO.setMoNumber(subscriberNumber);
+				if(subscriberNumber!=null){
+					managementRequestDTO.setMoNumber((commonUtil.discardCountryCodeIfExists(subscriberNumber)));
+				}
+				
 				txnId = managementRequestDTO.getTransactionId();
-				logger.info("Service : GeneralManagement  TransactionID {} Request Recieved in System " + txnId);
-				logger.debug("channel Id {} " + managementRequestDTO.getChannel());
-				logger.debug("Language ID {} " + managementRequestDTO.getLanguageId());
+				logger.info("Service : GeneralManagement  TransactionID {} Request Recieved in System " + txnId+"SubscriberNumber:"+managementRequestDTO.getMoNumber());
+			
 
 				if (subscriberNumber == null || subscriberNumber.trim().equalsIgnoreCase("")) {
 					managementResponseDTO.setRespCode(Cache.getServiceStatusMap().get("SUB_REQ_" + langId).getStatusCode());
@@ -70,10 +76,13 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 				}
 
 				serviceManagermentBL = new ServiceManagermentBL();
-
-				managementRequestDTO.setServiceIdentifier(Integer.valueOf(Cache.cacheMap.get("SERVICE_IDENTIFIER")));
-				managementRequestDTO.setFraudStatus(Cache.cacheMap.get("FRAUD_STATUS"));
-				managementRequestDTO.setReferreeNumber(Cache.cacheMap.get("REFERENCE_NUMBER"));
+				int serviceIdentifier=Integer.valueOf(Cache.cacheMap.get("SERVICE_IDENTIFIER"));
+				String fraudStatu=Cache.cacheMap.get("FRAUD_STATUS");
+				String refNumber=Cache.cacheMap.get("REFERENCE_NUMBER");
+				//Hard coded
+				managementRequestDTO.setServiceIdentifier(3);
+				managementRequestDTO.setFraudStatus("checked");
+				managementRequestDTO.setReferreeNumber("8");
 				genericDTO.setObj(managementRequestDTO);
 				genericDTO = serviceManagermentBL.buildProcess(genericDTO);
 
@@ -88,10 +97,12 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 					// managementRequestDTO = (ServiceManagementRequestDTO) genericDTO.getObj();
 					managementResponseDTO.setRespCode(managementRequestDTO.getStatusCode());;
 					managementResponseDTO.setRespDesc(managementRequestDTO.getStatusDesc());
+					servletResponse.setStatus(HttpStatus.SC_OK);
 				} else {
 					managementResponseDTO=new LoyaltyResponseDTO();
 					managementResponseDTO.setRespCode("SC001");
 					managementResponseDTO.setRespDesc("FAILURE");
+					servletResponse.setStatus(HttpStatus.SC_INTERNAL_SERVER_ERROR);
 					
 				}
 				managementResponseDTO.setTimestamp(t3);
@@ -101,6 +112,7 @@ public class GeneralManagementServiceImpl implements GeneralManagementService {
 				managementResponseDTO.setTimestamp(t1);
 				managementResponseDTO.setRespCode("400");
 				managementResponseDTO.setRespDesc("Missing Mandatory Parameters");
+				servletResponse.setStatus(HttpStatus.SC_BAD_REQUEST);
 			}
 			logger.info("Status code " + managementResponseDTO.getRespCode()+"responseDesc:"+managementResponseDTO.getRespDesc());
 		}

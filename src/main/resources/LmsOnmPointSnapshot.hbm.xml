@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+ <hibernate-mapping>  
+  <class name="com.sixdee.imp.dto.LmsOnmPointSnapshotDTO" table="LMS_ONM_POINT_SNAPSHOT">  
+   <id name="loyaltyId"  column="LOYALTY_ID"></id>
+
+<property name="openingBalance" column="OPENING_BALANCE"/>
+
+    <property name="closingBalance" column="CLOSING_BALANCE"/>
+    <property name="updateDate" column="UPDATE_DATE"/>
+<property name="createDate" column="CREATE_DATE"/>
+    <property name="isCdr" column="IS_CDR"/>
+  </class>  
+            
+ </hibernate-mapping>  

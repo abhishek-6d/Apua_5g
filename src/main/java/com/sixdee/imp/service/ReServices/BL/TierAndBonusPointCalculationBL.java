@@ -673,6 +673,7 @@ public class TierAndBonusPointCalculationBL implements BusinessLogics{
 	public void pointAccumulatedNotification(LoyaltyProfileTabDTO loyaltyProfileTabDTO,String msisdn,String calculatedTierPoints ,String transactionId,String expiryDate)
 	{
 		CommonUtil commonUtil = null;
+		String keyWord=null;
 		try {
 			commonUtil = new CommonUtil();
 			HashMap<String, String> map = new HashMap<>();
@@ -681,7 +682,8 @@ public class TierAndBonusPointCalculationBL implements BusinessLogics{
 			map.put(SystemConstants.totalRewardPoints,(loyaltyProfileTabDTO.getRewardPoints()+"").replaceAll(".0*$",""));
 			map.put(SystemConstants.calculatedPoints,calculatedTierPoints.replaceAll(".0*$",""));
 			map.put(SystemConstants.pointCaluclationExpiryDate,expiryDate);
-			commonUtil.generateNotifyRequest(transactionId, "NotifyCustomer",msisdn, map);
+			keyWord=(Cache.getConfigParameterMap().get("KEY_WORD")).getParameterValue();
+			commonUtil.generateNotifyRequest(transactionId, keyWord,msisdn, map);
 		} catch (Exception e) {
 			logger.info("TransactionId "+msisdn+" Exception " + e.getMessage());
 		}

@@ -29,7 +29,7 @@ public class ReserveAndCommitBL extends BOCommon {
 	@Override
 	public GenericDTO buildProcess(GenericDTO genericDTO) throws CommonException {
 		// TODO Auto-generated method stub
-
+		logger.info("**ReserveAndCommitBL***");
 		ReserveAndCommitReqDto reserveAndCommitReqDto = null;
 		
 		ReserveAndCommitRespDto reserveAndCommitRespDto = new ReserveAndCommitRespDto();
@@ -55,6 +55,7 @@ public class ReserveAndCommitBL extends BOCommon {
 		try {
 
 			reserveAndCommitReqDto = (ReserveAndCommitReqDto) genericDTO.getObj();
+			logger.info("**Point***"+reserveAndCommitReqDto.getPoints());
 			txnId = reserveAndCommitReqDto.getRequestId();
 			timeStamp = reserveAndCommitReqDto.getTimestamp();
 			loyaltyProfileTabDTO = new LoyaltyProfileTabDTO();

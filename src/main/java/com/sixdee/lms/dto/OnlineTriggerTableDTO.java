@@ -95,6 +95,11 @@ public class OnlineTriggerTableDTO implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+	@Override
+	public String toString() {
+		return "OnlineTriggerTableDTO [Id=" + Id + ", triggerId=" + triggerId + ", ruleId=" + ruleId + ", ruleURL="
+				+ ruleURL + ", triggerName=" + triggerName + "]";
+	}
 	
 
 	

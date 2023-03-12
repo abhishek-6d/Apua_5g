@@ -229,39 +229,43 @@ public class GetTransactionDetailsBO extends BOCommon {
 //---------------------------------------------------------------------------------------------
 			fromDate = getTransactionDetailsDTO.getFromDate();
 			endDate = getTransactionDetailsDTO.getEndDate();
-			statusId = getTransactionDetailsDTO.getStatusId();
 			
-			loyaltyId=getTransactionDetailsDTO.getLoyaltyId();
-			if(loyaltyId==null) {
-				subscriberNumberTabDTO=tableDetailsDAO.getSubscriberNumberDetails(Long.valueOf(getTransactionDetailsDTO.getSubscriberNumber()),null);
+			
+		
+			if(getTransactionDetailsDTO.getLoyaltyId()!=null) {
+				tableName = tableInfoDAO.getLoyaltyTransactionTable(getTransactionDetailsDTO.getLoyaltyId());
+				
+			}else {
+				subscriberNumberTabDTO=tableDetailsDAO.getSubscriberNumberDetails(Long.parseLong(getTransactionDetailsDTO.getSubscriberNumber()),null);
 				if(subscriberNumberTabDTO!=null) {
 					loyaltyId=String.valueOf(subscriberNumberTabDTO.getLoyaltyID());
+					tableName = tableInfoDAO.getLoyaltyTransactionTable(String.valueOf(subscriberNumberTabDTO.getLoyaltyID()));
+					
+				}else {
+				     
+					getTransactionDetailsDTO.setStatusCode("SC0610");
+					getTransactionDetailsDTO.setStatusDesc("INVALID SUBSCRIBER");
+					
 				}
-				else {
-					actionServiceDetailsDTO = Cache.getServiceStatusMap().get("NO_LOYALTY DETAILS__1");
-					getTransactionDetailsDTO.setStatusCode(actionServiceDetailsDTO.getStatusCode());
-					getTransactionDetailsDTO.setStatusDesc(actionServiceDetailsDTO.getStatusDesc());
-				}
-				
 			}
 			
 			
 			
-			logger.info("...............statusId......................" + statusId + "..............channel........"
+			logger.info("...............statusId......................" + getTransactionDetailsDTO.getStatusId() + "..............channel........"
 					+ getTransactionDetailsDTO.getChannel()+"...........lunguage......."+langId);
 
-			if (statusId != null && !(statusId.equalsIgnoreCase("")) && !(statusId.equalsIgnoreCase("0"))) {
-				logger.info(">>>status id>>>" + statusId);
+			if (getTransactionDetailsDTO.getStatusId() != null && !(getTransactionDetailsDTO.getStatusId().equalsIgnoreCase("")) && !(getTransactionDetailsDTO.getStatusId().equalsIgnoreCase("0"))) {
+				logger.debug(">>>status id>>>" + getTransactionDetailsDTO.getStatusId());
 
-				statusIds = getTransactionDetailsDAO.getStatusIds(statusId, getTransactionDetailsDTO.getChannel());
+				statusIds = getTransactionDetailsDAO.getStatusIds(getTransactionDetailsDTO.getStatusId(), getTransactionDetailsDTO.getChannel());
 			}
 
-			tableName = tableInfoDAO.getLoyaltyTransactionTable(loyaltyId);
+			logger.debug(">>>status id>>>" + statusIds+"loyaltyId:"+loyaltyId);
 
 			// getTransactionDetailsDAO.getCountOfTrans(tableName,loyaltyId);
 
 			if ((fromDate != null && !(fromDate.trim().equals("")))
-					&& (endDate != null && !(endDate.trim().equals("")))) {
+					&& (endDate != null && !(endDate.trim().equals("")))&&(loyaltyId!=null)) {
 				logger.info("From Date [" + fromDate + "] and End Date " + endDate
 						+ " is not null . so going to find transaciton with in that period ["
 						+ getTransactionDetailsDTO.getTransactionId() + "]");

@@ -41,6 +41,7 @@ public class ReserveAndCommitDAO {
 			
 			tableName=getOnmTransactionTableName(loyaltyId+"");
 			
+			
 			String hql="from " + tableName + " where loyaltyId=:loyaltyId and transactionId=:transactionId";
 			
 			Query query=session.createQuery(hql);
@@ -105,7 +106,7 @@ public class ReserveAndCommitDAO {
 			session=HiberanteUtil.getSessionFactory().openSession();
 			transaction=session.beginTransaction();
 			String tableName = "LOYALTY_PROFILE_ENTITY_0";
-			hql="UPDATE "+tableName+" SET statusUpdatedDate=:statusUpdatedDate,rewardPoints=rewardPoints-:rewardPoints,tierPoints=tierPoints-:tierPoints,reservePoints =reservePoints+:reservePoints "
+			hql="UPDATE "+tableName+" SET statusUpdatedDate=:statusUpdatedDate,rewardPoints=rewardPoints-:rewardPoints,tierPoints=tierPoints-:tierPoints,reservePoints=reservePoints+:reservePoints "
 					+ "WHERE loyaltyID=:loyaltyID ";
 			query=session.createQuery(hql);
 			query.setParameter("tierPoints", loyaltyProfileTabDTO.getReservePoints());

@@ -9,16 +9,19 @@ import org.apache.log4j.Logger;
 
 import com.sixdee.fw.dto.GenericDTO;
 import com.sixdee.imp.common.config.Cache;
+import com.sixdee.imp.response.ResponseDTO;
 import com.sixdee.imp.utill.Param;
 import com.sixdee.imp.utill.Request;
 import com.sixdee.imp.utill.RequestParseXML;
 import com.sixdee.imp.utill.Response;
+import com.sixdee.imp.utill.RuleEngine.Parameters;
 import com.sixdee.lms.dto.OnlineTriggerTableDTO;
 import com.sixdee.lms.dto.persistent.ExtNotificationDTO;
 import com.sixdee.lms.serviceInterfaces.BusinessLogics;
 import com.sixdee.lms.thirdPartyCall.CallThirdParty;
 import com.sixdee.lms.util.RealTimeTriggerUtil;
 import com.sixdee.lms.util.constant.SystemConstants;
+import com.sixdee.lms.util.parser.JsonParser;
 
 /**
  * @author rahul.kr
@@ -30,11 +33,12 @@ public class OnlineRuleInitiatorBO implements BusinessLogics{
 	
 	@Override
 	public GenericDTO executeBusinessProcess(GenericDTO genericDTO) {
+		
 		// TODO Auto-generated method stub
 		String requestId= null;
 		String keyword = null;
 		Request request = null;
-		Response response = null;
+		ResponseDTO response = null;
 		ExtNotificationDTO extNotificationDTO = null;
 		RealTimeTriggerUtil realTimeTriggerUtil = null;
 		List<OnlineTriggerTableDTO> onlineTableDTOList = null;
@@ -49,9 +53,10 @@ public class OnlineRuleInitiatorBO implements BusinessLogics{
 			if(extNotificationDTO!=null && extNotificationDTO.getIsTrigger()==1){
 			if(Cache.triggerTableMap!=null){
 				onlineTableDTOList=Cache.getTriggerTableMap().get(extNotificationDTO.getTriggerId());
-				
+				logger.info("onlineTableDTOList  size>>"+onlineTableDTOList);
 				if(onlineTableDTOList!=null){
 					for(OnlineTriggerTableDTO onlineTriggerTableDTO : onlineTableDTOList){
+						request.setScheduleId(String.valueOf(onlineTriggerTableDTO.getRuleId()));
 						response = generateRECall(requestId,extNotificationDTO.getTrigger(),onlineTriggerTableDTO,request);
 					}
 				}else{
@@ -77,22 +82,34 @@ public class OnlineRuleInitiatorBO implements BusinessLogics{
 		return genericDTO;
 	}
 
-	public Response generateRECall(String requestId,String triggerName, OnlineTriggerTableDTO onlineTriggerTableDTO, Request request) {
-		Response response = null;
+	public ResponseDTO generateRECall(String requestId,String triggerName, OnlineTriggerTableDTO onlineTriggerTableDTO, Request request) {
+		logger.info("generateRECall called ::::::::::::");
+		ResponseDTO response = null;
 		String reqXml = null;
 		CallThirdParty callThirdParty = null;
 		String respXML;
+		String reqJson;
+		String resJson;
 		try{
-			request.getDataSet().getParameter1().add(new Param(SystemConstants.TRIGGER_NAME,triggerName));
-			request.getDataSet().getParameter1().add(new Param(SystemConstants.RE_SERVICE_ID,onlineTriggerTableDTO.getTriggerId()+""));
-			request.getDataSet().getParameter1().add(new Param("ID","1"));
-			request.getDataSet().getParameter1().add(new Param(SystemConstants.RE_SCHEULE_ID,onlineTriggerTableDTO.getRuleId()+""));
-			reqXml=RequestParseXML.getRequest().toXML(request);
+			request.getDataSet().getParameters().add(new Parameters(SystemConstants.TRIGGER_NAME,triggerName));
+			request.getDataSet().getParameters().add(new Parameters(SystemConstants.RE_SERVICE_ID,onlineTriggerTableDTO.getTriggerId()+""));
+			request.getDataSet().getParameters().add(new Parameters("ID","1"));
+			request.getDataSet().getParameters().add(new Parameters(SystemConstants.RE_SCHEULE_ID,onlineTriggerTableDTO.getRuleId()+""));
+			
+			reqJson= JsonParser.toJson(request);
+			
+			//reqXml=RequestParseXML.getRequest().toXML(request);
 			callThirdParty = new CallThirdParty();
-			respXML=callThirdParty.makeThirdPartyCall(reqXml, onlineTriggerTableDTO.getRuleURL(), Integer.valueOf(Cache.configParameterMap.get("RE_CALL_TIMEOUT_CONFIG").getParameterValue().trim()));
-			logger.info("Response from ThirdParty :"+respXML);
-			if(respXML!=null && !(respXML.startsWith("<SUCCESS>")))
-				response =  (Response) RequestParseXML.responseMultiDataXstream().fromXML(respXML);
+			long t1 = System.currentTimeMillis();
+			resJson=callThirdParty.makeThirdPartyCall(reqJson, onlineTriggerTableDTO.getRuleURL(), Integer.valueOf(Cache.configParameterMap.get("RE_CALL_TIMEOUT_CONFIG").getParameterValue().trim()));
+			logger.info("Response from ThirdParty :"+resJson+"TotalTime:"+(System.currentTimeMillis()-t1));
+			
+			if(resJson!=null)
+				response =  (ResponseDTO)JsonParser.fromJson(resJson, ResponseDTO.class);
+			logger.info("Response DTO>> :"+response.toString());
+			
+			//if(respXML!=null && !(respXML.startsWith("<SUCCESS>")))
+				//response =  (Response) RequestParseXML.responseMultiDataXstream().fromXML(respXML);
 			//else
 				
 		}finally{

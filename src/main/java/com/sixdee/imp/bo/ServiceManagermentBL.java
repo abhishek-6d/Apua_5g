@@ -53,6 +53,7 @@ public class ServiceManagermentBL extends BOCommon {
 		 String ruleTrigger = null;
 		long t1=0;
 		try {
+			logger.info("ServiceIdentifier:"+serviceManagementDTO.getServiceIdentifier());
 			commonUtil=new CommonUtil();
 			requestId = serviceManagementDTO.getTransactionId();
 			 switch(serviceManagementDTO.getServiceIdentifier()) {

@@ -22,9 +22,9 @@ public class RewardPointsCalculationBL extends BOCommon {
 		RewardPointsCalculationDAO rewardPointsCalculationDAO = new RewardPointsCalculationDAO();
 		RewardPointsCalculationDTO rewardPointsCalculationDTO = (RewardPointsCalculationDTO) genericDTO.getObj();
 
-		if (rewardPointsCalculationDTO.isPointsCalculation()
-				&& Cache.getCacheMap().get("POINT_CALCULATION").equalsIgnoreCase("TRUE")) {
-			rewardPointsCalculationDAO.calculateRewardPointsStep1(genericDTO);
+	
+		if (rewardPointsCalculationDTO.isPointsCalculation()) {
+			genericDTO=rewardPointsCalculationDAO.calculateRewardPointsStep1(genericDTO);
 		}
 
 		if (rewardPointsCalculationDTO.getRewardPointsCategory() == 2) {
@@ -36,6 +36,7 @@ public class RewardPointsCalculationBL extends BOCommon {
 			if (genericDTO.getStatusCode() != null && genericDTO.getStatusCode().equalsIgnoreCase("SC0000"))
 				rewardPointsCalculationDAO.notifyARBORSystem(rewardPointsCalculationDTO);
 		}
+		
 		rewardPointsCalculationDAO = null;
 		rewardPointsCalculationDTO = null;
 		return genericDTO;

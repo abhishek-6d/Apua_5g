@@ -254,7 +254,7 @@ public class Globals
 				map.put(featureMappingDTO.getTriggerId(), onlineTableDTOList);
 			}
 			Cache.setTriggerTableMap(map);
-			System.out.println(map);
+			
 		} catch (HibernateException h) {
 			log.error(h);
 			/*
@@ -1122,8 +1122,10 @@ public class Globals
 				detailsDTO.setRewardPoints((obj[4]==null?null:Double.parseDouble(obj[4]+"")));
 				detailsDTO.setStatusPoints((obj[5]==null?null:Double.parseDouble(obj[5]+"")));
 				
+				
 				if(tierCategoryDetailsMap.get(detailsDTO.getTierID())!=null)
 				{
+					
 					if(tierCategoryDetailsMap.get(detailsDTO.getTierID()).get(detailsDTO.getCategoryID())!=null)
 					{
 						tierCategoryDetailsMap.get(detailsDTO.getTierID()).get(detailsDTO.getCategoryID()).add(detailsDTO);
@@ -1132,13 +1134,16 @@ public class Globals
 						list2.add(detailsDTO);
 						tierCategoryDetailsMap.get(detailsDTO.getTierID()).put(detailsDTO.getCategoryID(),list2);
 					}
+					
 				}else{
 					List<CategoryDetailsDTO> list2=new ArrayList<CategoryDetailsDTO>();
 					list2.add(detailsDTO);
+				
 					
 					Map<Integer,List<CategoryDetailsDTO>> map=new HashMap<Integer, List<CategoryDetailsDTO>>();
 					map.put(detailsDTO.getCategoryID(),list2);
 					
+				
 					tierCategoryDetailsMap.put(detailsDTO.getTierID(),map);
 					
 				}

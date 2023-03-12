@@ -43,6 +43,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 		}
 		return updateStatus;
@@ -77,6 +81,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 			session=null;
 		}
@@ -108,6 +116,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 			session=null;
 		}
@@ -145,8 +157,12 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
-			session=null;
+		
 		}
 		return updateStatus;
 	}
@@ -179,6 +195,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 		}
 		return updateStatus;
@@ -212,6 +232,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 		}
 		return updateStatus;
@@ -246,6 +270,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
+
+			if(session != null)
+				session.close();
+		
 			query = null;
 		}
 		return updateStatus;
@@ -295,7 +323,11 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+
+			if(session != null)
+				session.close();
+		
+			
 			logger.info("Update flag value is "+updateStatus);
 		}
 		return updateStatus;
@@ -332,7 +364,11 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+
+			if(session != null)
+				session.close();
+		
+			
 		}
 		return updateStatus;
 
@@ -365,7 +401,10 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+
+			if(session != null)
+				session.close();
+		
 		}
 		return updateStatus;
 
@@ -399,7 +438,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -449,7 +489,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -507,8 +548,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
-			session=null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 	}
@@ -541,7 +582,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -576,7 +618,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -610,7 +653,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -645,7 +689,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -702,7 +747,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -746,8 +792,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
-			logger.info("Update flag value is "+updateStatus);
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 
@@ -777,8 +823,8 @@ public class ServiceManagementDAO {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			query = null;
-			session=null;
+			if(session != null)
+				session.close();
 		}
 		return updateStatus;
 	}

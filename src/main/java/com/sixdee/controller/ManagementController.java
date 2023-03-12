@@ -467,7 +467,6 @@ public class ManagementController {
 			) {
 					
 				
-					
 					genericDTO=new GenericDTO();
 					genericDTO.setObj(reserveAndCommitReq);
 					reserveAndCommitBO=new ReserveAndCommitBL();
